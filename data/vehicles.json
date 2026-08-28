@@ -8,47 +8,6 @@
     "mapa_url": "https://www.google.com/maps?q=25.5453446,-103.4010844"
   },
   "vehicles": {
-    "1": {
-      "id": "1",
-      "placas": "",
-      "marca": "Honda",
-      "modelo": "City",
-      "anio": 2020,
-      "version": "",
-      "color": "Blanco",
-      "combustible": "",
-      "vin": "",
-      "km_actual": null,
-      "cliente_nombre": "Humberto",
-      "cliente_telefono": "8713588027",
-      "ficha_tecnica": {
-        "aceite_tipo": "",
-        "aceite_capacidad": "",
-        "presion_llantas": "",
-        "bateria": "",
-        "filtro_aire": "",
-        "filtro_aceite": ""
-      },
-      "proximo_servicio": {
-        "descripcion": "",
-        "km_estimado": null,
-        "fecha_estimada": null
-      },
-      "servicios": [
-        {
-          "fecha": "2026-08-27",
-          "tipo": "Se le poncho la llanta",
-          "descripcion": "Por pendejo",
-          "km": null,
-          "costo": 2000,
-          "tecnico": "Humberto",
-          "fotos": [
-            "uploads/1/20260827-233052-0-IMG_7229.jpg"
-          ],
-          "documentos": []
-        }
-      ]
-    },
     "DEMO123": {
       "id": "DEMO123",
       "placas": "ABC-123-A",
