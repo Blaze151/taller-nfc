@@ -11,7 +11,7 @@
     "2": {
       "id": "2",
       "estado": {
-        "valor": "recibido",
+        "valor": "en_proceso",
         "actualizado": "2026-08-29"
       },
       "placas": "Exc 123",
