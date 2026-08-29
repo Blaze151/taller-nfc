@@ -8,6 +8,54 @@
     "mapa_url": "https://www.google.com/maps?q=25.5453446,-103.4010844"
   },
   "vehicles": {
+    "2": {
+      "id": "2",
+      "estado": {
+        "valor": "recibido",
+        "actualizado": "2026-08-29"
+      },
+      "placas": "Exc 123",
+      "marca": "Nissan",
+      "modelo": "Versa",
+      "anio": 2023,
+      "version": "SXL",
+      "color": "Rojo",
+      "combustible": "Gasolina",
+      "vin": "12344567789",
+      "km_actual": 200000,
+      "cliente_nombre": "Humberto M",
+      "cliente_telefono": "8713588027",
+      "ficha_tecnica": {
+        "aceite_tipo": "",
+        "aceite_capacidad": "",
+        "presion_llantas": "",
+        "bateria": "",
+        "filtro_aire": "",
+        "filtro_aceite": ""
+      },
+      "proximo_servicio": {
+        "descripcion": "Afinación menor",
+        "km_estimado": 25000,
+        "fecha_estimada": "2026-11-26"
+      },
+      "servicios": [
+        {
+          "fecha": "2026-08-29",
+          "tipo": "Afinación menor",
+          "descripcion": "Cambio de aceite 5w 30 filtro de aceite filtro de aire limpieza de motor chequeo de niveles",
+          "km": 200000,
+          "costo": 3500,
+          "tecnico": "Sergio",
+          "fotos": [
+            "uploads/2/20260829-173451-0-17880464630406204207552437771102.jpg",
+            "uploads/2/20260829-173454-1-1000764706.jpg"
+          ],
+          "documentos": [
+            "uploads/2/20260829-173456-0-11-FACTURA-QUALITAS-BAJAC.pdf"
+          ]
+        }
+      ]
+    },
     "DEMO123": {
       "id": "DEMO123",
       "estado": {
