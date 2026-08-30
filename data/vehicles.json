@@ -55,8 +55,17 @@
         "actualizado": "2026-08-30",
         "adjuntos": {
           "recibido": {
-            "fotos": [],
-            "documentos": []
+            "fotos": [
+              "uploads/DEMO123/20260830-172347-recibido-0-1000764514.jpg",
+              "uploads/DEMO123/20260830-172352-recibido-1-1000764513.jpg",
+              "uploads/DEMO123/20260830-172356-recibido-2-1000764512.jpg",
+              "uploads/DEMO123/20260830-172358-recibido-3-1000764511.jpg",
+              "uploads/DEMO123/20260830-172400-recibido-4-1000764510.jpg",
+              "uploads/DEMO123/20260830-172402-recibido-5-1000764509.jpg"
+            ],
+            "documentos": [
+              "uploads/DEMO123/20260830-172404-recibido-0-11-FACTURA-QUALITAS-BAJAC.pdf"
+            ]
           },
           "en_proceso": {
             "fotos": [],
