@@ -43,7 +43,31 @@
         "km_estimado": 73500,
         "fecha_estimada": "2026-11-15"
       },
-      "servicio_actual": null,
+      "servicio_actual": {
+        "id": "svc_1788130222072",
+        "tipo": "Enderezado y pintura en puerta derecha trasera",
+        "descripcion": "Enderezado y pintura de puerta derecha trasera",
+        "km": 28000,
+        "costo": 4000,
+        "tecnico": "Manuel",
+        "fecha_inicio": "2026-08-30",
+        "estado": "recibido",
+        "actualizado": "2026-08-30",
+        "adjuntos": {
+          "recibido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "en_proceso": {
+            "fotos": [],
+            "documentos": []
+          },
+          "listo": {
+            "fotos": [],
+            "documentos": []
+          }
+        }
+      },
       "servicios": [
         {
           "fecha": "2026-08-30",
