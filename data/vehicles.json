@@ -34,40 +34,25 @@
         "km_estimado": 73500,
         "fecha_estimada": "2026-11-15"
       },
-      "servicio_actual": {
-        "id": "svc_demo1",
-        "tipo": "Cambio de balatas delanteras",
-        "descripcion": "Cliente reporta ruido al frenar. Se revisan balatas delanteras y se cotiza el cambio.",
-        "km": 68700,
-        "costo": null,
-        "tecnico": "Carlos R.",
-        "fecha_inicio": "2026-08-27",
-        "estado": "listo",
-        "actualizado": "2026-08-30",
-        "adjuntos": {
-          "recibido": {
-            "fotos": [
-              "uploads/DEMO123/20260830-000448-recibido-0-image.jpg"
-            ],
-            "documentos": []
-          },
-          "en_proceso": {
-            "fotos": [
-              "uploads/DEMO123/20260830-000450-en_proceso-0-image.jpg"
-            ],
-            "documentos": []
-          },
-          "listo": {
-            "fotos": [
-              "uploads/DEMO123/20260830-000452-listo-0-image.jpg"
-            ],
-            "documentos": [
-              "uploads/DEMO123/20260830-000454-listo-0-motherson-19-agosto.pdf"
-            ]
-          }
-        }
-      },
+      "servicio_actual": null,
       "servicios": [
+        {
+          "fecha": "2026-08-30",
+          "tipo": "Cambio de balatas delanteras",
+          "descripcion": "Cliente reporta ruido al frenar. Se revisan balatas delanteras y se cotiza el cambio.",
+          "km": 68700,
+          "costo": null,
+          "tecnico": "Carlos R.",
+          "fecha_inicio": "2026-08-27",
+          "fotos": [
+            "uploads/DEMO123/20260830-000448-recibido-0-image.jpg",
+            "uploads/DEMO123/20260830-000450-en_proceso-0-image.jpg",
+            "uploads/DEMO123/20260830-000452-listo-0-image.jpg"
+          ],
+          "documentos": [
+            "uploads/DEMO123/20260830-000454-listo-0-motherson-19-agosto.pdf"
+          ]
+        },
         {
           "fecha": "2026-08-10",
           "tipo": "Cambio de aceite",
