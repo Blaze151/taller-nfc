@@ -51,7 +51,7 @@
         "costo": 4000,
         "tecnico": "Manuel",
         "fecha_inicio": "2026-08-30",
-        "estado": "recibido",
+        "estado": "en_proceso",
         "actualizado": "2026-08-30",
         "adjuntos": {
           "recibido": {
@@ -68,7 +68,10 @@
             ]
           },
           "en_proceso": {
-            "fotos": [],
+            "fotos": [
+              "uploads/DEMO123/20260830-172606-en_proceso-0-1000764706.jpg",
+              "uploads/DEMO123/20260830-172609-en_proceso-1-1000764705.jpg"
+            ],
             "documentos": []
           },
           "listo": {
