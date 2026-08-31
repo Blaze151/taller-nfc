@@ -10,7 +10,7 @@
   "vehicles": {
     "2": {
       "id": "2",
-      "foto_perfil": "uploads/2/20260830-230105-perfil.jpg",
+      "foto_perfil": "uploads/2/20260830-230643-perfil.jpg",
       "documentos_vehiculo": {
         "fotos": [
           "uploads/2/20260830-230107-vdoc-0-17881523983478250644974993254848.jpg",
@@ -52,7 +52,7 @@
         "costo": 3200,
         "tecnico": "Frenos México",
         "fecha_inicio": "2026-08-31",
-        "estado": "recibido",
+        "estado": "en_proceso",
         "actualizado": "2026-08-31",
         "adjuntos": {
           "recibido": {
@@ -64,7 +64,9 @@
             "documentos": []
           },
           "en_proceso": {
-            "fotos": [],
+            "fotos": [
+              "uploads/2/20260830-230640-en_proceso-0-1000767506.jpg"
+            ],
             "documentos": []
           },
           "listo": {
