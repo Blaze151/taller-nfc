@@ -32,17 +32,17 @@
       "cliente_nombre": "Sergio Guardado Martínez",
       "cliente_telefono": "8711044146",
       "ficha_tecnica": {
-        "aceite_tipo": "",
-        "aceite_capacidad": "",
-        "presion_llantas": "",
+        "aceite_tipo": "5W-30 sintético",
+        "aceite_capacidad": "5 litros",
+        "presion_llantas": "40 lbs",
         "bateria": "",
         "filtro_aire": "",
         "filtro_aceite": ""
       },
       "proximo_servicio": {
-        "descripcion": "",
-        "km_estimado": null,
-        "fecha_estimada": null
+        "descripcion": "Afinación Mayor",
+        "km_estimado": 360000,
+        "fecha_estimada": "2026-08-31"
       },
       "servicio_actual": null,
       "servicios": []
