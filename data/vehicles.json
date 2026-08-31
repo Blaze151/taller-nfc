@@ -101,7 +101,7 @@
       "vin": "1HGCM82633A004352",
       "km_actual": 68500,
       "cliente_nombre": "Juan Pérez",
-      "cliente_telefono": "8449876543",
+      "cliente_telefono": "8713588027",
       "ficha_tecnica": {
         "aceite_tipo": "5W-30 sintético",
         "aceite_capacidad": "4.5 L",
@@ -123,7 +123,7 @@
         "costo": 1000,
         "tecnico": "Humberto",
         "fecha_inicio": "2026-08-31",
-        "estado": "recibido",
+        "estado": "listo",
         "actualizado": "2026-08-31",
         "pago": {
           "estado": "no_pagado",
