@@ -8,6 +8,45 @@
     "mapa_url": "https://www.google.com/maps?q=25.5453446,-103.4010844"
   },
   "vehicles": {
+    "2": {
+      "id": "2",
+      "foto_perfil": "uploads/2/20260830-230105-perfil.jpg",
+      "documentos_vehiculo": {
+        "fotos": [
+          "uploads/2/20260830-230107-vdoc-0-17881523983478250644974993254848.jpg",
+          "uploads/2/20260830-230110-vdoc-1-1788152416331937990787970880133.jpg",
+          "uploads/2/20260830-230112-vdoc-2-17881524279251254734955791377227.jpg",
+          "uploads/2/20260830-230114-vdoc-3-17881524356617319911066125476942.jpg"
+        ],
+        "documentos": []
+      },
+      "placas": "E 202-70 L",
+      "marca": "Ford",
+      "modelo": "F150",
+      "anio": 2010,
+      "version": "XL 4.6 Lts",
+      "color": "Negro",
+      "combustible": "Gasolina",
+      "vin": "1FTEW1C82AFC56473",
+      "km_actual": 358452,
+      "cliente_nombre": "Sergio Guardado Martínez",
+      "cliente_telefono": "8711044146",
+      "ficha_tecnica": {
+        "aceite_tipo": "",
+        "aceite_capacidad": "",
+        "presion_llantas": "",
+        "bateria": "",
+        "filtro_aire": "",
+        "filtro_aceite": ""
+      },
+      "proximo_servicio": {
+        "descripcion": "",
+        "km_estimado": null,
+        "fecha_estimada": null
+      },
+      "servicio_actual": null,
+      "servicios": []
+    },
     "DEMO123": {
       "id": "DEMO123",
       "foto_perfil": "uploads/DEMO123/20260830-124929-perfil.jpg",
