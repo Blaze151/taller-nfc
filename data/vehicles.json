@@ -44,7 +44,35 @@
         "km_estimado": 360000,
         "fecha_estimada": "2026-08-31"
       },
-      "servicio_actual": null,
+      "servicio_actual": {
+        "id": "svc_1788152583837",
+        "tipo": "Servicio Frenos Delanteros y Traseros",
+        "descripcion": "Servicio de cambio de balatas delanteras y traseras\nRectificado de discos\nLimpieza y ajuste",
+        "km": 358000,
+        "costo": 3200,
+        "tecnico": "Frenos México",
+        "fecha_inicio": "2026-08-31",
+        "estado": "recibido",
+        "actualizado": "2026-08-31",
+        "adjuntos": {
+          "recibido": {
+            "fotos": [
+              "uploads/2/20260830-230507-recibido-0-1000767504.jpg",
+              "uploads/2/20260830-230510-recibido-1-1000767519.jpg",
+              "uploads/2/20260830-230512-recibido-2-1000751935.jpg"
+            ],
+            "documentos": []
+          },
+          "en_proceso": {
+            "fotos": [],
+            "documentos": []
+          },
+          "listo": {
+            "fotos": [],
+            "documentos": []
+          }
+        }
+      },
       "servicios": []
     },
     "DEMO123": {
