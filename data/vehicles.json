@@ -123,7 +123,7 @@
         "costo": 1000,
         "tecnico": "Humberto",
         "fecha_inicio": "2026-08-31",
-        "estado": "en_proceso",
+        "estado": "listo",
         "actualizado": "2026-08-31",
         "pago": {
           "estado": "no_pagado",
@@ -143,6 +143,10 @@
             "documentos": []
           },
           "pago": {
+            "fotos": [],
+            "documentos": []
+          },
+          "recogido": {
             "fotos": [],
             "documentos": []
           }
