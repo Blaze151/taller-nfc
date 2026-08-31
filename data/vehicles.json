@@ -115,57 +115,56 @@
         "km_estimado": 73500,
         "fecha_estimada": "2026-11-15"
       },
-      "servicio_actual": {
-        "id": "svc_1788130222072",
-        "tipo": "Enderezado y pintura en puerta derecha trasera",
-        "descripcion": "Enderezado y pintura de puerta derecha trasera",
-        "km": 28000,
-        "costo": 4000,
-        "tecnico": "Manuel",
-        "fecha_inicio": "2026-08-30",
-        "estado": "listo",
-        "actualizado": "2026-08-30",
-        "pago": {
-          "estado": "pagado",
-          "metodo": "efectivo"
-        },
-        "adjuntos": {
-          "recibido": {
-            "fotos": [
-              "uploads/DEMO123/20260830-172347-recibido-0-1000764514.jpg",
-              "uploads/DEMO123/20260830-172352-recibido-1-1000764513.jpg",
-              "uploads/DEMO123/20260830-172356-recibido-2-1000764512.jpg",
-              "uploads/DEMO123/20260830-172358-recibido-3-1000764511.jpg",
-              "uploads/DEMO123/20260830-172400-recibido-4-1000764510.jpg",
-              "uploads/DEMO123/20260830-172402-recibido-5-1000764509.jpg"
-            ],
-            "documentos": [
-              "uploads/DEMO123/20260830-172404-recibido-0-11-FACTURA-QUALITAS-BAJAC.pdf"
-            ]
-          },
-          "en_proceso": {
-            "fotos": [
-              "uploads/DEMO123/20260830-172606-en_proceso-0-1000764706.jpg",
-              "uploads/DEMO123/20260830-172609-en_proceso-1-1000764705.jpg"
-            ],
-            "documentos": []
-          },
-          "listo": {
-            "fotos": [
-              "uploads/DEMO123/20260830-172804-listo-0-1000751935.jpg",
-              "uploads/DEMO123/20260830-172807-listo-1-1000751923.jpg"
-            ],
-            "documentos": []
-          },
-          "pago": {
-            "fotos": [
-              "uploads/DEMO123/20260830-232505-pago-0-image.jpg"
-            ],
-            "documentos": []
-          }
-        }
-      },
+      "servicio_actual": null,
       "servicios": [
+        {
+          "fecha": "2026-08-31",
+          "tipo": "Enderezado y pintura en puerta derecha trasera",
+          "descripcion": "Enderezado y pintura de puerta derecha trasera",
+          "km": 28000,
+          "costo": 4000,
+          "tecnico": "Manuel",
+          "fecha_inicio": "2026-08-30",
+          "pago": {
+            "estado": "pagado",
+            "metodo": "efectivo"
+          },
+          "adjuntos": {
+            "recibido": {
+              "fotos": [
+                "uploads/DEMO123/20260830-172347-recibido-0-1000764514.jpg",
+                "uploads/DEMO123/20260830-172352-recibido-1-1000764513.jpg",
+                "uploads/DEMO123/20260830-172356-recibido-2-1000764512.jpg",
+                "uploads/DEMO123/20260830-172358-recibido-3-1000764511.jpg",
+                "uploads/DEMO123/20260830-172400-recibido-4-1000764510.jpg",
+                "uploads/DEMO123/20260830-172402-recibido-5-1000764509.jpg"
+              ],
+              "documentos": [
+                "uploads/DEMO123/20260830-172404-recibido-0-11-FACTURA-QUALITAS-BAJAC.pdf"
+              ]
+            },
+            "en_proceso": {
+              "fotos": [
+                "uploads/DEMO123/20260830-172606-en_proceso-0-1000764706.jpg",
+                "uploads/DEMO123/20260830-172609-en_proceso-1-1000764705.jpg"
+              ],
+              "documentos": []
+            },
+            "listo": {
+              "fotos": [
+                "uploads/DEMO123/20260830-172804-listo-0-1000751935.jpg",
+                "uploads/DEMO123/20260830-172807-listo-1-1000751923.jpg"
+              ],
+              "documentos": []
+            },
+            "pago": {
+              "fotos": [
+                "uploads/DEMO123/20260830-232505-pago-0-image.jpg"
+              ],
+              "documentos": []
+            }
+          }
+        },
         {
           "fecha": "2026-08-30",
           "tipo": "Cambio de balatas delanteras",
