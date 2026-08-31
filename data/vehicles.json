@@ -115,7 +115,39 @@
         "km_estimado": 73500,
         "fecha_estimada": "2026-11-15"
       },
-      "servicio_actual": null,
+      "servicio_actual": {
+        "id": "svc_1788154069837",
+        "tipo": "Cámara",
+        "descripcion": "Hola",
+        "km": 20000,
+        "costo": 1000,
+        "tecnico": "Humberto",
+        "fecha_inicio": "2026-08-31",
+        "estado": "recibido",
+        "actualizado": "2026-08-31",
+        "pago": {
+          "estado": "no_pagado",
+          "metodo": null
+        },
+        "adjuntos": {
+          "recibido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "en_proceso": {
+            "fotos": [],
+            "documentos": []
+          },
+          "listo": {
+            "fotos": [],
+            "documentos": []
+          },
+          "pago": {
+            "fotos": [],
+            "documentos": []
+          }
+        }
+      },
       "servicios": [
         {
           "fecha": "2026-08-31",
