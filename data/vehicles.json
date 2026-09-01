@@ -46,11 +46,11 @@
         "costo": 2100,
         "tecnico": "Carlos R.",
         "fecha_inicio": "2026-08-27",
-        "estado": "listo",
+        "estado": "recogido",
         "actualizado": "2026-09-01",
         "pago": {
-          "estado": "no_pagado",
-          "metodo": null
+          "estado": "pagado",
+          "metodo": "transferencia"
         },
         "adjuntos": {
           "recibido": {
@@ -70,7 +70,9 @@
             "documentos": []
           },
           "pago": {
-            "fotos": [],
+            "fotos": [
+              "uploads/DEMO123/20260831-224115-pago-0-1000769099.jpg"
+            ],
             "documentos": []
           },
           "recogido": {
