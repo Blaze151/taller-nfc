@@ -46,8 +46,8 @@
         "costo": 2100,
         "tecnico": "Carlos R.",
         "fecha_inicio": "2026-08-27",
-        "estado": "en_proceso",
-        "actualizado": "2026-08-27",
+        "estado": "listo",
+        "actualizado": "2026-09-01",
         "pago": {
           "estado": "no_pagado",
           "metodo": null
