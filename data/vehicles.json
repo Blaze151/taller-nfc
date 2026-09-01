@@ -38,50 +38,49 @@
         "filtro_aire": "Cada 20,000 km",
         "filtro_aceite": "Cada 5,000 km"
       },
-      "servicio_actual": {
-        "id": "svc_demo1",
-        "tipo": "Cambio de balatas delanteras",
-        "descripcion": "Cliente reporta ruido al frenar. Se revisan balatas delanteras y se cotiza el cambio.",
-        "km": 68700,
-        "costo": 2100,
-        "tecnico": "Carlos R.",
-        "fecha_inicio": "2026-08-27",
-        "estado": "recogido",
-        "actualizado": "2026-09-01",
-        "pago": {
-          "estado": "pagado",
-          "metodo": "transferencia"
-        },
-        "adjuntos": {
-          "recibido": {
-            "fotos": [
-              "uploads/DEMO123/20260831-215703-recibido-0-5192338B-D2E6-4340-A6F3-BD4B336C4ADD.jpg"
-            ],
-            "documentos": []
-          },
-          "en_proceso": {
-            "fotos": [
-              "uploads/DEMO123/20260831-215706-en_proceso-0-6C317908-DB37-4182-AD7A-D36CB2B3473E.jpg"
-            ],
-            "documentos": []
-          },
-          "listo": {
-            "fotos": [],
-            "documentos": []
-          },
-          "pago": {
-            "fotos": [
-              "uploads/DEMO123/20260831-224115-pago-0-1000769099.jpg"
-            ],
-            "documentos": []
-          },
-          "recogido": {
-            "fotos": [],
-            "documentos": []
-          }
-        }
-      },
+      "servicio_actual": null,
       "servicios": [
+        {
+          "fecha": "2026-09-01",
+          "tipo": "Cambio de balatas delanteras",
+          "descripcion": "Cliente reporta ruido al frenar. Se revisan balatas delanteras y se cotiza el cambio.",
+          "km": 68700,
+          "costo": 2100,
+          "tecnico": "Carlos R.",
+          "fecha_inicio": "2026-08-27",
+          "pago": {
+            "estado": "pagado",
+            "metodo": "transferencia"
+          },
+          "adjuntos": {
+            "recibido": {
+              "fotos": [
+                "uploads/DEMO123/20260831-215703-recibido-0-5192338B-D2E6-4340-A6F3-BD4B336C4ADD.jpg"
+              ],
+              "documentos": []
+            },
+            "en_proceso": {
+              "fotos": [
+                "uploads/DEMO123/20260831-215706-en_proceso-0-6C317908-DB37-4182-AD7A-D36CB2B3473E.jpg"
+              ],
+              "documentos": []
+            },
+            "listo": {
+              "fotos": [],
+              "documentos": []
+            },
+            "pago": {
+              "fotos": [
+                "uploads/DEMO123/20260831-224115-pago-0-1000769099.jpg"
+              ],
+              "documentos": []
+            },
+            "recogido": {
+              "fotos": [],
+              "documentos": []
+            }
+          }
+        },
         {
           "fecha": "2026-08-10",
           "tipo": "Cambio de aceite",
