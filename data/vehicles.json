@@ -115,7 +115,43 @@
         "km_estimado": 73500,
         "fecha_estimada": "2026-11-15"
       },
-      "servicio_actual": null,
+      "servicio_actual": {
+        "id": "svc_1788229755611",
+        "tipo": "Balatas",
+        "descripcion": "",
+        "km": 922982,
+        "costo": 2000,
+        "tecnico": "",
+        "fecha_inicio": "2026-09-01",
+        "estado": "en_proceso",
+        "actualizado": "2026-09-01",
+        "pago": {
+          "estado": "a_deber",
+          "metodo": null
+        },
+        "adjuntos": {
+          "recibido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "en_proceso": {
+            "fotos": [],
+            "documentos": []
+          },
+          "listo": {
+            "fotos": [],
+            "documentos": []
+          },
+          "recogido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "pago": {
+            "fotos": [],
+            "documentos": []
+          }
+        }
+      },
       "servicios": [
         {
           "fecha": "2026-08-31",
