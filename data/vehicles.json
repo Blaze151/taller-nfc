@@ -54,6 +54,10 @@
         "fecha_inicio": "2026-08-31",
         "estado": "listo",
         "actualizado": "2026-08-31",
+        "pago": {
+          "estado": "pagado",
+          "metodo": null
+        },
         "adjuntos": {
           "recibido": {
             "fotos": [
@@ -74,6 +78,14 @@
               "uploads/2/20260830-230906-listo-0-1000676446.jpg",
               "uploads/2/20260830-230910-listo-1-1000673158.jpg"
             ],
+            "documentos": []
+          },
+          "pago": {
+            "fotos": [],
+            "documentos": []
+          },
+          "recogido": {
+            "fotos": [],
             "documentos": []
           }
         }
