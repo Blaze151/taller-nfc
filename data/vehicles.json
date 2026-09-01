@@ -10,10 +10,14 @@
   "vehicles": {
     "DEMO123": {
       "id": "DEMO123",
-      "foto_perfil": null,
+      "foto_perfil": "uploads/DEMO123/20260831-215708-perfil.jpg",
       "documentos_vehiculo": {
-        "fotos": [],
-        "documentos": []
+        "fotos": [
+          "uploads/DEMO123/20260831-215709-vdoc-0-IMG_7280.jpg"
+        ],
+        "documentos": [
+          "uploads/DEMO123/20260831-215710-vdoc-0-motherson-19-agosto.pdf"
+        ]
       },
       "placas": "ABC-123-A",
       "marca": "Nissan",
@@ -45,16 +49,20 @@
         "estado": "en_proceso",
         "actualizado": "2026-08-27",
         "pago": {
-          "estado": "a_deber",
+          "estado": "no_pagado",
           "metodo": null
         },
         "adjuntos": {
           "recibido": {
-            "fotos": [],
+            "fotos": [
+              "uploads/DEMO123/20260831-215703-recibido-0-5192338B-D2E6-4340-A6F3-BD4B336C4ADD.jpg"
+            ],
             "documentos": []
           },
           "en_proceso": {
-            "fotos": [],
+            "fotos": [
+              "uploads/DEMO123/20260831-215706-en_proceso-0-6C317908-DB37-4182-AD7A-D36CB2B3473E.jpg"
+            ],
             "documentos": []
           },
           "listo": {
