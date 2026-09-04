@@ -181,7 +181,7 @@
         "costo": null,
         "tecnico": "Sergio",
         "fecha_inicio": "2026-09-04",
-        "estado": "recibido",
+        "estado": "en_proceso",
         "actualizado": "2026-09-04",
         "pago": {
           "estado": "no_pagado",
