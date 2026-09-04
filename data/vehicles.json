@@ -38,7 +38,43 @@
         "filtro_aire": "Cada 20,000 km",
         "filtro_aceite": "Cada 5,000 km"
       },
-      "servicio_actual": null,
+      "servicio_actual": {
+        "id": "svc_1788543647669",
+        "tipo": "",
+        "descripcion": "",
+        "km": null,
+        "costo": null,
+        "tecnico": "",
+        "fecha_inicio": "2026-09-04",
+        "estado": "recibido",
+        "actualizado": "2026-09-04",
+        "pago": {
+          "estado": "no_pagado",
+          "metodo": null
+        },
+        "adjuntos": {
+          "recibido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "en_proceso": {
+            "fotos": [],
+            "documentos": []
+          },
+          "listo": {
+            "fotos": [],
+            "documentos": []
+          },
+          "recogido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "pago": {
+            "fotos": [],
+            "documentos": []
+          }
+        }
+      },
       "servicios": [
         {
           "fecha": "2026-09-01",
