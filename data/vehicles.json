@@ -145,12 +145,13 @@
     },
     "X1": {
       "id": "X1",
-      "foto_perfil": "uploads/X1/20260904-222552-perfil.jpg",
+      "foto_perfil": "uploads/X1/20260904-222721-perfil.jpg",
       "documentos_vehiculo": {
         "fotos": [
           "uploads/X1/20260904-111519-vdoc-0-1000777912.jpg",
           "uploads/X1/20260904-111524-vdoc-1-1000777907.jpg",
-          "uploads/X1/20260904-111529-vdoc-2-1000777902.jpg"
+          "uploads/X1/20260904-111529-vdoc-2-1000777902.jpg",
+          "uploads/X1/20260904-222725-vdoc-0-1000777906.jpg"
         ],
         "documentos": []
       },
@@ -179,7 +180,7 @@
         "tipo": "Revisión en sistema eléctrico. Alternador, Batería.",
         "descripcion": "El chofer reporta que se descarga la batería, y al querer arrancar el vehículo después de usarlo, ya no enciende...",
         "km": 337526,
-        "costo": null,
+        "costo": 3750,
         "tecnico": "Sergio",
         "fecha_inicio": "2026-09-04",
         "estado": "en_proceso",
