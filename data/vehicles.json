@@ -73,7 +73,13 @@
             "documentos": []
           },
           "en_proceso": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X1/20260905-134647-en_proceso-0-1000781291.jpg",
+              "uploads/X1/20260905-134651-en_proceso-1-1000781281.jpg",
+              "uploads/X1/20260905-134655-en_proceso-2-1000781293.jpg",
+              "uploads/X1/20260905-134659-en_proceso-3-1000781292.jpg",
+              "uploads/X1/20260905-134702-en_proceso-4-1000781196.jpg"
+            ],
             "documentos": []
           },
           "listo": {
