@@ -127,7 +127,7 @@
         "costo": 10500,
         "tecnico": "Sergio",
         "fecha_inicio": "2026-09-05",
-        "estado": "recibido",
+        "estado": "en_proceso",
         "actualizado": "2026-09-05",
         "pago": {
           "estado": "no_pagado",
@@ -148,7 +148,10 @@
             "documentos": []
           },
           "en_proceso": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X2/20260905-103852-en_proceso-0-17886262457692875841856057924171.jpg",
+              "uploads/X2/20260905-103854-en_proceso-1-17886262975744587132237773845802.jpg"
+            ],
             "documentos": []
           },
           "listo": {
