@@ -31,7 +31,7 @@
       "vin": "3N6DD25T9DK004578",
       "km_actual": 337526,
       "cliente_nombre": "Pasteleria Letys",
-      "cliente_telefono": "",
+      "cliente_telefono": "81 1012 0884",
       "ficha_tecnica": {
         "aceite_tipo": "",
         "aceite_capacidad": "",
@@ -48,8 +48,8 @@
         "costo": 3750,
         "tecnico": "Sergio",
         "fecha_inicio": "2026-09-04",
-        "estado": "en_proceso",
-        "actualizado": "2026-09-04",
+        "estado": "listo",
+        "actualizado": "2026-09-05",
         "pago": {
           "estado": "no_pagado",
           "metodo": null
@@ -83,7 +83,11 @@
             "documentos": []
           },
           "listo": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X1/20260905-134850-listo-0-1000781291.jpg",
+              "uploads/X1/20260905-134854-listo-1-1000781320.jpg",
+              "uploads/X1/20260905-134858-listo-2-1000781335.jpg"
+            ],
             "documentos": []
           },
           "recogido": {
