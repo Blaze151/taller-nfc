@@ -40,70 +40,70 @@
         "filtro_aire": "",
         "filtro_aceite": ""
       },
-      "servicio_actual": {
-        "id": "svc_1788541899610",
-        "tipo": "Revisión en sistema eléctrico. Alternador, Batería.",
-        "descripcion": "El chofer reporta que se descarga la batería, y al querer arrancar el vehículo después de usarlo, ya no enciende...",
-        "km": 337526,
-        "costo": 3750,
-        "tecnico": "Sergio",
-        "fecha_inicio": "2026-09-04",
-        "estado": "listo",
-        "actualizado": "2026-09-05",
-        "pago": {
-          "estado": "no_pagado",
-          "metodo": null
-        },
-        "adjuntos": {
-          "recibido": {
-            "fotos": [
-              "uploads/X1/20260904-192939-recibido-0-1000777899.jpg",
-              "uploads/X1/20260904-192943-recibido-1-1000777900.jpg",
-              "uploads/X1/20260904-192947-recibido-2-1000777902.jpg",
-              "uploads/X1/20260904-192951-recibido-3-1000777903.jpg",
-              "uploads/X1/20260904-192955-recibido-4-1000777904.jpg",
-              "uploads/X1/20260904-192959-recibido-5-1000777905.jpg",
-              "uploads/X1/20260904-193002-recibido-6-1000777906.jpg",
-              "uploads/X1/20260904-193006-recibido-7-1000777907.jpg",
-              "uploads/X1/20260904-193013-recibido-8-1000777908.jpg",
-              "uploads/X1/20260904-193036-recibido-9-1000777909.jpg",
-              "uploads/X1/20260904-193041-recibido-10-1000777910.jpg",
-              "uploads/X1/20260904-193045-recibido-11-1000777911.jpg"
-            ],
-            "documentos": []
-          },
-          "en_proceso": {
-            "fotos": [
-              "uploads/X1/20260905-134647-en_proceso-0-1000781291.jpg",
-              "uploads/X1/20260905-134651-en_proceso-1-1000781281.jpg",
-              "uploads/X1/20260905-134655-en_proceso-2-1000781293.jpg",
-              "uploads/X1/20260905-134659-en_proceso-3-1000781292.jpg",
-              "uploads/X1/20260905-134702-en_proceso-4-1000781196.jpg"
-            ],
-            "documentos": []
-          },
-          "listo": {
-            "fotos": [
-              "uploads/X1/20260905-134850-listo-0-1000781291.jpg",
-              "uploads/X1/20260905-134854-listo-1-1000781320.jpg",
-              "uploads/X1/20260905-134858-listo-2-1000781335.jpg"
-            ],
-            "documentos": []
-          },
-          "recogido": {
-            "fotos": [
-              "uploads/X1/20260905-144844-recogido-0-1000781452.jpg",
-              "uploads/X1/20260905-144848-recogido-1-1000781453.jpg"
-            ],
-            "documentos": []
-          },
+      "servicio_actual": null,
+      "servicios": [
+        {
+          "fecha": "2026-09-05",
+          "tipo": "Revisión en sistema eléctrico. Alternador, Batería.",
+          "descripcion": "El chofer reporta que se descarga la batería, y al querer arrancar el vehículo después de usarlo, ya no enciende...",
+          "km": 337526,
+          "costo": 3750,
+          "tecnico": "Sergio",
+          "fecha_inicio": "2026-09-04",
           "pago": {
-            "fotos": [],
-            "documentos": []
+            "estado": "no_pagado",
+            "metodo": "transferencia"
+          },
+          "adjuntos": {
+            "recibido": {
+              "fotos": [
+                "uploads/X1/20260904-192939-recibido-0-1000777899.jpg",
+                "uploads/X1/20260904-192943-recibido-1-1000777900.jpg",
+                "uploads/X1/20260904-192947-recibido-2-1000777902.jpg",
+                "uploads/X1/20260904-192951-recibido-3-1000777903.jpg",
+                "uploads/X1/20260904-192955-recibido-4-1000777904.jpg",
+                "uploads/X1/20260904-192959-recibido-5-1000777905.jpg",
+                "uploads/X1/20260904-193002-recibido-6-1000777906.jpg",
+                "uploads/X1/20260904-193006-recibido-7-1000777907.jpg",
+                "uploads/X1/20260904-193013-recibido-8-1000777908.jpg",
+                "uploads/X1/20260904-193036-recibido-9-1000777909.jpg",
+                "uploads/X1/20260904-193041-recibido-10-1000777910.jpg",
+                "uploads/X1/20260904-193045-recibido-11-1000777911.jpg"
+              ],
+              "documentos": []
+            },
+            "en_proceso": {
+              "fotos": [
+                "uploads/X1/20260905-134647-en_proceso-0-1000781291.jpg",
+                "uploads/X1/20260905-134651-en_proceso-1-1000781281.jpg",
+                "uploads/X1/20260905-134655-en_proceso-2-1000781293.jpg",
+                "uploads/X1/20260905-134659-en_proceso-3-1000781292.jpg",
+                "uploads/X1/20260905-134702-en_proceso-4-1000781196.jpg"
+              ],
+              "documentos": []
+            },
+            "listo": {
+              "fotos": [
+                "uploads/X1/20260905-134850-listo-0-1000781291.jpg",
+                "uploads/X1/20260905-134854-listo-1-1000781320.jpg",
+                "uploads/X1/20260905-134858-listo-2-1000781335.jpg"
+              ],
+              "documentos": []
+            },
+            "recogido": {
+              "fotos": [
+                "uploads/X1/20260905-144844-recogido-0-1000781452.jpg",
+                "uploads/X1/20260905-144848-recogido-1-1000781453.jpg"
+              ],
+              "documentos": []
+            },
+            "pago": {
+              "fotos": [],
+              "documentos": []
+            }
           }
         }
-      },
-      "servicios": []
+      ]
     },
     "X2": {
       "id": "X2",
