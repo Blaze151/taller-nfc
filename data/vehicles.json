@@ -182,6 +182,36 @@
         }
       },
       "servicios": []
+    },
+    "X3": {
+      "id": "X3",
+      "foto_perfil": "uploads/X3/20260905-184740-perfil.jpg",
+      "documentos_vehiculo": {
+        "fotos": [],
+        "documentos": []
+      },
+      "placas": "RK 4011 A",
+      "numero_unidad": "116",
+      "marca": "Isuzu",
+      "modelo": "",
+      "anio": null,
+      "version": "",
+      "color": "Blanco",
+      "combustible": "Diesel",
+      "vin": "",
+      "km_actual": 522379,
+      "cliente_nombre": "Pasteleria Letys",
+      "cliente_telefono": "81 1012 0884",
+      "ficha_tecnica": {
+        "aceite_tipo": "",
+        "aceite_capacidad": "",
+        "presion_llantas": "",
+        "bateria": "",
+        "filtro_aire": "",
+        "filtro_aceite": ""
+      },
+      "servicio_actual": null,
+      "servicios": []
     }
   }
 }
