@@ -218,11 +218,11 @@
         "costo": 5600,
         "tecnico": "Sergio",
         "fecha_inicio": "2026-09-06",
-        "estado": "en_proceso",
+        "estado": "recogido",
         "actualizado": "2026-09-06",
         "pago": {
           "estado": "no_pagado",
-          "metodo": null
+          "metodo": "transferencia"
         },
         "adjuntos": {
           "recibido": {
