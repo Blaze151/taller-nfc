@@ -368,7 +368,7 @@
         "costo": 500,
         "tecnico": "",
         "fecha_inicio": "2026-09-06",
-        "estado": "recibido",
+        "estado": "en_proceso",
         "actualizado": "2026-09-06",
         "pago": {
           "estado": "no_pagado",
