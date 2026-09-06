@@ -360,7 +360,43 @@
         "filtro_aire": "",
         "filtro_aceite": ""
       },
-      "servicio_actual": null,
+      "servicio_actual": {
+        "id": "svc_1788704197233",
+        "tipo": "",
+        "descripcion": "",
+        "km": null,
+        "costo": null,
+        "tecnico": "",
+        "fecha_inicio": "2026-09-06",
+        "estado": "recibido",
+        "actualizado": "2026-09-06",
+        "pago": {
+          "estado": "no_pagado",
+          "metodo": null
+        },
+        "adjuntos": {
+          "recibido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "en_proceso": {
+            "fotos": [],
+            "documentos": []
+          },
+          "listo": {
+            "fotos": [],
+            "documentos": []
+          },
+          "recogido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "pago": {
+            "fotos": [],
+            "documentos": []
+          }
+        }
+      },
       "servicios": []
     }
   }
