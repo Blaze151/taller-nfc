@@ -368,16 +368,17 @@
         "costo": 500,
         "tecnico": "",
         "fecha_inicio": "2026-09-06",
-        "estado": "en_proceso",
+        "estado": "listo",
         "actualizado": "2026-09-06",
         "pago": {
-          "estado": "no_pagado",
+          "estado": "pagado",
           "metodo": null
         },
         "adjuntos": {
           "recibido": {
             "fotos": [
-              "uploads/X4/20260906-081925-recibido-0-1000774215.jpg"
+              "uploads/X4/20260906-082221-recibido-0-1000773612.jpg",
+              "uploads/X4/20260906-082259-recibido-0-1000773612.jpg"
             ],
             "documentos": []
           },
@@ -386,11 +387,17 @@
             "documentos": []
           },
           "listo": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X4/20260906-082228-listo-0-1000780830.jpg",
+              "uploads/X4/20260906-082319-listo-0-1000780830.jpg",
+              "uploads/X4/20260906-082322-listo-1-1000774215.jpg"
+            ],
             "documentos": []
           },
           "recogido": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X4/20260906-082331-recogido-0-1000774217.jpg"
+            ],
             "documentos": []
           },
           "pago": {
