@@ -362,10 +362,10 @@
       },
       "servicio_actual": {
         "id": "svc_1788704197233",
-        "tipo": "",
-        "descripcion": "",
+        "tipo": "Instalación focos Led en faros principales",
+        "descripcion": "Instalación de focos led en faros",
         "km": null,
-        "costo": null,
+        "costo": 500,
         "tecnico": "",
         "fecha_inicio": "2026-09-06",
         "estado": "recibido",
@@ -376,7 +376,9 @@
         },
         "adjuntos": {
           "recibido": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X4/20260906-081925-recibido-0-1000774215.jpg"
+            ],
             "documentos": []
           },
           "en_proceso": {
