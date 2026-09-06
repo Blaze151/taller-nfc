@@ -41,66 +41,65 @@
         "filtro_aire": "",
         "filtro_aceite": ""
       },
-      "servicio_actual": {
-        "id": "svc_1788656265127",
-        "tipo": "Afinación",
-        "descripcion": "Afinación motor a gasolina 4 cilindros, cambio de filtros, aceite sintético 15W/40, limpieza cuerpo de aceleración, relleno de niveles",
-        "km": 337529,
-        "costo": 3500,
-        "tecnico": "Sergio",
-        "fecha_inicio": "2026-09-06",
-        "estado": "recogido",
-        "actualizado": "2026-09-06",
-        "pago": {
-          "estado": "no_pagado",
-          "metodo": null
-        },
-        "adjuntos": {
-          "recibido": {
-            "fotos": [
-              "uploads/X1/20260905-190210-recibido-0-1000777899.jpg",
-              "uploads/X1/20260905-190222-recibido-1-1000777900.jpg",
-              "uploads/X1/20260905-190226-recibido-2-1000777902.jpg",
-              "uploads/X1/20260905-190324-recibido-3-1000777903.jpg",
-              "uploads/X1/20260905-190337-recibido-4-1000777906.jpg",
-              "uploads/X1/20260905-190357-recibido-5-1000777907.jpg",
-              "uploads/X1/20260905-190418-recibido-6-1000777908.jpg",
-              "uploads/X1/20260905-190425-recibido-7-1000777909.jpg"
-            ],
-            "documentos": []
-          },
-          "en_proceso": {
-            "fotos": [
-              "uploads/X1/20260905-190445-en_proceso-0-1000781194.jpg",
-              "uploads/X1/20260905-190459-en_proceso-1-1000781195.jpg",
-              "uploads/X1/20260905-190506-en_proceso-2-1000781196.jpg",
-              "uploads/X1/20260905-190526-en_proceso-3-1000781281.jpg",
-              "uploads/X1/20260905-190547-en_proceso-4-1000781293.jpg"
-            ],
-            "documentos": []
-          },
-          "listo": {
-            "fotos": [
-              "uploads/X1/20260905-190607-listo-0-1000781320.jpg",
-              "uploads/X1/20260905-190614-listo-1-1000781335.jpg",
-              "uploads/X1/20260905-190635-listo-2-1000781292.jpg",
-              "uploads/X1/20260905-190655-listo-3-1000781291.jpg"
-            ],
-            "documentos": []
-          },
-          "recogido": {
-            "fotos": [
-              "uploads/X1/20260905-194812-recogido-0-1000781452.jpg"
-            ],
-            "documentos": []
-          },
-          "pago": {
-            "fotos": [],
-            "documentos": []
-          }
-        }
-      },
+      "servicio_actual": null,
       "servicios": [
+        {
+          "fecha": "2026-09-06",
+          "tipo": "Afinación",
+          "descripcion": "Afinación motor a gasolina 4 cilindros, cambio de filtros, aceite sintético 15W/40, limpieza cuerpo de aceleración, relleno de niveles",
+          "km": 337529,
+          "costo": 3500,
+          "tecnico": "Sergio",
+          "fecha_inicio": "2026-09-06",
+          "pago": {
+            "estado": "no_pagado",
+            "metodo": null
+          },
+          "adjuntos": {
+            "recibido": {
+              "fotos": [
+                "uploads/X1/20260905-190210-recibido-0-1000777899.jpg",
+                "uploads/X1/20260905-190222-recibido-1-1000777900.jpg",
+                "uploads/X1/20260905-190226-recibido-2-1000777902.jpg",
+                "uploads/X1/20260905-190324-recibido-3-1000777903.jpg",
+                "uploads/X1/20260905-190337-recibido-4-1000777906.jpg",
+                "uploads/X1/20260905-190357-recibido-5-1000777907.jpg",
+                "uploads/X1/20260905-190418-recibido-6-1000777908.jpg",
+                "uploads/X1/20260905-190425-recibido-7-1000777909.jpg"
+              ],
+              "documentos": []
+            },
+            "en_proceso": {
+              "fotos": [
+                "uploads/X1/20260905-190445-en_proceso-0-1000781194.jpg",
+                "uploads/X1/20260905-190459-en_proceso-1-1000781195.jpg",
+                "uploads/X1/20260905-190506-en_proceso-2-1000781196.jpg",
+                "uploads/X1/20260905-190526-en_proceso-3-1000781281.jpg",
+                "uploads/X1/20260905-190547-en_proceso-4-1000781293.jpg"
+              ],
+              "documentos": []
+            },
+            "listo": {
+              "fotos": [
+                "uploads/X1/20260905-190607-listo-0-1000781320.jpg",
+                "uploads/X1/20260905-190614-listo-1-1000781335.jpg",
+                "uploads/X1/20260905-190635-listo-2-1000781292.jpg",
+                "uploads/X1/20260905-190655-listo-3-1000781291.jpg"
+              ],
+              "documentos": []
+            },
+            "recogido": {
+              "fotos": [
+                "uploads/X1/20260905-194812-recogido-0-1000781452.jpg"
+              ],
+              "documentos": []
+            },
+            "pago": {
+              "fotos": [],
+              "documentos": []
+            }
+          }
+        },
         {
           "fecha": "2026-09-05",
           "tipo": "Revisión en sistema eléctrico. Alternador, Batería.",
