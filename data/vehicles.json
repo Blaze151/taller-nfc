@@ -48,7 +48,7 @@
         "costo": 3500,
         "tecnico": "Sergio",
         "fecha_inicio": "2026-09-06",
-        "estado": "recibido",
+        "estado": "recogido",
         "actualizado": "2026-09-06",
         "pago": {
           "estado": "no_pagado",
@@ -88,7 +88,9 @@
             "documentos": []
           },
           "recogido": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X1/20260905-194812-recogido-0-1000781452.jpg"
+            ],
             "documentos": []
           },
           "pago": {
