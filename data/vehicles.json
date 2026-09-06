@@ -360,53 +360,53 @@
         "filtro_aire": "",
         "filtro_aceite": ""
       },
-      "servicio_actual": {
-        "id": "svc_1788704197233",
-        "tipo": "Instalación focos Led en faros principales",
-        "descripcion": "Instalación de focos led en faros",
-        "km": null,
-        "costo": 500,
-        "tecnico": "",
-        "fecha_inicio": "2026-09-06",
-        "estado": "recogido",
-        "actualizado": "2026-09-06",
-        "pago": {
-          "estado": "pagado",
-          "metodo": null
-        },
-        "adjuntos": {
-          "recibido": {
-            "fotos": [
-              "uploads/X4/20260906-082221-recibido-0-1000773612.jpg",
-              "uploads/X4/20260906-082259-recibido-0-1000773612.jpg"
-            ],
-            "documentos": []
-          },
-          "en_proceso": {
-            "fotos": [],
-            "documentos": []
-          },
-          "listo": {
-            "fotos": [
-              "uploads/X4/20260906-082228-listo-0-1000780830.jpg",
-              "uploads/X4/20260906-082319-listo-0-1000780830.jpg",
-              "uploads/X4/20260906-082322-listo-1-1000774215.jpg"
-            ],
-            "documentos": []
-          },
-          "recogido": {
-            "fotos": [
-              "uploads/X4/20260906-082331-recogido-0-1000774217.jpg"
-            ],
-            "documentos": []
-          },
+      "servicio_actual": null,
+      "servicios": [
+        {
+          "fecha": "2026-09-06",
+          "tipo": "Instalación focos Led en faros principales",
+          "descripcion": "Instalación de focos led en faros",
+          "km": null,
+          "costo": 500,
+          "tecnico": "",
+          "fecha_inicio": "2026-09-06",
           "pago": {
-            "fotos": [],
-            "documentos": []
+            "estado": "pagado",
+            "metodo": null
+          },
+          "adjuntos": {
+            "recibido": {
+              "fotos": [
+                "uploads/X4/20260906-082221-recibido-0-1000773612.jpg",
+                "uploads/X4/20260906-082259-recibido-0-1000773612.jpg"
+              ],
+              "documentos": []
+            },
+            "en_proceso": {
+              "fotos": [],
+              "documentos": []
+            },
+            "listo": {
+              "fotos": [
+                "uploads/X4/20260906-082228-listo-0-1000780830.jpg",
+                "uploads/X4/20260906-082319-listo-0-1000780830.jpg",
+                "uploads/X4/20260906-082322-listo-1-1000774215.jpg"
+              ],
+              "documentos": []
+            },
+            "recogido": {
+              "fotos": [
+                "uploads/X4/20260906-082331-recogido-0-1000774217.jpg"
+              ],
+              "documentos": []
+            },
+            "pago": {
+              "fotos": [],
+              "documentos": []
+            }
           }
         }
-      },
-      "servicios": []
+      ]
     }
   }
 }
