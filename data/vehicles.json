@@ -199,7 +199,7 @@
       "color": "Blanco",
       "combustible": "Diesel",
       "vin": "",
-      "km_actual": 522379,
+      "km_actual": 522779,
       "cliente_nombre": "Pasteleria Letys",
       "cliente_telefono": "81 1012 0884",
       "ficha_tecnica": {
@@ -210,7 +210,52 @@
         "filtro_aire": "",
         "filtro_aceite": ""
       },
-      "servicio_actual": null,
+      "servicio_actual": {
+        "id": "svc_1788655674656",
+        "tipo": "Servicio de Frenos traseros.",
+        "descripcion": "El chofer reportó que tiro aceite de una llanta trasera y el vehículo se quedó sin frenos",
+        "km": 522779,
+        "costo": 5600,
+        "tecnico": "Sergio",
+        "fecha_inicio": "2026-09-06",
+        "estado": "recibido",
+        "actualizado": "2026-09-06",
+        "pago": {
+          "estado": "no_pagado",
+          "metodo": null
+        },
+        "adjuntos": {
+          "recibido": {
+            "fotos": [
+              "uploads/X3/20260905-185005-recibido-0-1000780826.jpg",
+              "uploads/X3/20260905-185009-recibido-1-1000780827.jpg",
+              "uploads/X3/20260905-185012-recibido-2-1000780828.jpg",
+              "uploads/X3/20260905-185017-recibido-3-1000780829.jpg",
+              "uploads/X3/20260905-185020-recibido-4-1000780830.jpg",
+              "uploads/X3/20260905-185023-recibido-5-1000780831.jpg",
+              "uploads/X3/20260905-185026-recibido-6-1000780832.jpg",
+              "uploads/X3/20260905-185030-recibido-7-1000780833.jpg"
+            ],
+            "documentos": []
+          },
+          "en_proceso": {
+            "fotos": [],
+            "documentos": []
+          },
+          "listo": {
+            "fotos": [],
+            "documentos": []
+          },
+          "recogido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "pago": {
+            "fotos": [],
+            "documentos": []
+          }
+        }
+      },
       "servicios": []
     }
   }
