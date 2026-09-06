@@ -218,7 +218,7 @@
         "costo": 5600,
         "tecnico": "Sergio",
         "fecha_inicio": "2026-09-06",
-        "estado": "recibido",
+        "estado": "en_proceso",
         "actualizado": "2026-09-06",
         "pago": {
           "estado": "no_pagado",
@@ -247,11 +247,20 @@
             "documentos": []
           },
           "listo": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X3/20260905-185543-listo-0-1000781348.jpg",
+              "uploads/X3/20260905-185547-listo-1-1000781347.jpg",
+              "uploads/X3/20260905-185550-listo-2-1000781346.jpg",
+              "uploads/X3/20260905-185553-listo-3-1000781345.jpg",
+              "uploads/X3/20260905-185556-listo-4-1000781344.jpg"
+            ],
             "documentos": []
           },
           "recogido": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X3/20260905-185600-recogido-0-1000781450.jpg",
+              "uploads/X3/20260905-185603-recogido-1-1000781451.jpg"
+            ],
             "documentos": []
           },
           "pago": {
