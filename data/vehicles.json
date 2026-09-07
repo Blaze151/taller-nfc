@@ -360,7 +360,43 @@
         "filtro_aire": "",
         "filtro_aceite": ""
       },
-      "servicio_actual": null,
+      "servicio_actual": {
+        "id": "svc_1788744345799",
+        "tipo": "Pintura",
+        "descripcion": "Pintar rojo",
+        "km": 20000,
+        "costo": 5000,
+        "tecnico": "Humberto",
+        "fecha_inicio": "2026-09-07",
+        "estado": "recibido",
+        "actualizado": "2026-09-07",
+        "pago": {
+          "estado": "no_pagado",
+          "metodo": null
+        },
+        "adjuntos": {
+          "recibido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "en_proceso": {
+            "fotos": [],
+            "documentos": []
+          },
+          "listo": {
+            "fotos": [],
+            "documentos": []
+          },
+          "recogido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "pago": {
+            "fotos": [],
+            "documentos": []
+          }
+        }
+      },
       "servicios": [
         {
           "fecha": "2026-09-06",
