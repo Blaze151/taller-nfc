@@ -398,7 +398,7 @@
               "llanta_refaccion": "si",
               "extinguidor": "no"
             },
-            "gasolina": "3/4",
+            "gasolina": 25,
             "danos_notas": "Rayón frontal"
           }
         },
