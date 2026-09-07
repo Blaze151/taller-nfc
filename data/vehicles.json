@@ -471,6 +471,37 @@
           }
         }
       ]
+    },
+    "X5": {
+      "id": "X5",
+      "foto_perfil": "uploads/X5/20260906-202004-perfil.jpg",
+      "documentos_vehiculo": {
+        "fotos": [],
+        "documentos": []
+      },
+      "placas": "",
+      "numero_unidad": "",
+      "marca": "",
+      "modelo": "",
+      "anio": null,
+      "version": "",
+      "color": "",
+      "combustible": "",
+      "vin": "",
+      "km_actual": null,
+      "cliente_nombre": "",
+      "cliente_telefono": "",
+      "cliente_telefono_2": "",
+      "ficha_tecnica": {
+        "aceite_tipo": "",
+        "aceite_capacidad": "",
+        "presion_llantas": "",
+        "bateria": "",
+        "filtro_aire": "",
+        "filtro_aceite": ""
+      },
+      "servicio_actual": null,
+      "servicios": []
     }
   }
 }
