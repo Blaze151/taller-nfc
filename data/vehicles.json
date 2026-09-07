@@ -404,11 +404,15 @@
         },
         "adjuntos": {
           "recibido": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X4/20260906-220232-recibido-0-IMG_7406.jpg"
+            ],
             "documentos": []
           },
           "en_proceso": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X4/20260906-220234-en_proceso-0-photo-6289_singular_display_fullPicture.jpg"
+            ],
             "documentos": []
           },
           "listo": {
