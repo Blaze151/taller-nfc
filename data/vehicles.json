@@ -376,9 +376,9 @@
         },
         "orden_recepcion": {
           "enviado": true,
-          "aceptado": false,
+          "aceptado": true,
           "fecha_envio": "2026-09-07",
-          "fecha_aceptado": null,
+          "fecha_aceptado": "2026-09-07",
           "inventario": {
             "exteriores": {
               "antena": "si",
