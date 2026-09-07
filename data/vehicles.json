@@ -374,6 +374,34 @@
           "estado": "no_pagado",
           "metodo": null
         },
+        "orden_recepcion": {
+          "enviado": false,
+          "aceptado": false,
+          "fecha_envio": null,
+          "fecha_aceptado": null,
+          "inventario": {
+            "exteriores": {
+              "antena": "si",
+              "espejo_lateral": "si",
+              "cristales": "si",
+              "emblema": "si",
+              "tapon_ruedas": "si",
+              "molduras_completas": "si",
+              "tapon_gasolina": "si"
+            },
+            "accesorios": {
+              "gato": "si",
+              "maneral_gato": "no",
+              "llave_ruedas": "si",
+              "estuche_herramientas": "no",
+              "triangulo_seguridad": "no",
+              "llanta_refaccion": "si",
+              "extinguidor": "no"
+            },
+            "gasolina": "3/4",
+            "danos_notas": "Rayón frontal"
+          }
+        },
         "adjuntos": {
           "recibido": {
             "fotos": [],
