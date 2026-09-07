@@ -375,9 +375,9 @@
           "metodo": null
         },
         "orden_recepcion": {
-          "enviado": false,
+          "enviado": true,
           "aceptado": false,
-          "fecha_envio": null,
+          "fecha_envio": "2026-09-07",
           "fecha_aceptado": null,
           "inventario": {
             "exteriores": {
