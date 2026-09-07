@@ -504,6 +504,37 @@
       },
       "servicio_actual": null,
       "servicios": []
+    },
+    "X6": {
+      "id": "X6",
+      "foto_perfil": "uploads/X6/20260906-221758-perfil.jpg",
+      "documentos_vehiculo": {
+        "fotos": [],
+        "documentos": []
+      },
+      "placas": "1233 5566 A",
+      "numero_unidad": "15",
+      "marca": "Hyundai",
+      "modelo": "X3",
+      "anio": 2025,
+      "version": "SR 1.8L",
+      "color": "Rosa",
+      "combustible": "Eléctrico",
+      "vin": "3N6DD25T9DK004578",
+      "km_actual": 123000,
+      "cliente_nombre": "Alexa",
+      "cliente_telefono": "871 358 8027",
+      "cliente_telefono_2": "8711044146",
+      "ficha_tecnica": {
+        "aceite_tipo": "",
+        "aceite_capacidad": "",
+        "presion_llantas": "",
+        "bateria": "",
+        "filtro_aire": "",
+        "filtro_aceite": ""
+      },
+      "servicio_actual": null,
+      "servicios": []
     }
   }
 }
