@@ -202,23 +202,23 @@
         "estado": "en_proceso",
         "actualizado": "2026-09-05",
         "pago": {
-          "estado": "no_pagado",
-          "metodo": null
+          "estado": "a_deber",
+          "metodo": "transferencia"
         },
         "orden_recepcion": {
-          "enviado": false,
-          "aceptado": false,
-          "fecha_envio": null,
-          "fecha_aceptado": null,
+          "enviado": true,
+          "aceptado": true,
+          "fecha_envio": "2026-09-08",
+          "fecha_aceptado": "2026-09-08",
           "inventario": {
             "exteriores": {
               "antena": "no",
-              "espejo_lateral": "no",
-              "cristales": "no",
-              "emblema": "no",
+              "espejo_lateral": "si",
+              "cristales": "si",
+              "emblema": "si",
               "tapon_ruedas": "no",
-              "molduras_completas": "no",
-              "tapon_gasolina": "no"
+              "molduras_completas": "si",
+              "tapon_gasolina": "si"
             },
             "accesorios": {
               "gato": "no",
@@ -229,9 +229,10 @@
               "llanta_refaccion": "no",
               "extinguidor": "no"
             },
-            "gasolina": 0,
+            "gasolina": 25,
             "danos_notas": ""
-          }
+          },
+          "pdf_path": "uploads/X2/20260908-144539-informe-recepcion.pdf"
         },
         "adjuntos": {
           "recibido": {
