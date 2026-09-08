@@ -182,6 +182,7 @@
       "km_actual": null,
       "cliente_nombre": "Diego",
       "cliente_telefono": "871 327 1844",
+      "cliente_telefono_2": "",
       "ficha_tecnica": {
         "aceite_tipo": "",
         "aceite_capacidad": "",
@@ -204,6 +205,34 @@
           "estado": "no_pagado",
           "metodo": null
         },
+        "orden_recepcion": {
+          "enviado": false,
+          "aceptado": false,
+          "fecha_envio": null,
+          "fecha_aceptado": null,
+          "inventario": {
+            "exteriores": {
+              "antena": "no",
+              "espejo_lateral": "no",
+              "cristales": "no",
+              "emblema": "no",
+              "tapon_ruedas": "no",
+              "molduras_completas": "no",
+              "tapon_gasolina": "no"
+            },
+            "accesorios": {
+              "gato": "no",
+              "maneral_gato": "no",
+              "llave_ruedas": "no",
+              "estuche_herramientas": "no",
+              "triangulo_seguridad": "no",
+              "llanta_refaccion": "no",
+              "extinguidor": "no"
+            },
+            "gasolina": 0,
+            "danos_notas": ""
+          }
+        },
         "adjuntos": {
           "recibido": {
             "fotos": [
@@ -223,7 +252,11 @@
               "uploads/X2/20260905-103852-en_proceso-0-17886262457692875841856057924171.jpg",
               "uploads/X2/20260905-103854-en_proceso-1-17886262975744587132237773845802.jpg",
               "uploads/X2/20260905-202539-en_proceso-0-1000781253.jpg",
-              "uploads/X2/20260905-202543-en_proceso-1-1000781197.jpg"
+              "uploads/X2/20260905-202543-en_proceso-1-1000781197.jpg",
+              "uploads/X2/20260908-062113-en_proceso-0-1000786563.jpg",
+              "uploads/X2/20260908-062116-en_proceso-1-1000786564.jpg",
+              "uploads/X2/20260908-062118-en_proceso-2-1000786631.jpg",
+              "uploads/X2/20260908-062121-en_proceso-3-1000786638.jpg"
             ],
             "documentos": []
           },
