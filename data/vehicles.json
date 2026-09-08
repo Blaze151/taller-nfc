@@ -360,7 +360,73 @@
         "filtro_aire": "",
         "filtro_aceite": ""
       },
-      "servicio_actual": null,
+      "servicio_actual": {
+        "id": "svc_1788830184430",
+        "folio": "A001",
+        "tipo": "Cambio de llantas",
+        "descripcion": "Se le van a a cambiar los rines",
+        "km": 21000,
+        "costo": 5000,
+        "tecnico": "Humberto",
+        "fecha_inicio": "2026-09-08",
+        "estado": "recibido",
+        "actualizado": "2026-09-08",
+        "pago": {
+          "estado": "no_pagado",
+          "metodo": null
+        },
+        "orden_recepcion": {
+          "enviado": true,
+          "aceptado": false,
+          "fecha_envio": "2026-09-08",
+          "fecha_aceptado": null,
+          "inventario": {
+            "exteriores": {
+              "antena": "si",
+              "espejo_lateral": "si",
+              "cristales": "si",
+              "emblema": "si",
+              "tapon_ruedas": "si",
+              "molduras_completas": "si",
+              "tapon_gasolina": "si"
+            },
+            "accesorios": {
+              "gato": "no",
+              "maneral_gato": "no",
+              "llave_ruedas": "no",
+              "estuche_herramientas": "no",
+              "triangulo_seguridad": "no",
+              "llanta_refaccion": "no",
+              "extinguidor": "no"
+            },
+            "gasolina": 75,
+            "danos_notas": "Todo se ve bien"
+          },
+          "pdf_path": "uploads/X4/20260907-191731-informe-recepcion.pdf"
+        },
+        "adjuntos": {
+          "recibido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "en_proceso": {
+            "fotos": [],
+            "documentos": []
+          },
+          "listo": {
+            "fotos": [],
+            "documentos": []
+          },
+          "recogido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "pago": {
+            "fotos": [],
+            "documentos": []
+          }
+        }
+      },
       "servicios": [
         {
           "fecha": "2026-09-06",
@@ -538,5 +604,6 @@
       },
       "servicios": []
     }
-  }
+  },
+  "folio_counter": 1
 }
