@@ -202,7 +202,7 @@
         "estado": "en_proceso",
         "actualizado": "2026-09-05",
         "pago": {
-          "estado": "a_deber",
+          "estado": "pagado",
           "metodo": "transferencia"
         },
         "orden_recepcion": {
@@ -264,7 +264,11 @@
             "documentos": []
           },
           "listo": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X2/20260909-174549-listo-0-1000791231.jpg",
+              "uploads/X2/20260909-174552-listo-1-1000791230.jpg",
+              "uploads/X2/20260909-174555-listo-2-1000791229.jpg"
+            ],
             "documentos": []
           },
           "recogido": {
