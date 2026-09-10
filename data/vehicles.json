@@ -755,6 +755,37 @@
         }
       },
       "servicios": []
+    },
+    "X8": {
+      "id": "X8",
+      "foto_perfil": "uploads/X8/20260910-132930-perfil.jpg",
+      "documentos_vehiculo": {
+        "fotos": [],
+        "documentos": []
+      },
+      "placas": "FLX 591 C",
+      "numero_unidad": "",
+      "marca": "Dodge",
+      "modelo": "Attitude",
+      "anio": 2020,
+      "version": "",
+      "color": "Marron",
+      "combustible": "Gasolina",
+      "vin": "ML3AB56J3LH007447",
+      "km_actual": 204457,
+      "cliente_nombre": "Jacobo",
+      "cliente_telefono": "871 710 0070",
+      "cliente_telefono_2": "",
+      "ficha_tecnica": {
+        "aceite_tipo": "",
+        "aceite_capacidad": "",
+        "presion_llantas": "",
+        "bateria": "",
+        "filtro_aire": "",
+        "filtro_aceite": ""
+      },
+      "servicio_actual": null,
+      "servicios": []
     }
   },
   "folio_counter": 2
