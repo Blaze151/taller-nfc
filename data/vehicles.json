@@ -784,9 +784,85 @@
         "filtro_aire": "",
         "filtro_aceite": ""
       },
-      "servicio_actual": null,
+      "servicio_actual": {
+        "id": "svc_1789068583473",
+        "folio": "A003",
+        "tipo": "Enderezado y pintura en facia delantera lado derecho",
+        "descripcion": "Reparación de la fascia y pintura \nChequeo y revisión de suspensión delantera \nReparación de depósito limpiaparabrisas",
+        "km": 204457,
+        "costo": 2500,
+        "tecnico": "Manuel",
+        "fecha_inicio": "2026-09-10",
+        "estado": "en_proceso",
+        "actualizado": "2026-09-10",
+        "pago": {
+          "estado": "no_pagado",
+          "metodo": "transferencia"
+        },
+        "orden_recepcion": {
+          "enviado": true,
+          "aceptado": true,
+          "fecha_envio": "2026-09-10",
+          "fecha_aceptado": "2026-09-10",
+          "inventario": {
+            "exteriores": {
+              "antena": "si",
+              "espejo_lateral": "si",
+              "cristales": "si",
+              "emblema": "si",
+              "tapon_ruedas": "si",
+              "molduras_completas": "si",
+              "tapon_gasolina": "si"
+            },
+            "accesorios": {
+              "gato": "no",
+              "maneral_gato": "no",
+              "llave_ruedas": "no",
+              "estuche_herramientas": "no",
+              "triangulo_seguridad": "no",
+              "llanta_refaccion": "no",
+              "extinguidor": "no"
+            },
+            "gasolina": 25,
+            "danos_notas": ""
+          },
+          "pdf_path": "uploads/X8/20260910-133202-informe-recepcion.pdf"
+        },
+        "adjuntos": {
+          "recibido": {
+            "fotos": [
+              "uploads/X8/20260910-133311-recibido-0-1000793089.jpg",
+              "uploads/X8/20260910-133315-recibido-1-1000793487.jpg",
+              "uploads/X8/20260910-133321-recibido-2-1000793494.jpg",
+              "uploads/X8/20260910-133328-recibido-3-1000793493.jpg",
+              "uploads/X8/20260910-133334-recibido-4-1000793492.jpg"
+            ],
+            "documentos": []
+          },
+          "en_proceso": {
+            "fotos": [
+              "uploads/X8/20260910-133347-en_proceso-0-1000793089.jpg",
+              "uploads/X8/20260910-133354-en_proceso-1-1000793090.jpg",
+              "uploads/X8/20260910-133400-en_proceso-2-1000793488.jpg"
+            ],
+            "documentos": []
+          },
+          "listo": {
+            "fotos": [],
+            "documentos": []
+          },
+          "recogido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "pago": {
+            "fotos": [],
+            "documentos": []
+          }
+        }
+      },
       "servicios": []
     }
   },
-  "folio_counter": 2
+  "folio_counter": 3
 }
