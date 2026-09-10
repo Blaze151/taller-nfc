@@ -643,7 +643,119 @@
         }
       },
       "servicios": []
+    },
+    "X7": {
+      "id": "X7",
+      "foto_perfil": "uploads/X7/20260910-121313-perfil.jpg",
+      "documentos_vehiculo": {
+        "fotos": [
+          "uploads/X7/20260910-121315-vdoc-0-17890634875216607427176445748016.jpg"
+        ],
+        "documentos": []
+      },
+      "placas": "RK-4003-A",
+      "numero_unidad": "107",
+      "marca": "Isuzu",
+      "modelo": "",
+      "anio": null,
+      "version": "",
+      "color": "Blanco",
+      "combustible": "Diesel",
+      "vin": "JAANPR759F7003462",
+      "km_actual": 648890,
+      "cliente_nombre": "Pasteleria Lety",
+      "cliente_telefono": "81 1012 0884",
+      "cliente_telefono_2": "870 148 2548",
+      "ficha_tecnica": {
+        "aceite_tipo": "",
+        "aceite_capacidad": "",
+        "presion_llantas": "",
+        "bateria": "",
+        "filtro_aire": "",
+        "filtro_aceite": ""
+      },
+      "servicio_actual": {
+        "id": "svc_1789063554025",
+        "folio": "A002",
+        "tipo": "Reparación en muelles traseros izquierdo",
+        "descripcion": "La unidad contaba con un muelle roto, se procederá a reemplazarlo",
+        "km": 648890,
+        "costo": null,
+        "tecnico": "Edgar",
+        "fecha_inicio": "2026-09-10",
+        "estado": "recibido",
+        "actualizado": "2026-09-10",
+        "pago": {
+          "estado": "no_pagado",
+          "metodo": null
+        },
+        "orden_recepcion": {
+          "enviado": true,
+          "aceptado": false,
+          "fecha_envio": "2026-09-10",
+          "fecha_aceptado": null,
+          "inventario": {
+            "exteriores": {
+              "antena": "si",
+              "espejo_lateral": "si",
+              "cristales": "si",
+              "emblema": "si",
+              "tapon_ruedas": "no",
+              "molduras_completas": "no",
+              "tapon_gasolina": "si"
+            },
+            "accesorios": {
+              "gato": "no",
+              "maneral_gato": "no",
+              "llave_ruedas": "no",
+              "estuche_herramientas": "no",
+              "triangulo_seguridad": "no",
+              "llanta_refaccion": "no",
+              "extinguidor": "no"
+            },
+            "gasolina": 75,
+            "danos_notas": ""
+          },
+          "pdf_path": "uploads/X6/20260910-121134-informe-recepcion.pdf"
+        },
+        "adjuntos": {
+          "recibido": {
+            "fotos": [
+              "uploads/X7/20260910-121239-recibido-0-1000791234.jpg",
+              "uploads/X7/20260910-121242-recibido-1-1000791233.jpg",
+              "uploads/X7/20260910-121245-recibido-2-1000791232.jpg",
+              "uploads/X7/20260910-121248-recibido-3-1000791235.jpg",
+              "uploads/X7/20260910-121255-recibido-4-1000791236.jpg"
+            ],
+            "documentos": []
+          },
+          "en_proceso": {
+            "fotos": [
+              "uploads/X7/20260910-121257-en_proceso-0-1000791430.jpg",
+              "uploads/X7/20260910-121300-en_proceso-1-1000791429.jpg",
+              "uploads/X7/20260910-121303-en_proceso-2-1000791428.jpg",
+              "uploads/X7/20260910-121306-en_proceso-3-1000792609.jpg",
+              "uploads/X7/20260910-121308-en_proceso-4-1000792614.jpg",
+              "uploads/X7/20260910-121311-en_proceso-5-1000792615.jpg"
+            ],
+            "documentos": []
+          },
+          "listo": {
+            "fotos": [],
+            "documentos": []
+          },
+          "recogido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "pago": {
+            "fotos": [],
+            "documentos": []
+          }
+        }
+      },
+      "servicios": []
     }
   },
-  "folio_counter": 1
+  "folio_counter": 2
 }
