@@ -41,7 +41,83 @@
         "filtro_aire": "",
         "filtro_aceite": ""
       },
-      "servicio_actual": null,
+      "servicio_actual": {
+        "id": "svc_1789165983089",
+        "folio": "A006",
+        "tipo": "",
+        "descripcion": "",
+        "km": null,
+        "costo": null,
+        "tecnico": "",
+        "tiempo_entrega_aprox": "",
+        "fecha_inicio": "2026-09-11",
+        "estado": "recibido",
+        "actualizado": "2026-09-11",
+        "pago": {
+          "estado": "no_pagado",
+          "metodo": null
+        },
+        "orden_recepcion": {
+          "enviado": false,
+          "aceptado": false,
+          "fecha_envio": null,
+          "fecha_aceptado": null,
+          "inventario": {
+            "exteriores": {
+              "antena": "no",
+              "espejo_lateral": "no",
+              "cristales": "no",
+              "emblema": "no",
+              "tapon_ruedas": "no",
+              "molduras_completas": "no",
+              "tapon_gasolina": "no"
+            },
+            "accesorios": {
+              "gato": "no",
+              "maneral_gato": "no",
+              "llave_ruedas": "no",
+              "estuche_herramientas": "no",
+              "triangulo_seguridad": "no",
+              "llanta_refaccion": "no",
+              "extinguidor": "no"
+            },
+            "gasolina": 0,
+            "danos_notas": ""
+          }
+        },
+        "adjuntos": {
+          "recibido": {
+            "fotos": [
+              "uploads/X1/20260911-163322-recibido-0-IMG_7594.jpg",
+              "uploads/X1/20260911-163324-recibido-1-IMG_7593.jpg",
+              "uploads/X1/20260911-163325-recibido-2-IMG_7590.jpg",
+              "uploads/X1/20260911-163327-recibido-3-A2AE1000-31DB-418A-818C-A176B25D0376.jpg",
+              "uploads/X1/20260911-163329-recibido-4-IMG_7589.jpg",
+              "uploads/X1/20260911-163330-recibido-5-IMG_7592.jpg",
+              "uploads/X1/20260911-163332-recibido-6-IMG_7587.jpg",
+              "uploads/X1/20260911-163334-recibido-7-IMG_7586.jpg",
+              "uploads/X1/20260911-163336-recibido-8-IMG_7584.jpg"
+            ],
+            "documentos": []
+          },
+          "en_proceso": {
+            "fotos": [],
+            "documentos": []
+          },
+          "listo": {
+            "fotos": [],
+            "documentos": []
+          },
+          "recogido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "pago": {
+            "fotos": [],
+            "documentos": []
+          }
+        }
+      },
       "servicios": [
         {
           "fecha": "2026-09-05",
@@ -799,5 +875,5 @@
       ]
     }
   },
-  "folio_counter": 5
+  "folio_counter": 6
 }
