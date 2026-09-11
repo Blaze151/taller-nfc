@@ -768,9 +768,84 @@
         "filtro_aire": "GP1196",
         "filtro_aceite": "GP145"
       },
-      "servicio_actual": null,
+      "servicio_actual": {
+        "id": "svc_1789149915249",
+        "folio": "A004",
+        "tipo": "FRENOS",
+        "descripcion": "REVISION DE SISTEMA DE FRENOS",
+        "km": 49668,
+        "costo": null,
+        "tecnico": "OSCAR FLORES",
+        "fecha_inicio": "2026-09-11",
+        "estado": "en_proceso",
+        "actualizado": "2026-09-11",
+        "pago": {
+          "estado": "no_pagado",
+          "metodo": null
+        },
+        "orden_recepcion": {
+          "enviado": true,
+          "aceptado": false,
+          "fecha_envio": "2026-09-11",
+          "fecha_aceptado": null,
+          "inventario": {
+            "exteriores": {
+              "antena": "si",
+              "espejo_lateral": "si",
+              "cristales": "si",
+              "emblema": "si",
+              "tapon_ruedas": "si",
+              "molduras_completas": "si",
+              "tapon_gasolina": "si"
+            },
+            "accesorios": {
+              "gato": "no",
+              "maneral_gato": "no",
+              "llave_ruedas": "si",
+              "estuche_herramientas": "si",
+              "triangulo_seguridad": "no",
+              "llanta_refaccion": "si",
+              "extinguidor": "no"
+            },
+            "gasolina": 25,
+            "danos_notas": "PARABRISAS ESTRELLADO, RAYON PUERTA DELANTERA DERECHA, CHECAR FOTOGRAFIAS"
+          },
+          "pdf_path": "uploads/X9/20260911-121301-informe-recepcion.pdf"
+        },
+        "adjuntos": {
+          "recibido": {
+            "fotos": [
+              "uploads/X9/20260911-121448-recibido-0-ECO.jpg",
+              "uploads/X9/20260911-121450-recibido-1-KM.jpg",
+              "uploads/X9/20260911-121453-recibido-2-LADO-DERECHO.jpg",
+              "uploads/X9/20260911-121454-recibido-3-LADO-IZQUIERDO.jpg",
+              "uploads/X9/20260911-121456-recibido-4-NIVEL-DE-COMBUSTIBLE.jpg",
+              "uploads/X9/20260911-121458-recibido-5-PLACA.jpg",
+              "uploads/X9/20260911-121500-recibido-6-VIN.jpg",
+              "uploads/X9/20260911-121503-recibido-7-WhatsApp-Image-2026-09-03-at-10.54.28-AM-3-.jpg"
+            ],
+            "documentos": []
+          },
+          "en_proceso": {
+            "fotos": [],
+            "documentos": []
+          },
+          "listo": {
+            "fotos": [],
+            "documentos": []
+          },
+          "recogido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "pago": {
+            "fotos": [],
+            "documentos": []
+          }
+        }
+      },
       "servicios": []
     }
   },
-  "folio_counter": 3
+  "folio_counter": 4
 }
