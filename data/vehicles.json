@@ -777,7 +777,7 @@
         "costo": null,
         "tecnico": "OSCAR FLORES",
         "fecha_inicio": "2026-09-11",
-        "estado": "en_proceso",
+        "estado": "listo",
         "actualizado": "2026-09-11",
         "pago": {
           "estado": "no_pagado",
@@ -838,7 +838,9 @@
             ]
           },
           "listo": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X9/20260911-122516-listo-0-LADO-DERECHO.jpg"
+            ],
             "documentos": []
           },
           "recogido": {
