@@ -797,6 +797,45 @@
           }
         }
       ]
+    },
+    "X10": {
+      "id": "X10",
+      "foto_perfil": "uploads/X10/20260911-173654-perfil.jpg",
+      "documentos_vehiculo": {
+        "fotos": [
+          "uploads/X10/20260911-173657-vdoc-0-ECO.jpg",
+          "uploads/X10/20260911-173700-vdoc-1-KM.jpg",
+          "uploads/X10/20260911-173702-vdoc-2-LADO-DERECHO.jpg",
+          "uploads/X10/20260911-173704-vdoc-3-LADO-IZQUIERDO.jpg",
+          "uploads/X10/20260911-173706-vdoc-4-PLACA.jpg",
+          "uploads/X10/20260911-173708-vdoc-5-VIN.jpg",
+          "uploads/X10/20260911-173713-vdoc-6-WhatsApp-Image-2026-09-09-at-4.35.24-PM-3-.jpg"
+        ],
+        "documentos": []
+      },
+      "placas": "MGE-518-A",
+      "numero_unidad": "13164",
+      "marca": "VW",
+      "modelo": "VENTO",
+      "anio": 2020,
+      "version": "",
+      "color": "AMARILLO",
+      "combustible": "Gasolina",
+      "vin": "MEX5B2609LT080055",
+      "km_actual": 100221,
+      "cliente_nombre": "TOTAL PARTS",
+      "cliente_telefono": "8713940393",
+      "cliente_telefono_2": "8712862236",
+      "ficha_tecnica": {
+        "aceite_tipo": "5W30",
+        "aceite_capacidad": "5 LTO",
+        "presion_llantas": "32 LBS",
+        "bateria": "12 V",
+        "filtro_aire": "GP1196",
+        "filtro_aceite": "GP145"
+      },
+      "servicio_actual": null,
+      "servicios": []
     }
   },
   "folio_counter": 6
