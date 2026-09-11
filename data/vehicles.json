@@ -191,97 +191,97 @@
         "filtro_aire": "",
         "filtro_aceite": ""
       },
-      "servicio_actual": {
-        "id": "svc_1788624282943",
-        "tipo": "Reparación choque frontal",
-        "descripcion": "Reparación de choque frontal\nCofre\nFacia\nPolveras\nMolduras",
-        "km": null,
-        "costo": 10500,
-        "tecnico": "Sergio",
-        "fecha_inicio": "2026-09-05",
-        "estado": "recogido",
-        "actualizado": "2026-09-11",
-        "pago": {
-          "estado": "pagado",
-          "metodo": "transferencia"
-        },
-        "orden_recepcion": {
-          "enviado": true,
-          "aceptado": true,
-          "fecha_envio": "2026-09-08",
-          "fecha_aceptado": "2026-09-08",
-          "inventario": {
-            "exteriores": {
-              "antena": "no",
-              "espejo_lateral": "si",
-              "cristales": "si",
-              "emblema": "si",
-              "tapon_ruedas": "no",
-              "molduras_completas": "si",
-              "tapon_gasolina": "si"
-            },
-            "accesorios": {
-              "gato": "no",
-              "maneral_gato": "no",
-              "llave_ruedas": "no",
-              "estuche_herramientas": "no",
-              "triangulo_seguridad": "no",
-              "llanta_refaccion": "no",
-              "extinguidor": "no"
-            },
-            "gasolina": 25,
-            "danos_notas": ""
-          },
-          "pdf_path": "uploads/X2/20260908-144539-informe-recepcion.pdf"
-        },
-        "adjuntos": {
-          "recibido": {
-            "fotos": [
-              "uploads/X2/20260905-100603-recibido-0-1000780814.jpg",
-              "uploads/X2/20260905-100611-recibido-1-1000780815.jpg",
-              "uploads/X2/20260905-100614-recibido-2-1000780816.jpg",
-              "uploads/X2/20260905-100618-recibido-3-1000780817.jpg",
-              "uploads/X2/20260905-100622-recibido-4-1000780818.jpg",
-              "uploads/X2/20260905-100626-recibido-5-1000780819.jpg",
-              "uploads/X2/20260905-100630-recibido-6-1000780820.jpg",
-              "uploads/X2/20260905-100634-recibido-7-1000780821.jpg"
-            ],
-            "documentos": []
-          },
-          "en_proceso": {
-            "fotos": [
-              "uploads/X2/20260905-103852-en_proceso-0-17886262457692875841856057924171.jpg",
-              "uploads/X2/20260905-103854-en_proceso-1-17886262975744587132237773845802.jpg",
-              "uploads/X2/20260905-202539-en_proceso-0-1000781253.jpg",
-              "uploads/X2/20260905-202543-en_proceso-1-1000781197.jpg",
-              "uploads/X2/20260908-062113-en_proceso-0-1000786563.jpg",
-              "uploads/X2/20260908-062116-en_proceso-1-1000786564.jpg",
-              "uploads/X2/20260908-062118-en_proceso-2-1000786631.jpg",
-              "uploads/X2/20260908-062121-en_proceso-3-1000786638.jpg",
-              "uploads/X2/20260908-144428-en_proceso-0-1000788582.jpg",
-              "uploads/X2/20260908-144433-en_proceso-1-1000788222.jpg"
-            ],
-            "documentos": []
-          },
-          "listo": {
-            "fotos": [
-              "uploads/X2/20260909-174549-listo-0-1000791231.jpg",
-              "uploads/X2/20260909-174552-listo-1-1000791230.jpg",
-              "uploads/X2/20260909-174555-listo-2-1000791229.jpg"
-            ],
-            "documentos": []
-          },
-          "recogido": {
-            "fotos": [],
-            "documentos": []
-          },
+      "servicio_actual": null,
+      "servicios": [
+        {
+          "fecha": "2026-09-11",
+          "tipo": "Reparación choque frontal",
+          "descripcion": "Reparación de choque frontal\nCofre\nFacia\nPolveras\nMolduras",
+          "km": null,
+          "costo": 10500,
+          "tecnico": "Sergio",
+          "fecha_inicio": "2026-09-05",
           "pago": {
-            "fotos": [],
-            "documentos": []
+            "estado": "pagado",
+            "metodo": "transferencia"
+          },
+          "orden_recepcion": {
+            "enviado": true,
+            "aceptado": true,
+            "fecha_envio": "2026-09-08",
+            "fecha_aceptado": "2026-09-08",
+            "inventario": {
+              "exteriores": {
+                "antena": "no",
+                "espejo_lateral": "si",
+                "cristales": "si",
+                "emblema": "si",
+                "tapon_ruedas": "no",
+                "molduras_completas": "si",
+                "tapon_gasolina": "si"
+              },
+              "accesorios": {
+                "gato": "no",
+                "maneral_gato": "no",
+                "llave_ruedas": "no",
+                "estuche_herramientas": "no",
+                "triangulo_seguridad": "no",
+                "llanta_refaccion": "no",
+                "extinguidor": "no"
+              },
+              "gasolina": 25,
+              "danos_notas": ""
+            },
+            "pdf_path": "uploads/X2/20260908-144539-informe-recepcion.pdf"
+          },
+          "adjuntos": {
+            "recibido": {
+              "fotos": [
+                "uploads/X2/20260905-100603-recibido-0-1000780814.jpg",
+                "uploads/X2/20260905-100611-recibido-1-1000780815.jpg",
+                "uploads/X2/20260905-100614-recibido-2-1000780816.jpg",
+                "uploads/X2/20260905-100618-recibido-3-1000780817.jpg",
+                "uploads/X2/20260905-100622-recibido-4-1000780818.jpg",
+                "uploads/X2/20260905-100626-recibido-5-1000780819.jpg",
+                "uploads/X2/20260905-100630-recibido-6-1000780820.jpg",
+                "uploads/X2/20260905-100634-recibido-7-1000780821.jpg"
+              ],
+              "documentos": []
+            },
+            "en_proceso": {
+              "fotos": [
+                "uploads/X2/20260905-103852-en_proceso-0-17886262457692875841856057924171.jpg",
+                "uploads/X2/20260905-103854-en_proceso-1-17886262975744587132237773845802.jpg",
+                "uploads/X2/20260905-202539-en_proceso-0-1000781253.jpg",
+                "uploads/X2/20260905-202543-en_proceso-1-1000781197.jpg",
+                "uploads/X2/20260908-062113-en_proceso-0-1000786563.jpg",
+                "uploads/X2/20260908-062116-en_proceso-1-1000786564.jpg",
+                "uploads/X2/20260908-062118-en_proceso-2-1000786631.jpg",
+                "uploads/X2/20260908-062121-en_proceso-3-1000786638.jpg",
+                "uploads/X2/20260908-144428-en_proceso-0-1000788582.jpg",
+                "uploads/X2/20260908-144433-en_proceso-1-1000788222.jpg"
+              ],
+              "documentos": []
+            },
+            "listo": {
+              "fotos": [
+                "uploads/X2/20260909-174549-listo-0-1000791231.jpg",
+                "uploads/X2/20260909-174552-listo-1-1000791230.jpg",
+                "uploads/X2/20260909-174555-listo-2-1000791229.jpg"
+              ],
+              "documentos": []
+            },
+            "recogido": {
+              "fotos": [],
+              "documentos": []
+            },
+            "pago": {
+              "fotos": [],
+              "documentos": []
+            }
           }
         }
-      },
-      "servicios": []
+      ]
     },
     "X3": {
       "id": "X3",
