@@ -44,6 +44,71 @@
       "servicio_actual": null,
       "servicios": [
         {
+          "fecha": "2026-09-11",
+          "folio": "A005",
+          "tipo": "Hola",
+          "descripcion": "",
+          "km": null,
+          "costo": null,
+          "tecnico": "",
+          "tiempo_entrega_aprox": "",
+          "fecha_inicio": "2026-09-11",
+          "pago": {
+            "estado": "no_pagado",
+            "metodo": null
+          },
+          "orden_recepcion": {
+            "enviado": false,
+            "aceptado": false,
+            "fecha_envio": null,
+            "fecha_aceptado": null,
+            "inventario": {
+              "exteriores": {
+                "antena": "no",
+                "espejo_lateral": "no",
+                "cristales": "no",
+                "emblema": "no",
+                "tapon_ruedas": "no",
+                "molduras_completas": "no",
+                "tapon_gasolina": "no"
+              },
+              "accesorios": {
+                "gato": "no",
+                "maneral_gato": "no",
+                "llave_ruedas": "no",
+                "estuche_herramientas": "no",
+                "triangulo_seguridad": "no",
+                "llanta_refaccion": "no",
+                "extinguidor": "no"
+              },
+              "gasolina": 0,
+              "danos_notas": ""
+            }
+          },
+          "adjuntos": {
+            "recibido": {
+              "fotos": [],
+              "documentos": []
+            },
+            "en_proceso": {
+              "fotos": [],
+              "documentos": []
+            },
+            "listo": {
+              "fotos": [],
+              "documentos": []
+            },
+            "recogido": {
+              "fotos": [],
+              "documentos": []
+            },
+            "pago": {
+              "fotos": [],
+              "documentos": []
+            }
+          }
+        },
+        {
           "fecha": "2026-09-06",
           "tipo": "Afinación",
           "descripcion": "Afinación motor a gasolina 4 cilindros, cambio de filtros, aceite sintético 15W/40, limpieza cuerpo de aceleración, relleno de niveles",
@@ -856,5 +921,5 @@
       ]
     }
   },
-  "folio_counter": 4
+  "folio_counter": 5
 }
