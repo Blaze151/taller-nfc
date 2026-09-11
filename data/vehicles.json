@@ -199,8 +199,8 @@
         "costo": 10500,
         "tecnico": "Sergio",
         "fecha_inicio": "2026-09-05",
-        "estado": "en_proceso",
-        "actualizado": "2026-09-05",
+        "estado": "recogido",
+        "actualizado": "2026-09-11",
         "pago": {
           "estado": "pagado",
           "metodo": "transferencia"
