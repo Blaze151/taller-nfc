@@ -553,17 +553,17 @@
         "costo": null,
         "tecnico": "Edgar",
         "fecha_inicio": "2026-09-10",
-        "estado": "recibido",
-        "actualizado": "2026-09-10",
+        "estado": "recogido",
+        "actualizado": "2026-09-11",
         "pago": {
           "estado": "no_pagado",
           "metodo": null
         },
         "orden_recepcion": {
           "enviado": true,
-          "aceptado": false,
+          "aceptado": true,
           "fecha_envio": "2026-09-10",
-          "fecha_aceptado": null,
+          "fecha_aceptado": "2026-09-11",
           "inventario": {
             "exteriores": {
               "antena": "si",
@@ -615,7 +615,11 @@
             "documentos": []
           },
           "recogido": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X7/20260911-092416-recogido-0-1000793658.jpg",
+              "uploads/X7/20260911-092419-recogido-1-1000793657.jpg",
+              "uploads/X7/20260911-092421-recogido-2-1000793656.jpg"
+            ],
             "documentos": []
           },
           "pago": {
