@@ -739,6 +739,37 @@
           }
         }
       ]
+    },
+    "X9": {
+      "id": "X9",
+      "foto_perfil": "uploads/X9/20260911-120417-perfil.jpg",
+      "documentos_vehiculo": {
+        "fotos": [],
+        "documentos": []
+      },
+      "placas": "LH-43-480",
+      "numero_unidad": "17035",
+      "marca": "FORD",
+      "modelo": "TRANSIT",
+      "anio": 2025,
+      "version": "",
+      "color": "AMARILLO",
+      "combustible": "Diesel",
+      "vin": "1FTBW968X5KA46861",
+      "km_actual": 49668,
+      "cliente_nombre": "TOTAL PARTS",
+      "cliente_telefono": "8713940393",
+      "cliente_telefono_2": "8711044146",
+      "ficha_tecnica": {
+        "aceite_tipo": "15W40",
+        "aceite_capacidad": "13 LTO",
+        "presion_llantas": "45 LBS",
+        "bateria": "12 V",
+        "filtro_aire": "GP1196",
+        "filtro_aceite": "GP145"
+      },
+      "servicio_actual": null,
+      "servicios": []
     }
   },
   "folio_counter": 3
