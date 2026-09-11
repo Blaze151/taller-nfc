@@ -827,8 +827,15 @@
             "documentos": []
           },
           "en_proceso": {
-            "fotos": [],
-            "documentos": []
+            "fotos": [
+              "uploads/X9/20260911-122103-en_proceso-0-BALATAS-USADAS.jpg",
+              "uploads/X9/20260911-122106-en_proceso-1-DISCO-RAYADO-1.jpg",
+              "uploads/X9/20260911-122108-en_proceso-2-DISCO-RAYADO-2.jpg",
+              "uploads/X9/20260911-122110-en_proceso-3-SENSOR-USADO.jpg"
+            ],
+            "documentos": [
+              "uploads/X9/20260911-122111-en_proceso-0-COTIZACION-FORD-TRANSIT-17035.pdf"
+            ]
           },
           "listo": {
             "fotos": [],
