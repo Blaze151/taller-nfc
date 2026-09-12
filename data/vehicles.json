@@ -797,7 +797,111 @@
           }
         }
       ]
+    },
+    "X10": {
+      "id": "X10",
+      "foto_perfil": null,
+      "documentos_vehiculo": {
+        "fotos": [
+          "uploads/X10/20260911-182259-vdoc-0-ECO.jpg",
+          "uploads/X10/20260911-182300-vdoc-1-KM.jpg",
+          "uploads/X10/20260911-182302-vdoc-2-LADO-DERECHO.jpg",
+          "uploads/X10/20260911-182304-vdoc-3-LADO-IZQUIERDO.jpg",
+          "uploads/X10/20260911-182306-vdoc-4-PLACA.jpg",
+          "uploads/X10/20260911-182308-vdoc-5-VIN.jpg",
+          "uploads/X10/20260911-182310-vdoc-6-WhatsApp-Image-2026-09-09-at-4.35.24-PM-3-.jpg"
+        ],
+        "documentos": []
+      },
+      "placas": "MGE-518-A",
+      "numero_unidad": "13164",
+      "marca": "VW",
+      "modelo": "VENTO",
+      "anio": 2016,
+      "version": "",
+      "color": "AMARILLO",
+      "combustible": "Gasolina",
+      "vin": "MEX5B2609LT080055",
+      "km_actual": 100221,
+      "cliente_nombre": "TOTAL PARTS",
+      "cliente_telefono": "8713940393",
+      "cliente_telefono_2": "8712862236",
+      "ficha_tecnica": {
+        "aceite_tipo": "5W30",
+        "aceite_capacidad": "5 LTO",
+        "presion_llantas": "32 LBS",
+        "bateria": "12 V",
+        "filtro_aire": "",
+        "filtro_aceite": ""
+      },
+      "servicio_actual": {
+        "id": "svc_1789172307729",
+        "folio": "A009",
+        "tipo": "SERVCIO , FRENOS, LLANTAS",
+        "descripcion": "SERVICIO DE MANTENIMIENTO POR KILOMETRAJE, REVISION DE FRENOS, LLANTAS",
+        "km": 100221,
+        "costo": null,
+        "tecnico": "JAVIER VARGAS",
+        "fecha_inicio": "2026-09-12",
+        "estado": "recibido",
+        "actualizado": "2026-09-12",
+        "pago": {
+          "estado": "no_pagado",
+          "metodo": null
+        },
+        "orden_recepcion": {
+          "enviado": false,
+          "aceptado": false,
+          "fecha_envio": null,
+          "fecha_aceptado": null,
+          "inventario": {
+            "exteriores": {
+              "antena": "si",
+              "espejo_lateral": "si",
+              "cristales": "si",
+              "emblema": "si",
+              "tapon_ruedas": "si",
+              "molduras_completas": "si",
+              "tapon_gasolina": "si"
+            },
+            "accesorios": {
+              "gato": "si",
+              "maneral_gato": "si",
+              "llave_ruedas": "si",
+              "estuche_herramientas": "si",
+              "triangulo_seguridad": "si",
+              "llanta_refaccion": "si",
+              "extinguidor": "si"
+            },
+            "gasolina": 50,
+            "danos_notas": "VEHICULO EN BUEN ESTADO"
+          }
+        },
+        "adjuntos": {
+          "recibido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "en_proceso": {
+            "fotos": [],
+            "documentos": []
+          },
+          "listo": {
+            "fotos": [],
+            "documentos": []
+          },
+          "recogido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "pago": {
+            "fotos": [],
+            "documentos": []
+          }
+        }
+      },
+      "servicios": []
     }
   },
-  "folio_counter": 8
+  "folio_counter": 9
 }
