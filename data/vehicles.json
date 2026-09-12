@@ -850,9 +850,9 @@
           "metodo": null
         },
         "orden_recepcion": {
-          "enviado": false,
+          "enviado": true,
           "aceptado": false,
-          "fecha_envio": null,
+          "fecha_envio": "2026-09-12",
           "fecha_aceptado": null,
           "inventario": {
             "exteriores": {
@@ -875,7 +875,8 @@
             },
             "gasolina": 50,
             "danos_notas": "VEHICULO EN BUEN ESTADO"
-          }
+          },
+          "pdf_path": "uploads/X10/20260911-182413-informe-recepcion.pdf"
         },
         "adjuntos": {
           "recibido": {
