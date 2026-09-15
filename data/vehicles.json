@@ -1037,6 +1037,40 @@
         }
       },
       "servicios": []
+    },
+    "X12": {
+      "id": "X12",
+      "foto_perfil": "uploads/X12/20260915-132022-perfil.jpg",
+      "documentos_vehiculo": {
+        "fotos": [],
+        "documentos": []
+      },
+      "placas": "FR 121322",
+      "numero_unidad": "",
+      "marca": "Chevrolet",
+      "modelo": "Cruze",
+      "anio": 2019,
+      "version": "",
+      "color": "Azul Aqua",
+      "combustible": "Gasolina",
+      "vin": "3GIBE6SM6KS565760",
+      "km_actual": 194306,
+      "cliente_nombre": "Sthep",
+      "cliente_telefono": "872 121 0543",
+      "cliente_telefono_2": "",
+      "cliente_correo": "",
+      "cliente_rfc": "",
+      "cliente_direccion": "",
+      "ficha_tecnica": {
+        "aceite_tipo": "",
+        "aceite_capacidad": "",
+        "presion_llantas": "",
+        "bateria": "",
+        "filtro_aire": "",
+        "filtro_aceite": ""
+      },
+      "servicio_actual": null,
+      "servicios": []
     }
   },
   "folio_counter": 12
