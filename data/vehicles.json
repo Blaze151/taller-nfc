@@ -1077,7 +1077,7 @@
         "km": null,
         "costo": null,
         "tecnico": "Sergio G",
-        "tiempo_entrega_aprox": "",
+        "tiempo_entrega_aprox": "Mismo",
         "fecha_inicio": "2026-09-15",
         "estado": "recibido",
         "actualizado": "2026-09-15",
@@ -1110,7 +1110,7 @@
               "extinguidor": "si"
             },
             "gasolina": 25,
-            "danos_notas": ""
+            "danos_notas": "Cámara reversa no sirve, tiene reparación golpe trasero facia y arnés principal"
           }
         },
         "cotizacion": {
