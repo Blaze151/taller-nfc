@@ -902,6 +902,40 @@
         }
       },
       "servicios": []
+    },
+    "X11": {
+      "id": "X11",
+      "foto_perfil": "uploads/X11/20260915-121818-perfil.jpg",
+      "documentos_vehiculo": {
+        "fotos": [],
+        "documentos": []
+      },
+      "placas": "GDY 121 E",
+      "numero_unidad": "076 032",
+      "marca": "Toyota",
+      "modelo": "Prius C",
+      "anio": null,
+      "version": "Híbrido",
+      "color": "Verde / Morado Qualitas",
+      "combustible": "Eléctrico",
+      "vin": "JTDKDTB34K1525942",
+      "km_actual": 185037,
+      "cliente_nombre": "Roberto Qualitas",
+      "cliente_telefono": "6181682950",
+      "cliente_telefono_2": "",
+      "cliente_correo": "",
+      "cliente_rfc": "",
+      "cliente_direccion": "",
+      "ficha_tecnica": {
+        "aceite_tipo": "",
+        "aceite_capacidad": "",
+        "presion_llantas": "",
+        "bateria": "",
+        "filtro_aire": "",
+        "filtro_aceite": ""
+      },
+      "servicio_actual": null,
+      "servicios": []
     }
   },
   "folio_counter": 11
