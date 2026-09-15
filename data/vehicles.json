@@ -999,7 +999,19 @@
         },
         "adjuntos": {
           "recibido": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X11/20260915-122207-recibido-0-17894964235441928279344199209692.jpg",
+              "uploads/X11/20260915-122209-recibido-1-1000806262.jpg",
+              "uploads/X11/20260915-122212-recibido-2-1000806267.jpg",
+              "uploads/X11/20260915-122214-recibido-3-1000806268.jpg",
+              "uploads/X11/20260915-122217-recibido-4-1000806269.jpg",
+              "uploads/X11/20260915-122218-recibido-5-1000806270.jpg",
+              "uploads/X11/20260915-122220-recibido-6-1000806271.jpg",
+              "uploads/X11/20260915-122258-recibido-7-1000806272.jpg",
+              "uploads/X11/20260915-122332-recibido-8-1000806273.jpg",
+              "uploads/X11/20260915-122339-recibido-9-1000806274.jpg",
+              "uploads/X11/20260915-122347-recibido-10-1000806275.jpg"
+            ],
             "documentos": []
           },
           "diagnostico": {
