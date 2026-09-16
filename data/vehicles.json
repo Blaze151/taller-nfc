@@ -940,7 +940,7 @@
         "tipo": "Empaques puertas",
         "descripcion": "Ajustar, limpiar, pegar empaques de las 4 puertas.\nPegar empaques techo.",
         "km": 185037,
-        "costo": 1000,
+        "costo": null,
         "tecnico": "Sergio G",
         "tiempo_entrega_aprox": "Mismo Día Express",
         "fecha_inicio": "2026-09-15",
