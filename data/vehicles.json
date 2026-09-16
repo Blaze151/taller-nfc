@@ -1086,9 +1086,9 @@
           "metodo": null
         },
         "orden_recepcion": {
-          "enviado": false,
+          "enviado": true,
           "aceptado": false,
-          "fecha_envio": null,
+          "fecha_envio": "2026-09-16",
           "fecha_aceptado": null,
           "inventario": {
             "exteriores": {
@@ -1111,17 +1111,23 @@
             },
             "gasolina": 25,
             "danos_notas": "Cámara reversa no sirve, tiene reparación golpe trasero facia y arnés principal"
-          }
+          },
+          "pdf_path": "uploads/X12/20260915-213758-informe-recepcion.pdf"
         },
         "cotizacion": {
-          "enviado": false,
-          "fecha_envio": null,
-          "pdf_path": null,
+          "enviado": true,
+          "fecha_envio": "2026-09-16",
+          "pdf_path": "uploads/X12/20260915-213951-cotizacion.pdf",
           "items": [
             {
-              "concepto": "",
+              "concepto": "Reparación arnés trasero",
               "cantidad": 1,
-              "costo_unitario": null
+              "costo_unitario": 1
+            },
+            {
+              "concepto": "Revisión",
+              "cantidad": 1,
+              "costo_unitario": 1
             }
           ],
           "incluir_iva": true,
@@ -1144,11 +1150,24 @@
             "documentos": []
           },
           "diagnostico": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X12/20260915-214036-diagnostico-0-1000806217.jpg",
+              "uploads/X12/20260915-214043-diagnostico-1-1000806181.jpg",
+              "uploads/X12/20260915-214049-diagnostico-2-1000798705.jpg",
+              "uploads/X12/20260915-214114-diagnostico-3-1000798703.jpg",
+              "uploads/X12/20260915-214116-diagnostico-4-1000798701.jpg",
+              "uploads/X12/20260915-214122-diagnostico-5-1000798677.jpg"
+            ],
             "documentos": []
           },
           "en_proceso": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X12/20260915-214137-en_proceso-0-1000806324.jpg",
+              "uploads/X12/20260915-214143-en_proceso-1-1000806218.jpg",
+              "uploads/X12/20260915-214146-en_proceso-2-1000806217.jpg",
+              "uploads/X12/20260915-214158-en_proceso-3-1000806181.jpg",
+              "uploads/X12/20260915-214200-en_proceso-4-1000806164.jpg"
+            ],
             "documentos": []
           },
           "listo": {
