@@ -944,8 +944,8 @@
         "tecnico": "Sergio G",
         "tiempo_entrega_aprox": "Mismo Día Express",
         "fecha_inicio": "2026-09-15",
-        "estado": "recibido",
-        "actualizado": "2026-09-15",
+        "estado": "recogido",
+        "actualizado": "2026-09-16",
         "pago": {
           "estado": "no_pagado",
           "metodo": null
