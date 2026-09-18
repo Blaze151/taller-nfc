@@ -1231,7 +1231,7 @@
         "tecnico": "Oscar Flores",
         "tiempo_entrega_aprox": "1 día de trabajo",
         "fecha_inicio": "2026-09-18",
-        "estado": "recibido",
+        "estado": "diagnostico",
         "actualizado": "2026-09-18",
         "pago": {
           "estado": "no_pagado",
@@ -1239,9 +1239,9 @@
         },
         "orden_recepcion": {
           "enviado": false,
-          "aceptado": false,
+          "aceptado": true,
           "fecha_envio": null,
-          "fecha_aceptado": null,
+          "fecha_aceptado": "2026-09-18",
           "inventario": {
             "exteriores": {
               "antena": "no",
