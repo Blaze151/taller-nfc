@@ -947,8 +947,8 @@
         "estado": "recogido",
         "actualizado": "2026-09-16",
         "pago": {
-          "estado": "no_pagado",
-          "metodo": null
+          "estado": "a_deber",
+          "metodo": "transferencia"
         },
         "orden_recepcion": {
           "enviado": false,
