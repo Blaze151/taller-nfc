@@ -1231,7 +1231,7 @@
         "tecnico": "Oscar Flores",
         "tiempo_entrega_aprox": "1 día de trabajo",
         "fecha_inicio": "2026-09-18",
-        "estado": "diagnostico",
+        "estado": "listo",
         "actualizado": "2026-09-18",
         "pago": {
           "estado": "no_pagado",
@@ -1285,9 +1285,9 @@
           "observaciones": "En la revisión detectamos falta de frenos delanteros y traseros"
         },
         "informe_trabajo": {
-          "enviado": false,
-          "fecha_envio": null,
-          "pdf_path": null
+          "enviado": true,
+          "fecha_envio": "2026-09-18",
+          "pdf_path": "uploads/X30/20260918-163454-informe-trabajo.pdf"
         },
         "adjuntos": {
           "recibido": {
@@ -1328,7 +1328,9 @@
             "documentos": []
           },
           "recogido": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X30/20260918-164528-recogido-0-1000680496.jpg"
+            ],
             "documentos": []
           },
           "pago": {
