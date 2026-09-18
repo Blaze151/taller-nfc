@@ -1185,6 +1185,44 @@
           }
         }
       ]
+    },
+    "X30": {
+      "id": "X30",
+      "foto_perfil": "uploads/X30/20260918-160558-perfil.jpg",
+      "documentos_vehiculo": {
+        "fotos": [
+          "uploads/X30/20260918-160600-vdoc-0-17897690285107048667342469206944.jpg",
+          "uploads/X30/20260918-160602-vdoc-1-17897690572768571382364477590745.jpg",
+          "uploads/X30/20260918-160604-vdoc-2-17897690662856000173098319876319.jpg"
+        ],
+        "documentos": []
+      },
+      "placas": "E202-70",
+      "numero_unidad": "",
+      "marca": "Ford",
+      "modelo": "F150",
+      "anio": 2010,
+      "version": "4.6",
+      "color": "Negro",
+      "combustible": "Gasolina",
+      "vin": "1FTEW1C82AFC56473",
+      "km_actual": 360000,
+      "cliente_nombre": "Sergio Guardado",
+      "cliente_telefono": "8711044146",
+      "cliente_telefono_2": "8713940393",
+      "cliente_correo": "luisgermangarciag@gmail.com",
+      "cliente_rfc": "",
+      "cliente_direccion": "",
+      "ficha_tecnica": {
+        "aceite_tipo": "5W20",
+        "aceite_capacidad": "8 LTS",
+        "presion_llantas": "35 PSI",
+        "bateria": "12V",
+        "filtro_aire": "",
+        "filtro_aceite": ""
+      },
+      "servicio_actual": null,
+      "servicios": []
     }
   },
   "folio_counter": 13
