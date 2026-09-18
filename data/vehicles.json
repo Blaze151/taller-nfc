@@ -1315,11 +1315,16 @@
             "documentos": []
           },
           "en_proceso": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X30/20260918-163241-en_proceso-0-1000664594.jpg",
+              "uploads/X30/20260918-163243-en_proceso-1-1000680326.jpg"
+            ],
             "documentos": []
           },
           "listo": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X30/20260918-163245-listo-0-1000680497.jpg"
+            ],
             "documentos": []
           },
           "recogido": {
