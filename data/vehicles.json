@@ -1307,7 +1307,12 @@
             "documentos": []
           },
           "diagnostico": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X30/20260919-133634-diagnostico-0-1000681468.jpg",
+              "uploads/X30/20260919-133636-diagnostico-1-1000681467.jpg",
+              "uploads/X30/20260919-133637-diagnostico-2-1000681466.jpg",
+              "uploads/X30/20260919-133639-diagnostico-3-1000681465.jpg"
+            ],
             "documentos": []
           },
           "en_proceso": {
