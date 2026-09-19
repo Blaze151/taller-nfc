@@ -1272,9 +1272,14 @@
           "pdf_path": null,
           "items": [
             {
-              "concepto": "",
+              "concepto": "Servicio de mantenimiento mayor",
               "cantidad": 1,
-              "costo_unitario": null
+              "costo_unitario": 1999
+            },
+            {
+              "concepto": "Cambio de banda de accesorios Gates",
+              "cantidad": 1,
+              "costo_unitario": 923
             }
           ],
           "incluir_iva": true,
