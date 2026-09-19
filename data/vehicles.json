@@ -1221,125 +1221,125 @@
         "filtro_aire": "",
         "filtro_aceite": ""
       },
-      "servicio_actual": {
-        "id": "svc_1789769206948",
-        "folio": "A014",
-        "tipo": "Servicio de mantenimiento mayor",
-        "descripcion": "Afinación mayor, revision de niveles y puntos de seguridad",
-        "km": 360000,
-        "costo": 3500,
-        "tecnico": "Oscar Flores",
-        "tiempo_entrega_aprox": "1 día de trabajo",
-        "fecha_inicio": "2026-09-18",
-        "estado": "recogido",
-        "actualizado": "2026-09-18",
-        "pago": {
-          "estado": "no_pagado",
-          "metodo": null
-        },
-        "orden_recepcion": {
-          "enviado": false,
-          "aceptado": true,
-          "fecha_envio": null,
-          "fecha_aceptado": "2026-09-18",
-          "inventario": {
-            "exteriores": {
-              "antena": "no",
-              "espejo_lateral": "no",
-              "cristales": "no",
-              "emblema": "no",
-              "tapon_ruedas": "no",
-              "molduras_completas": "no",
-              "tapon_gasolina": "no"
-            },
-            "accesorios": {
-              "gato": "no",
-              "maneral_gato": "no",
-              "llave_ruedas": "no",
-              "estuche_herramientas": "no",
-              "triangulo_seguridad": "no",
-              "llanta_refaccion": "no",
-              "extinguidor": "no"
-            },
-            "gasolina": 0,
-            "danos_notas": ""
-          }
-        },
-        "cotizacion": {
-          "enviado": true,
-          "fecha_envio": "2026-09-18",
-          "pdf_path": "uploads/X30/20260918-162659-cotizacion.pdf",
-          "items": [
-            {
-              "concepto": "Afinación mayor",
-              "cantidad": 1,
-              "costo_unitario": 3500
-            },
-            {
-              "concepto": "Filtro de cabina",
-              "cantidad": 1,
-              "costo_unitario": 150
-            }
-          ],
-          "incluir_iva": true,
-          "observaciones": "En la revisión detectamos falta de frenos delanteros y traseros"
-        },
-        "informe_trabajo": {
-          "enviado": true,
-          "fecha_envio": "2026-09-18",
-          "pdf_path": "uploads/X30/20260918-163454-informe-trabajo.pdf"
-        },
-        "adjuntos": {
-          "recibido": {
-            "fotos": [
-              "uploads/X30/20260918-161445-recibido-0-1000680514.jpg",
-              "uploads/X30/20260918-161448-recibido-1-1000680507.jpg",
-              "uploads/X30/20260918-161450-recibido-2-1000680506.jpg",
-              "uploads/X30/20260918-161452-recibido-3-1000680502.jpg",
-              "uploads/X30/20260918-161454-recibido-4-1000680501.jpg",
-              "uploads/X30/20260918-161456-recibido-5-1000680500.jpg",
-              "uploads/X30/20260918-161458-recibido-6-1000680499.jpg",
-              "uploads/X30/20260918-161500-recibido-7-1000680498.jpg",
-              "uploads/X30/20260918-161502-recibido-8-1000680497.jpg",
-              "uploads/X30/20260918-161504-recibido-9-1000680496.jpg",
-              "uploads/X30/20260918-161506-recibido-10-1000680495.jpg",
-              "uploads/X30/20260918-161508-recibido-11-1000680494.jpg"
-            ],
-            "documentos": []
-          },
-          "diagnostico": {
-            "fotos": [
-              "uploads/X30/20260918-162909-diagnostico-0-1000670993.jpg",
-              "uploads/X30/20260918-162911-diagnostico-1-1000664508.jpg"
-            ],
-            "documentos": []
-          },
-          "en_proceso": {
-            "fotos": [
-              "uploads/X30/20260918-163241-en_proceso-0-1000664594.jpg",
-              "uploads/X30/20260918-163243-en_proceso-1-1000680326.jpg"
-            ],
-            "documentos": []
-          },
-          "listo": {
-            "fotos": [
-              "uploads/X30/20260918-163245-listo-0-1000680497.jpg"
-            ],
-            "documentos": []
-          },
-          "recogido": {
-            "fotos": [
-              "uploads/X30/20260918-164528-recogido-0-1000680496.jpg"
-            ],
-            "documentos": []
-          },
+      "servicio_actual": null,
+      "servicios": [
+        {
+          "fecha": "2026-09-19",
+          "folio": "A014",
+          "tipo": "Servicio de mantenimiento mayor",
+          "descripcion": "Afinación mayor, revision de niveles y puntos de seguridad",
+          "km": 360000,
+          "costo": 3500,
+          "tecnico": "Oscar Flores",
+          "tiempo_entrega_aprox": "1 día de trabajo",
+          "fecha_inicio": "2026-09-18",
           "pago": {
-            "fotos": [],
-            "documentos": []
+            "estado": "no_pagado",
+            "metodo": null
+          },
+          "orden_recepcion": {
+            "enviado": false,
+            "aceptado": true,
+            "fecha_envio": null,
+            "fecha_aceptado": "2026-09-18",
+            "inventario": {
+              "exteriores": {
+                "antena": "no",
+                "espejo_lateral": "no",
+                "cristales": "no",
+                "emblema": "no",
+                "tapon_ruedas": "no",
+                "molduras_completas": "no",
+                "tapon_gasolina": "no"
+              },
+              "accesorios": {
+                "gato": "no",
+                "maneral_gato": "no",
+                "llave_ruedas": "no",
+                "estuche_herramientas": "no",
+                "triangulo_seguridad": "no",
+                "llanta_refaccion": "no",
+                "extinguidor": "no"
+              },
+              "gasolina": 0,
+              "danos_notas": ""
+            }
+          },
+          "cotizacion": {
+            "enviado": true,
+            "fecha_envio": "2026-09-18",
+            "pdf_path": "uploads/X30/20260918-162659-cotizacion.pdf",
+            "items": [
+              {
+                "concepto": "Afinación mayor",
+                "cantidad": 1,
+                "costo_unitario": 3500
+              },
+              {
+                "concepto": "Filtro de cabina",
+                "cantidad": 1,
+                "costo_unitario": 150
+              }
+            ],
+            "incluir_iva": true,
+            "observaciones": "En la revisión detectamos falta de frenos delanteros y traseros"
+          },
+          "informe_trabajo": {
+            "enviado": true,
+            "fecha_envio": "2026-09-18",
+            "pdf_path": "uploads/X30/20260918-163454-informe-trabajo.pdf"
+          },
+          "adjuntos": {
+            "recibido": {
+              "fotos": [
+                "uploads/X30/20260918-161445-recibido-0-1000680514.jpg",
+                "uploads/X30/20260918-161448-recibido-1-1000680507.jpg",
+                "uploads/X30/20260918-161450-recibido-2-1000680506.jpg",
+                "uploads/X30/20260918-161452-recibido-3-1000680502.jpg",
+                "uploads/X30/20260918-161454-recibido-4-1000680501.jpg",
+                "uploads/X30/20260918-161456-recibido-5-1000680500.jpg",
+                "uploads/X30/20260918-161458-recibido-6-1000680499.jpg",
+                "uploads/X30/20260918-161500-recibido-7-1000680498.jpg",
+                "uploads/X30/20260918-161502-recibido-8-1000680497.jpg",
+                "uploads/X30/20260918-161504-recibido-9-1000680496.jpg",
+                "uploads/X30/20260918-161506-recibido-10-1000680495.jpg",
+                "uploads/X30/20260918-161508-recibido-11-1000680494.jpg"
+              ],
+              "documentos": []
+            },
+            "diagnostico": {
+              "fotos": [
+                "uploads/X30/20260918-162909-diagnostico-0-1000670993.jpg",
+                "uploads/X30/20260918-162911-diagnostico-1-1000664508.jpg"
+              ],
+              "documentos": []
+            },
+            "en_proceso": {
+              "fotos": [
+                "uploads/X30/20260918-163241-en_proceso-0-1000664594.jpg",
+                "uploads/X30/20260918-163243-en_proceso-1-1000680326.jpg"
+              ],
+              "documentos": []
+            },
+            "listo": {
+              "fotos": [
+                "uploads/X30/20260918-163245-listo-0-1000680497.jpg"
+              ],
+              "documentos": []
+            },
+            "recogido": {
+              "fotos": [
+                "uploads/X30/20260918-164528-recogido-0-1000680496.jpg"
+              ],
+              "documentos": []
+            },
+            "pago": {
+              "fotos": [],
+              "documentos": []
+            }
           }
         }
-      },
-      "servicios": []
+      ]
     }
   },
   "folio_counter": 14
