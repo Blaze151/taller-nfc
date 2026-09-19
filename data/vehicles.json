@@ -1209,7 +1209,7 @@
       "km_actual": 360000,
       "cliente_nombre": "Sergio Guardado",
       "cliente_telefono": "8711044146",
-      "cliente_telefono_2": "8713940393",
+      "cliente_telefono_2": "8712238104",
       "cliente_correo": "luisgermangarciag@gmail.com",
       "cliente_rfc": "",
       "cliente_direccion": "",
@@ -1238,9 +1238,9 @@
           "metodo": null
         },
         "orden_recepcion": {
-          "enviado": false,
+          "enviado": true,
           "aceptado": false,
-          "fecha_envio": null,
+          "fecha_envio": "2026-09-19",
           "fecha_aceptado": null,
           "inventario": {
             "exteriores": {
@@ -1263,7 +1263,8 @@
             },
             "gasolina": 50,
             "danos_notas": "Parabrisas estrellado"
-          }
+          },
+          "pdf_path": "uploads/X30/20260919-125831-informe-recepcion.pdf"
         },
         "cotizacion": {
           "enviado": false,
