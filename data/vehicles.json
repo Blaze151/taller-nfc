@@ -1231,8 +1231,8 @@
         "tecnico": "Oscar flores",
         "tiempo_entrega_aprox": "2 dias",
         "fecha_inicio": "2026-09-19",
-        "estado": "recibido",
-        "actualizado": "2026-09-19",
+        "estado": "listo",
+        "actualizado": "2026-09-20",
         "pago": {
           "estado": "no_pagado",
           "metodo": null
