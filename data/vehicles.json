@@ -1661,12 +1661,27 @@
           "pdf_path": null,
           "items": [
             {
-              "concepto": "",
+              "concepto": "Pintura general color amarillo",
               "cantidad": 1,
-              "costo_unitario": null
+              "costo_unitario": 5500
+            },
+            {
+              "concepto": "Trabajo de hojalatería y Enderezado estribo facia trasera facia delantera",
+              "cantidad": 1,
+              "costo_unitario": 2500
+            },
+            {
+              "concepto": "Tolvas loderas delanteras con instalación",
+              "cantidad": 1,
+              "costo_unitario": 2400
+            },
+            {
+              "concepto": "Moldura inferior facia delantera con instalación",
+              "cantidad": 1,
+              "costo_unitario": 2300
             }
           ],
-          "incluir_iva": true,
+          "incluir_iva": false,
           "observaciones": "",
           "aceptado": false,
           "fecha_aceptado": null
