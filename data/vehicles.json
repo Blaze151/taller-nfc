@@ -1578,6 +1578,41 @@
           }
         }
       ]
+    },
+    "X13": {
+      "id": "X13",
+      "fecha_creacion": "2026-09-21T19:37:34.293Z",
+      "foto_perfil": "uploads/X13/20260921-133734-perfil.jpg",
+      "documentos_vehiculo": {
+        "fotos": [],
+        "documentos": []
+      },
+      "placas": "FDD-950-C",
+      "numero_unidad": "",
+      "marca": "Hyundai",
+      "modelo": "Grand i10",
+      "anio": null,
+      "version": "",
+      "color": "Blanco",
+      "combustible": "Gasolina",
+      "vin": "",
+      "km_actual": 368687,
+      "cliente_nombre": "Francisco Guardado",
+      "cliente_telefono": "871 727 0930",
+      "cliente_telefono_2": "",
+      "cliente_correo": "",
+      "cliente_rfc": "",
+      "cliente_direccion": "",
+      "ficha_tecnica": {
+        "aceite_tipo": "",
+        "aceite_capacidad": "",
+        "presion_llantas": "",
+        "bateria": "",
+        "filtro_aire": "",
+        "filtro_aceite": ""
+      },
+      "servicio_actual": null,
+      "servicios": []
     }
   },
   "folio_counter": 17
