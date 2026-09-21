@@ -8,6 +8,134 @@
     "mapa_url": "https://www.google.com/maps?q=25.5453446,-103.4010844"
   },
   "vehicles": {
+    "1": {
+      "id": "1",
+      "fecha_creacion": "2026-09-21T19:24:39.901Z",
+      "foto_perfil": "uploads/1/20260921-132440-perfil.jpg",
+      "documentos_vehiculo": {
+        "fotos": [
+          "uploads/1/20260921-132442-vdoc-0-1000128739.jpg"
+        ],
+        "documentos": []
+      },
+      "placas": "Er-8436-d",
+      "numero_unidad": "37",
+      "marca": "For",
+      "modelo": "Ranger",
+      "anio": 2020,
+      "version": "2.5",
+      "color": "Blanca",
+      "combustible": "Gasolina",
+      "vin": "8AFBR5AA2F6258232",
+      "km_actual": 388532,
+      "cliente_nombre": "Industria Sigrama",
+      "cliente_telefono": "8713940393",
+      "cliente_telefono_2": "8712238104",
+      "cliente_correo": "",
+      "cliente_rfc": "",
+      "cliente_direccion": "",
+      "ficha_tecnica": {
+        "aceite_tipo": "5w30",
+        "aceite_capacidad": "5 lts",
+        "presion_llantas": "45",
+        "bateria": "Duralast 48-91-dl",
+        "filtro_aire": "F35a96mf",
+        "filtro_aceite": "Gp58"
+      },
+      "servicio_actual": {
+        "id": "svc_1790018285126",
+        "folio": "A017",
+        "tipo": "Clutch",
+        "descripcion": "Se batalla al entrar velocidades",
+        "km": 388532,
+        "costo": null,
+        "tecnico": "Oscar flores",
+        "tiempo_entrega_aprox": "1 dia",
+        "fecha_inicio": "2026-09-21",
+        "estado": "recibido",
+        "actualizado": "2026-09-21",
+        "pago": {
+          "estado": "no_pagado",
+          "metodo": null
+        },
+        "orden_recepcion": {
+          "enviado": false,
+          "aceptado": false,
+          "fecha_envio": null,
+          "fecha_aceptado": null,
+          "inventario": {
+            "exteriores": {
+              "antena": "no",
+              "espejo_lateral": "no",
+              "cristales": "no",
+              "emblema": "no",
+              "tapon_ruedas": "no",
+              "molduras_completas": "no",
+              "tapon_gasolina": "no"
+            },
+            "accesorios": {
+              "gato": "no",
+              "maneral_gato": "no",
+              "llave_ruedas": "no",
+              "estuche_herramientas": "no",
+              "triangulo_seguridad": "no",
+              "llanta_refaccion": "no",
+              "extinguidor": "no"
+            },
+            "gasolina": 0,
+            "danos_notas": ""
+          }
+        },
+        "cotizacion": {
+          "enviado": false,
+          "fecha_envio": null,
+          "pdf_path": null,
+          "items": [
+            {
+              "concepto": "",
+              "cantidad": 1,
+              "costo_unitario": null
+            }
+          ],
+          "incluir_iva": true,
+          "observaciones": "",
+          "aceptado": false,
+          "fecha_aceptado": null
+        },
+        "informe_trabajo": {
+          "enviado": false,
+          "fecha_envio": null,
+          "pdf_path": null
+        },
+        "adjuntos": {
+          "recibido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "diagnostico": {
+            "fotos": [],
+            "documentos": []
+          },
+          "en_proceso": {
+            "fotos": [],
+            "documentos": []
+          },
+          "listo": {
+            "fotos": [],
+            "documentos": []
+          },
+          "recogido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "pago": {
+            "fotos": [],
+            "documentos": []
+          }
+        }
+      },
+      "servicios": []
+    },
     "X1": {
       "id": "X1",
       "foto_perfil": "uploads/X1/20260904-222721-perfil.jpg",
@@ -1441,5 +1569,5 @@
       ]
     }
   },
-  "folio_counter": 15
+  "folio_counter": 17
 }
