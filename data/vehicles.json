@@ -1627,19 +1627,19 @@
           "metodo": null
         },
         "orden_recepcion": {
-          "enviado": false,
+          "enviado": true,
           "aceptado": false,
-          "fecha_envio": null,
+          "fecha_envio": "2026-09-21",
           "fecha_aceptado": null,
           "inventario": {
             "exteriores": {
-              "antena": "no",
-              "espejo_lateral": "no",
-              "cristales": "no",
+              "antena": "si",
+              "espejo_lateral": "si",
+              "cristales": "si",
               "emblema": "no",
               "tapon_ruedas": "no",
               "molduras_completas": "no",
-              "tapon_gasolina": "no"
+              "tapon_gasolina": "si"
             },
             "accesorios": {
               "gato": "no",
@@ -1650,9 +1650,10 @@
               "llanta_refaccion": "no",
               "extinguidor": "no"
             },
-            "gasolina": 0,
-            "danos_notas": ""
-          }
+            "gasolina": 25,
+            "danos_notas": "No tiene llanta de refacción, trai un tanque de gas LP.\n\nCotizar daños externos vistos en las fotos de recepción:\nEstribo derecho\nFacia delantera \nFacia trasera"
+          },
+          "pdf_path": "uploads/X13/20260921-144923-informe-recepcion.pdf"
         },
         "cotizacion": {
           "enviado": false,
