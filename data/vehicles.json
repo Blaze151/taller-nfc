@@ -1700,7 +1700,15 @@
             "documentos": []
           },
           "diagnostico": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X13/20260921-160850-diagnostico-0-1000821455.jpg",
+              "uploads/X13/20260921-160853-diagnostico-1-1000821454.jpg",
+              "uploads/X13/20260921-160855-diagnostico-2-1000821453.jpg",
+              "uploads/X13/20260921-160941-diagnostico-3-1000821451.jpg",
+              "uploads/X13/20260921-161143-diagnostico-4-1000821449.jpg",
+              "uploads/X13/20260921-161145-diagnostico-5-1000821447.jpg",
+              "uploads/X13/20260921-161147-diagnostico-6-1000821444.jpg"
+            ],
             "documentos": []
           },
           "en_proceso": {
