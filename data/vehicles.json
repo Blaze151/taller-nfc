@@ -66,24 +66,24 @@
           "inventario": {
             "exteriores": {
               "antena": "no",
-              "espejo_lateral": "no",
-              "cristales": "no",
-              "emblema": "no",
+              "espejo_lateral": "si",
+              "cristales": "si",
+              "emblema": "si",
               "tapon_ruedas": "no",
-              "molduras_completas": "no",
-              "tapon_gasolina": "no"
+              "molduras_completas": "si",
+              "tapon_gasolina": "si"
             },
             "accesorios": {
               "gato": "no",
               "maneral_gato": "no",
               "llave_ruedas": "no",
               "estuche_herramientas": "no",
-              "triangulo_seguridad": "no",
-              "llanta_refaccion": "no",
+              "triangulo_seguridad": "si",
+              "llanta_refaccion": "si",
               "extinguidor": "no"
             },
-            "gasolina": 0,
-            "danos_notas": ""
+            "gasolina": 50,
+            "danos_notas": "Golpe fascia por el faro, caja de lado izquierdo dañada, antena quebrada, golpe puerta trasera derecha"
           }
         },
         "cotizacion": {
