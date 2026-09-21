@@ -1611,9 +1611,118 @@
         "filtro_aire": "",
         "filtro_aceite": ""
       },
-      "servicio_actual": null,
+      "servicio_actual": {
+        "id": "svc_1790019467192",
+        "folio": "A018",
+        "tipo": "Pintura General para Taxi",
+        "descripcion": "Pintura general color amarillo tráfico \nReparación de golpes estribo derecho \nAjuste de facia delantera",
+        "km": 368687,
+        "costo": null,
+        "tecnico": "Manuel",
+        "tiempo_entrega_aprox": "4 dias",
+        "fecha_inicio": "2026-09-21",
+        "estado": "recibido",
+        "actualizado": "2026-09-21",
+        "pago": {
+          "estado": "no_pagado",
+          "metodo": null
+        },
+        "orden_recepcion": {
+          "enviado": false,
+          "aceptado": false,
+          "fecha_envio": null,
+          "fecha_aceptado": null,
+          "inventario": {
+            "exteriores": {
+              "antena": "no",
+              "espejo_lateral": "no",
+              "cristales": "no",
+              "emblema": "no",
+              "tapon_ruedas": "no",
+              "molduras_completas": "no",
+              "tapon_gasolina": "no"
+            },
+            "accesorios": {
+              "gato": "no",
+              "maneral_gato": "no",
+              "llave_ruedas": "no",
+              "estuche_herramientas": "no",
+              "triangulo_seguridad": "no",
+              "llanta_refaccion": "no",
+              "extinguidor": "no"
+            },
+            "gasolina": 0,
+            "danos_notas": ""
+          }
+        },
+        "cotizacion": {
+          "enviado": false,
+          "fecha_envio": null,
+          "pdf_path": null,
+          "items": [
+            {
+              "concepto": "",
+              "cantidad": 1,
+              "costo_unitario": null
+            }
+          ],
+          "incluir_iva": true,
+          "observaciones": "",
+          "aceptado": false,
+          "fecha_aceptado": null
+        },
+        "informe_trabajo": {
+          "enviado": false,
+          "fecha_envio": null,
+          "pdf_path": null
+        },
+        "adjuntos": {
+          "recibido": {
+            "fotos": [
+              "uploads/X13/20260921-133919-recibido-0-1000821446.jpg",
+              "uploads/X13/20260921-133921-recibido-1-1000821447.jpg",
+              "uploads/X13/20260921-134045-recibido-2-1000821443.jpg",
+              "uploads/X13/20260921-134048-recibido-3-1000821444.jpg",
+              "uploads/X13/20260921-134049-recibido-4-1000821445.jpg",
+              "uploads/X13/20260921-134052-recibido-5-1000821448.jpg",
+              "uploads/X13/20260921-134054-recibido-6-1000821449.jpg",
+              "uploads/X13/20260921-134056-recibido-7-1000821450.jpg",
+              "uploads/X13/20260921-134058-recibido-8-1000821451.jpg",
+              "uploads/X13/20260921-134059-recibido-9-1000821452.jpg",
+              "uploads/X13/20260921-134102-recibido-10-1000821453.jpg",
+              "uploads/X13/20260921-134225-recibido-11-1000821454.jpg",
+              "uploads/X13/20260921-134258-recibido-12-1000821455.jpg",
+              "uploads/X13/20260921-134305-recibido-13-1000821456.jpg",
+              "uploads/X13/20260921-134307-recibido-14-1000821457.jpg",
+              "uploads/X13/20260921-134355-recibido-15-1000821458.jpg",
+              "uploads/X13/20260921-134358-recibido-16-1000821459.jpg"
+            ],
+            "documentos": []
+          },
+          "diagnostico": {
+            "fotos": [],
+            "documentos": []
+          },
+          "en_proceso": {
+            "fotos": [],
+            "documentos": []
+          },
+          "listo": {
+            "fotos": [],
+            "documentos": []
+          },
+          "recogido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "pago": {
+            "fotos": [],
+            "documentos": []
+          }
+        }
+      },
       "servicios": []
     }
   },
-  "folio_counter": 17
+  "folio_counter": 18
 }
