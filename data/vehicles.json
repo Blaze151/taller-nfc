@@ -59,9 +59,9 @@
           "metodo": null
         },
         "orden_recepcion": {
-          "enviado": false,
+          "enviado": true,
           "aceptado": false,
-          "fecha_envio": null,
+          "fecha_envio": "2026-09-21",
           "fecha_aceptado": null,
           "inventario": {
             "exteriores": {
@@ -84,7 +84,8 @@
             },
             "gasolina": 50,
             "danos_notas": "Golpe fascia por el faro, caja de lado izquierdo dañada, antena quebrada, golpe puerta trasera derecha"
-          }
+          },
+          "pdf_path": "uploads/1/20260921-132952-informe-recepcion.pdf"
         },
         "cotizacion": {
           "enviado": false,
