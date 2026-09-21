@@ -10,7 +10,6 @@
   "vehicles": {
     "1": {
       "id": "1",
-      "fecha_creacion": "2026-09-21T19:24:39.901Z",
       "foto_perfil": "uploads/1/20260921-132440-perfil.jpg",
       "documentos_vehiculo": {
         "fotos": [
@@ -52,7 +51,7 @@
         "tecnico": "Oscar flores",
         "tiempo_entrega_aprox": "1 dia",
         "fecha_inicio": "2026-09-21",
-        "estado": "recibido",
+        "estado": "diagnostico",
         "actualizado": "2026-09-21",
         "pago": {
           "estado": "no_pagado",
@@ -60,9 +59,9 @@
         },
         "orden_recepcion": {
           "enviado": true,
-          "aceptado": false,
+          "aceptado": true,
           "fecha_envio": "2026-09-21",
-          "fecha_aceptado": null,
+          "fecha_aceptado": "2026-09-21",
           "inventario": {
             "exteriores": {
               "antena": "no",
