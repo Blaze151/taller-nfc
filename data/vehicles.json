@@ -1647,8 +1647,8 @@
         "tecnico": "Manuel",
         "tiempo_entrega_aprox": "4 dias",
         "fecha_inicio": "2026-09-21",
-        "estado": "recibido",
-        "actualizado": "2026-09-21",
+        "estado": "en_proceso",
+        "actualizado": "2026-09-22",
         "pago": {
           "estado": "no_pagado",
           "metodo": null
@@ -1722,6 +1722,9 @@
           "enviado": false,
           "fecha_envio": null,
           "pdf_path": null
+        },
+        "fechas_etapa": {
+          "en_proceso": "2026-09-22T01:30:28.902Z"
         },
         "adjuntos": {
           "recibido": {
