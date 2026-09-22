@@ -1685,7 +1685,7 @@
         "cotizacion": {
           "enviado": true,
           "fecha_envio": "2026-09-22",
-          "pdf_path": "uploads/X13/20260921-191813-cotizacion.pdf",
+          "pdf_path": "uploads/X13/20260921-192132-cotizacion.pdf",
           "items": [
             {
               "concepto": "Pintura general color amarillo",
@@ -1708,18 +1708,13 @@
               "costo_unitario": 1500
             },
             {
-              "concepto": "",
-              "cantidad": 1,
-              "costo_unitario": null
-            },
-            {
-              "concepto": "",
+              "concepto": "Compresor para aire acondicionado (pendiente)",
               "cantidad": 1,
               "costo_unitario": null
             }
           ],
           "incluir_iva": false,
-          "observaciones": "",
+          "observaciones": "La moldura inferior viene junto con la moldura central..no se vende por separado.\nEsta pendiente pasar cotización del compresor del aire acondicionado con instalación y relleno de gas R134A para probar todo el sistema.",
           "aceptado": false,
           "fecha_aceptado": null
         },
