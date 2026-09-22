@@ -938,6 +938,7 @@
     },
     "X10": {
       "id": "X10",
+      "fecha_creacion": "2026-09-22T00:17:53.048Z",
       "foto_perfil": "uploads/X10/20260911-182343-perfil.jpg",
       "documentos_vehiculo": {
         "fotos": [
@@ -964,6 +965,9 @@
       "cliente_nombre": "TOTAL PARTS",
       "cliente_telefono": "8713940393",
       "cliente_telefono_2": "8712862236",
+      "cliente_correo": "",
+      "cliente_rfc": "",
+      "cliente_direccion": "",
       "ficha_tecnica": {
         "aceite_tipo": "5W30",
         "aceite_capacidad": "5 LTO",
@@ -977,9 +981,11 @@
         "folio": "A009",
         "tipo": "SERVCIO , FRENOS, LLANTAS",
         "descripcion": "SERVICIO DE MANTENIMIENTO POR KILOMETRAJE, REVISION DE FRENOS, LLANTAS",
+        "nota_interna": "",
         "km": 100221,
         "costo": null,
         "tecnico": "JAVIER VARGAS",
+        "tiempo_entrega_aprox": "",
         "fecha_inicio": "2026-09-12",
         "estado": "recibido",
         "actualizado": "2026-09-12",
@@ -1016,6 +1022,22 @@
           },
           "pdf_path": "uploads/X10/20260911-182413-informe-recepcion.pdf"
         },
+        "cotizacion": {
+          "enviado": false,
+          "fecha_envio": null,
+          "pdf_path": null,
+          "items": [
+            {
+              "concepto": "",
+              "cantidad": 1,
+              "costo_unitario": null
+            }
+          ],
+          "incluir_iva": true,
+          "observaciones": "",
+          "aceptado": false,
+          "fecha_aceptado": null
+        },
         "adjuntos": {
           "recibido": {
             "fotos": [],
@@ -1034,6 +1056,10 @@
             "documentos": []
           },
           "pago": {
+            "fotos": [],
+            "documentos": []
+          },
+          "diagnostico": {
             "fotos": [],
             "documentos": []
           }
