@@ -1641,6 +1641,7 @@
         "folio": "A018",
         "tipo": "Pintura General para Taxi",
         "descripcion": "Pintura general color amarillo tráfico \nReparación de golpes estribo derecho \nAjuste de facia delantera",
+        "nota_interna": "",
         "km": 368687,
         "costo": null,
         "tecnico": "Manuel",
@@ -1682,9 +1683,9 @@
           "pdf_path": "uploads/X13/20260921-144923-informe-recepcion.pdf"
         },
         "cotizacion": {
-          "enviado": false,
-          "fecha_envio": null,
-          "pdf_path": null,
+          "enviado": true,
+          "fecha_envio": "2026-09-22",
+          "pdf_path": "uploads/X13/20260921-191813-cotizacion.pdf",
           "items": [
             {
               "concepto": "Pintura general color amarillo",
@@ -1697,14 +1698,24 @@
               "costo_unitario": 2500
             },
             {
-              "concepto": "Tolvas loderas delanteras con instalación",
-              "cantidad": 1,
-              "costo_unitario": 2400
-            },
-            {
               "concepto": "Moldura inferior facia delantera con instalación",
               "cantidad": 1,
-              "costo_unitario": 2300
+              "costo_unitario": 1800
+            },
+            {
+              "concepto": "Tolvas loderas delanteras con instalación",
+              "cantidad": 1,
+              "costo_unitario": 1500
+            },
+            {
+              "concepto": "",
+              "cantidad": 1,
+              "costo_unitario": null
+            },
+            {
+              "concepto": "",
+              "cantidad": 1,
+              "costo_unitario": null
             }
           ],
           "incluir_iva": false,
