@@ -1685,7 +1685,7 @@
         "cotizacion": {
           "enviado": true,
           "fecha_envio": "2026-09-22",
-          "pdf_path": "uploads/X13/20260921-192132-cotizacion.pdf",
+          "pdf_path": "uploads/X13/20260921-192559-cotizacion.pdf",
           "items": [
             {
               "concepto": "Pintura general color amarillo",
@@ -1700,7 +1700,7 @@
             {
               "concepto": "Moldura inferior facia delantera con instalación",
               "cantidad": 1,
-              "costo_unitario": 1800
+              "costo_unitario": 1700
             },
             {
               "concepto": "Tolvas loderas delanteras con instalación",
@@ -1714,7 +1714,7 @@
             }
           ],
           "incluir_iva": false,
-          "observaciones": "La moldura inferior viene junto con la moldura central..no se vende por separado.\nEsta pendiente pasar cotización del compresor del aire acondicionado con instalación y relleno de gas R134A para probar todo el sistema.",
+          "observaciones": "La moldura inferior viene completa de lado izquierdo a derecho.\nEsta pendiente pasar cotización del compresor del aire acondicionado con instalación y relleno de gas R134A para probar todo el sistema.",
           "aceptado": false,
           "fecha_aceptado": null
         },
