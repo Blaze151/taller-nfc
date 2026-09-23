@@ -2189,6 +2189,13 @@
           service.adjuntos[stage].documentos.push(path);
           bumpUploadProgress();
         });
+
+        // Mismo motivo que en la subida del servicio activo: "pend" es el
+        // mismo objeto en memoria que se sigue usando mientras no se cierre
+        // la página — hay que vaciarlo o un segundo guardado en la misma
+        // sesión vuelve a subir estas mismas fotos/documentos duplicados.
+        pend.fotos.length = 0;
+        pend.documentos.length = 0;
       }
       delete service._pendingAdjuntos;
     }
@@ -2225,6 +2232,15 @@
         active.adjuntos[stage].documentos.push(path);
         bumpUploadProgress();
       });
+
+      // OJO: "pend" es el mismo objeto que svcActualPending[stage] (no una
+      // copia) — hay que vaciarlo de verdad aquí. Si no, la próxima vez que
+      // se guarde en esta misma sesión (sin recargar la página), estas
+      // mismas fotos/documentos se vuelven a subir y quedan DUPLICADAS —
+      // esto era el bug real que causaba imágenes repetidas al hacer varios
+      // guardados seguidos sin cerrar la página.
+      pend.fotos.length = 0;
+      pend.documentos.length = 0;
     }
     delete active._pendingAdjuntos;
   }
