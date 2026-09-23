@@ -1715,8 +1715,8 @@
           ],
           "incluir_iva": false,
           "observaciones": "La moldura inferior viene completa de lado izquierdo a derecho.\nEsta pendiente pasar cotización del compresor del aire acondicionado con instalación y relleno de gas R134A para probar todo el sistema.",
-          "aceptado": false,
-          "fecha_aceptado": null
+          "aceptado": true,
+          "fecha_aceptado": "2026-09-22"
         },
         "informe_trabajo": {
           "enviado": false,
@@ -1762,7 +1762,25 @@
             "documentos": []
           },
           "en_proceso": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X13/20260923-142302-en_proceso-0-1000825832.jpg",
+              "uploads/X13/20260923-142305-en_proceso-1-1000825833.jpg",
+              "uploads/X13/20260923-142307-en_proceso-2-1000825836.jpg",
+              "uploads/X13/20260923-142341-en_proceso-3-1000825835.jpg",
+              "uploads/X13/20260923-142343-en_proceso-4-1000825834.jpg",
+              "uploads/X13/20260923-142346-en_proceso-5-1000825837.jpg",
+              "uploads/X13/20260923-142347-en_proceso-6-1000825838.jpg",
+              "uploads/X13/20260923-142350-en_proceso-7-1000825839.jpg",
+              "uploads/X13/20260923-142352-en_proceso-8-1000825840.jpg",
+              "uploads/X13/20260923-142353-en_proceso-9-1000826003.jpg",
+              "uploads/X13/20260923-142355-en_proceso-10-1000826004.jpg",
+              "uploads/X13/20260923-142357-en_proceso-11-1000826005.jpg",
+              "uploads/X13/20260923-142359-en_proceso-12-1000826006.jpg",
+              "uploads/X13/20260923-142401-en_proceso-13-1000826007.jpg",
+              "uploads/X13/20260923-142403-en_proceso-14-1000826008.jpg",
+              "uploads/X13/20260923-142405-en_proceso-15-1000826035.jpg",
+              "uploads/X13/20260923-142407-en_proceso-16-1000826036.jpg"
+            ],
             "documentos": []
           },
           "listo": {
