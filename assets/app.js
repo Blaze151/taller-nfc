@@ -27,6 +27,9 @@
       taller_generico: "Taller Mecánico",
       ficha_digital_servicio: "Ficha digital de servicio",
       estado_recibido_label: "Recibido", estado_recibido_corto: "Recién llegado",
+      pdf_hoja_recepcion_label: "Hoja de recepción (PDF)",
+      pdf_cotizacion_label: "Cotización (PDF)",
+      pdf_informe_trabajo_label: "Informe de trabajo (PDF)",
       estado_diagnostico_label: "Diagnóstico", estado_diagnostico_corto: "Diagnóstico",
       estado_en_proceso_label: "En proceso", estado_en_proceso_corto: "En proceso",
       estado_listo_label: "Listo para recoger", estado_listo_corto: "Listo",
@@ -97,6 +100,9 @@
       taller_generico: "Auto Repair Shop",
       ficha_digital_servicio: "Digital service record",
       estado_recibido_label: "Received", estado_recibido_corto: "Just arrived",
+      pdf_hoja_recepcion_label: "Reception form (PDF)",
+      pdf_cotizacion_label: "Quote (PDF)",
+      pdf_informe_trabajo_label: "Work report (PDF)",
       estado_diagnostico_label: "Diagnosis", estado_diagnostico_corto: "Diagnosis",
       estado_en_proceso_label: "In progress", estado_en_proceso_corto: "In progress",
       estado_listo_label: "Ready for pickup", estado_listo_corto: "Ready",
@@ -490,16 +496,35 @@
     return html;
   }
 
+  // El PDF que corresponde a cada etapa (si ya se generó y envió) — se
+  // muestra dentro del desplegable de esa misma etapa, junto a sus fotos.
+  function pdfInfoForStage(activo, stage) {
+    if (stage === "recibido" && activo.orden_recepcion && activo.orden_recepcion.pdf_path) {
+      return { path: activo.orden_recepcion.pdf_path, labelKey: "pdf_hoja_recepcion_label" };
+    }
+    if (stage === "diagnostico" && activo.cotizacion && activo.cotizacion.pdf_path) {
+      return { path: activo.cotizacion.pdf_path, labelKey: "pdf_cotizacion_label" };
+    }
+    if (stage === "recogido" && activo.informe_trabajo && activo.informe_trabajo.pdf_path) {
+      return { path: activo.informe_trabajo.pdf_path, labelKey: "pdf_informe_trabajo_label" };
+    }
+    return null;
+  }
+
   function renderStageSection(activo, stage) {
     const g = (activo.adjuntos && activo.adjuntos[stage]) || { fotos: [], documentos: [] };
     const attachHtml = renderAttachmentsGroup(g.fotos, g.documentos);
-    if (!attachHtml) return "";
+    const pdfInfo = pdfInfoForStage(activo, stage);
+    const pdfHtml = pdfInfo
+      ? `<a class="doc-chip" href="${esc(rawUrl(pdfInfo.path))}" target="_blank" rel="noopener">📄 ${esc(t(pdfInfo.labelKey))}</a>`
+      : "";
+    if (!attachHtml && !pdfHtml) return "";
     const info = ESTADOS_SERVICIO()[stage] || PAGO_INFO();
-    const count = (g.fotos || []).length + (g.documentos || []).length;
+    const count = (g.fotos || []).length + (g.documentos || []).length + (pdfInfo ? 1 : 0);
     return `
       <details class="doc-dropdown" style="margin-top:12px;">
         <summary>${info.icon} ${esc(info.label)} (${count})</summary>
-        <div class="doc-dropdown-body">${attachHtml}</div>
+        <div class="doc-dropdown-body">${pdfHtml}${attachHtml}</div>
       </details>`;
   }
 
