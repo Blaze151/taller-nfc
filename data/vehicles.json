@@ -1790,8 +1790,8 @@
         "tecnico": "Manuel",
         "tiempo_entrega_aprox": "4 dias",
         "fecha_inicio": "2026-09-21",
-        "estado": "en_proceso",
-        "actualizado": "2026-09-22",
+        "estado": "recogido",
+        "actualizado": "2026-09-28",
         "pago": {
           "estado": "pagado",
           "metodo": "efectivo"
@@ -1872,7 +1872,8 @@
           "pdf_path": "uploads/X13/20260928-121216-informe-trabajo.pdf"
         },
         "fechas_etapa": {
-          "en_proceso": "2026-09-22T01:30:28.902Z"
+          "en_proceso": "2026-09-22T01:30:28.902Z",
+          "recogido": "2026-09-28T18:13:11.495Z"
         },
         "adjuntos": {
           "recibido": {
