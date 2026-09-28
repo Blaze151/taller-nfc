@@ -1793,8 +1793,8 @@
         "estado": "en_proceso",
         "actualizado": "2026-09-22",
         "pago": {
-          "estado": "no_pagado",
-          "metodo": null
+          "estado": "pagado",
+          "metodo": "efectivo"
         },
         "orden_recepcion": {
           "enviado": true,
