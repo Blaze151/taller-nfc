@@ -1854,6 +1854,11 @@
               "concepto": "Compresor para aire acondicionado (pendiente)",
               "cantidad": 1,
               "costo_unitario": null
+            },
+            {
+              "concepto": "Emblema HYUNDAI facia delantera",
+              "cantidad": 1,
+              "costo_unitario": 200
             }
           ],
           "incluir_iva": false,
