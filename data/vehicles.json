@@ -191,26 +191,26 @@
         "tecnico": "OSCAR FLORES",
         "tiempo_entrega_aprox": "2 dias",
         "fecha_inicio": "2026-09-28",
-        "estado": "recibido",
+        "estado": "diagnostico",
         "actualizado": "2026-09-28",
         "pago": {
           "estado": "no_pagado",
           "metodo": null
         },
         "orden_recepcion": {
-          "enviado": false,
+          "enviado": true,
           "aceptado": false,
-          "fecha_envio": null,
+          "fecha_envio": "2026-09-28",
           "fecha_aceptado": null,
           "inventario": {
             "exteriores": {
-              "antena": "no",
-              "espejo_lateral": "no",
-              "cristales": "no",
-              "emblema": "no",
+              "antena": "si",
+              "espejo_lateral": "si",
+              "cristales": "si",
+              "emblema": "si",
               "tapon_ruedas": "no",
-              "molduras_completas": "no",
-              "tapon_gasolina": "no"
+              "molduras_completas": "si",
+              "tapon_gasolina": "si"
             },
             "accesorios": {
               "gato": "no",
@@ -218,12 +218,13 @@
               "llave_ruedas": "no",
               "estuche_herramientas": "no",
               "triangulo_seguridad": "no",
-              "llanta_refaccion": "no",
+              "llanta_refaccion": "si",
               "extinguidor": "no"
             },
-            "gasolina": 0,
-            "danos_notas": ""
-          }
+            "gasolina": 25,
+            "danos_notas": "Cofre no cierra"
+          },
+          "pdf_path": "uploads/11/20260928-120937-informe-recepcion.pdf"
         },
         "cotizacion": {
           "enviado": false,
@@ -247,7 +248,8 @@
           "pdf_path": null
         },
         "fechas_etapa": {
-          "recibido": "2026-09-28T17:55:37.584Z"
+          "recibido": "2026-09-28T17:55:37.584Z",
+          "diagnostico": "2026-09-28T18:09:41.129Z"
         },
         "adjuntos": {
           "recibido": {
