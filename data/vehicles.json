@@ -151,7 +151,9 @@
       "fecha_creacion": "2026-09-28T18:05:40.770Z",
       "foto_perfil": "uploads/11/20260928-120558-perfil.jpg",
       "documentos_vehiculo": {
-        "fotos": [],
+        "fotos": [
+          "uploads/11/20260928-120720-vdoc-0-17906188115146573301972542413669.jpg"
+        ],
         "documentos": []
       },
       "placas": "RXK-777A",
@@ -160,7 +162,7 @@
       "modelo": "Beat",
       "anio": 2019,
       "version": "1.2",
-      "color": "Blanco con qmarillo",
+      "color": "Blanco con amarillo",
       "combustible": "Gasolina",
       "vin": "MA6CA6CDXKT016137",
       "km_actual": 269003,
