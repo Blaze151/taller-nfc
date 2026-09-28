@@ -1867,9 +1867,9 @@
           "fecha_aceptado": "2026-09-22"
         },
         "informe_trabajo": {
-          "enviado": false,
-          "fecha_envio": null,
-          "pdf_path": null
+          "enviado": true,
+          "fecha_envio": "2026-09-28",
+          "pdf_path": "uploads/X13/20260928-121216-informe-trabajo.pdf"
         },
         "fechas_etapa": {
           "en_proceso": "2026-09-22T01:30:28.902Z"
@@ -1932,7 +1932,9 @@
             "documentos": []
           },
           "listo": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X13/20260928-121246-listo-0-1000826035.jpg"
+            ],
             "documentos": []
           },
           "recogido": {
