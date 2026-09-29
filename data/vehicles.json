@@ -1949,6 +1949,41 @@
           }
         }
       ]
+    },
+    "X14": {
+      "id": "X14",
+      "fecha_creacion": "2026-09-29T21:40:20.109Z",
+      "foto_perfil": "uploads/X14/20260929-154020-perfil.jpg",
+      "documentos_vehiculo": {
+        "fotos": [],
+        "documentos": []
+      },
+      "placas": "",
+      "numero_unidad": "",
+      "marca": "Volkswagen",
+      "modelo": "Jetta SE",
+      "anio": 2012,
+      "version": "SE 2.5 Lts",
+      "color": "Negro",
+      "combustible": "Gasolina",
+      "vin": "3VWDX7AJ7CM451714",
+      "km_actual": null,
+      "cliente_nombre": "Alejandro Juarez",
+      "cliente_telefono": "",
+      "cliente_telefono_2": "8711044146",
+      "cliente_correo": "",
+      "cliente_rfc": "",
+      "cliente_direccion": "",
+      "ficha_tecnica": {
+        "aceite_tipo": "",
+        "aceite_capacidad": "",
+        "presion_llantas": "",
+        "bateria": "",
+        "filtro_aire": "",
+        "filtro_aceite": ""
+      },
+      "servicio_actual": null,
+      "servicios": []
     }
   },
   "folio_counter": 19
