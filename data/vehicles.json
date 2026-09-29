@@ -2028,9 +2028,9 @@
           }
         },
         "cotizacion": {
-          "enviado": false,
-          "fecha_envio": null,
-          "pdf_path": null,
+          "enviado": true,
+          "fecha_envio": "2026-09-29",
+          "pdf_path": "uploads/X14/20260929-155627-cotizacion.pdf",
           "items": [
             {
               "concepto": "Facia trasera nueva",
