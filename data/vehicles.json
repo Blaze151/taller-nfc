@@ -2030,17 +2030,12 @@
         "cotizacion": {
           "enviado": true,
           "fecha_envio": "2026-09-29",
-          "pdf_path": "uploads/X14/20260929-155850-cotizacion.pdf",
+          "pdf_path": "uploads/X14/20260929-175624-cotizacion.pdf",
           "items": [
             {
               "concepto": "Facia trasera nueva",
               "cantidad": 1,
               "costo_unitario": 2500
-            },
-            {
-              "concepto": "Reparación de facia delantera lado izquierdo",
-              "cantidad": 1,
-              "costo_unitario": 1600
             },
             {
               "concepto": "Hojalatería y pintura en costado izquierdo, puerta trasera, polvera izquierda",
@@ -2050,12 +2045,17 @@
             {
               "concepto": "Reparación de Rin de aluminio",
               "cantidad": 1,
-              "costo_unitario": 2800
+              "costo_unitario": 2400
             },
             {
               "concepto": "Llanta nueva",
               "cantidad": 1,
               "costo_unitario": 3050
+            },
+            {
+              "concepto": "Instalación de facia nueva trasera con acabado de pintura",
+              "cantidad": 1,
+              "costo_unitario": 2000
             }
           ],
           "incluir_iva": true,
