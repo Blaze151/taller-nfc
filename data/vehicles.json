@@ -2148,133 +2148,133 @@
         "filtro_aire": "",
         "filtro_aceite": ""
       },
-      "servicio_actual": {
-        "id": "svc_1791060020008",
-        "folio": "A021",
-        "tipo": "Afinación",
-        "descripcion": "Afinación mayor: bujías, filtros (aire, aceite, gasolina), revisión de niveles y puntos de seguridad.",
-        "nota_interna": "",
-        "km": 186512,
-        "costo": 2900,
-        "tecnico": "Sergio G",
-        "tiempo_entrega_aprox": "Express",
-        "fecha_inicio": "2026-10-03",
-        "estado": "en_proceso",
-        "actualizado": "2026-10-03",
-        "pago": {
-          "estado": "pagado",
-          "metodo": "transferencia"
-        },
-        "orden_recepcion": {
-          "enviado": true,
-          "aceptado": false,
-          "fecha_envio": "2026-10-03",
-          "fecha_aceptado": null,
-          "inventario": {
-            "exteriores": {
-              "antena": "si",
-              "espejo_lateral": "si",
-              "cristales": "si",
-              "emblema": "si",
-              "tapon_ruedas": "si",
-              "molduras_completas": "si",
-              "tapon_gasolina": "si"
-            },
-            "accesorios": {
-              "gato": "si",
-              "maneral_gato": "si",
-              "llave_ruedas": "si",
-              "estuche_herramientas": "si",
-              "triangulo_seguridad": "si",
-              "llanta_refaccion": "si",
-              "extinguidor": "si"
-            },
-            "gasolina": 25,
-            "danos_notas": ""
-          },
-          "pdf_path": "uploads/X15/20261003-165802-informe-recepcion.pdf"
-        },
-        "cotizacion": {
-          "enviado": true,
-          "fecha_envio": "2026-10-03",
-          "pdf_path": "uploads/X15/20261003-155626-cotizacion.pdf",
-          "items": [
-            {
-              "concepto": "Afinación mayor: bujías, filtros (aire, aceite, gasolina), revisión de niveles y puntos de seguridad.",
-              "cantidad": 1,
-              "costo_unitario": 2900
-            }
-          ],
-          "incluir_iva": false,
-          "observaciones": "Se checó la batería y marca que es del mes 7 del año 2024. Ya tiene más de dos años y le toca reemplazo pronto.",
-          "aceptado": true,
-          "fecha_aceptado": "2026-10-03"
-        },
-        "informe_trabajo": {
-          "enviado": true,
-          "fecha_envio": "2026-10-03",
-          "pdf_path": "uploads/X15/20261003-171354-informe-trabajo.pdf"
-        },
-        "fechas_etapa": {
-          "recibido": "2026-10-03T20:40:20.008Z",
-          "diagnostico": "2026-10-03T22:56:40.646Z",
-          "en_proceso": "2026-10-03T23:11:08.784Z"
-        },
-        "adjuntos": {
-          "recibido": {
-            "fotos": [
-              "uploads/X15/20261003-152624-recibido-0-20261003_143455.jpg"
-            ],
-            "documentos": []
-          },
-          "diagnostico": {
-            "fotos": [
-              "uploads/X15/20261003-155538-diagnostico-0-IMG-20261003-WA0025.jpg",
-              "uploads/X15/20261003-155540-diagnostico-1-IMG-20261003-WA0023.jpg",
-              "uploads/X15/20261003-155542-diagnostico-2-IMG-20261003-WA0022.jpg",
-              "uploads/X15/20261003-155543-diagnostico-3-IMG-20261003-WA0020.jpg",
-              "uploads/X15/20261003-155544-diagnostico-4-IMG-20261003-WA0019.jpg",
-              "uploads/X15/20261003-155546-diagnostico-5-IMG-20261003-WA0021.jpg",
-              "uploads/X15/20261003-155547-diagnostico-6-IMG-20261003-WA0010.jpg",
-              "uploads/X15/20261003-155549-diagnostico-7-IMG-20261003-WA0018.jpg",
-              "uploads/X15/20261003-155550-diagnostico-8-IMG-20261003-WA0016.jpg",
-              "uploads/X15/20261003-155552-diagnostico-9-IMG-20261003-WA0015.jpg",
-              "uploads/X15/20261003-155553-diagnostico-10-IMG-20261003-WA0014.jpg",
-              "uploads/X15/20261003-155555-diagnostico-11-20261003_143455.jpg",
-              "uploads/X15/20261003-155556-diagnostico-12-20261003_143401.jpg"
-            ],
-            "documentos": []
-          },
-          "en_proceso": {
-            "fotos": [
-              "uploads/X15/20261003-170917-en_proceso-0-1000852532.jpg",
-              "uploads/X15/20261003-170923-en_proceso-1-1000852533.jpg",
-              "uploads/X15/20261003-170929-en_proceso-2-1000852591.jpg",
-              "uploads/X15/20261003-171035-en_proceso-3-1000852592.jpg",
-              "uploads/X15/20261003-171039-en_proceso-4-1000852637.jpg",
-              "uploads/X15/20261003-171048-en_proceso-5-1000852639.jpg",
-              "uploads/X15/20261003-171050-en_proceso-6-1000852640.jpg",
-              "uploads/X15/20261003-171052-en_proceso-7-1000852641.jpg"
-            ],
-            "documentos": []
-          },
-          "listo": {
-            "fotos": [
-              "uploads/X15/20261003-171054-listo-0-1000852976.jpg"
-            ],
-            "documentos": []
-          },
-          "recogido": {
-            "fotos": [],
-            "documentos": []
-          },
+      "servicio_actual": null,
+      "servicios": [
+        {
+          "fecha": "2026-10-03",
+          "folio": "A021",
+          "tipo": "Afinación",
+          "descripcion": "Afinación mayor: bujías, filtros (aire, aceite, gasolina), revisión de niveles y puntos de seguridad.",
+          "nota_interna": "",
+          "km": 186512,
+          "costo": 2900,
+          "tecnico": "Sergio G",
+          "tiempo_entrega_aprox": "Express",
+          "fecha_inicio": "2026-10-03",
           "pago": {
-            "fotos": [],
-            "documentos": []
+            "estado": "pagado",
+            "metodo": "transferencia"
+          },
+          "orden_recepcion": {
+            "enviado": true,
+            "aceptado": false,
+            "fecha_envio": "2026-10-03",
+            "fecha_aceptado": null,
+            "inventario": {
+              "exteriores": {
+                "antena": "si",
+                "espejo_lateral": "si",
+                "cristales": "si",
+                "emblema": "si",
+                "tapon_ruedas": "si",
+                "molduras_completas": "si",
+                "tapon_gasolina": "si"
+              },
+              "accesorios": {
+                "gato": "si",
+                "maneral_gato": "si",
+                "llave_ruedas": "si",
+                "estuche_herramientas": "si",
+                "triangulo_seguridad": "si",
+                "llanta_refaccion": "si",
+                "extinguidor": "si"
+              },
+              "gasolina": 25,
+              "danos_notas": ""
+            },
+            "pdf_path": "uploads/X15/20261003-165802-informe-recepcion.pdf"
+          },
+          "cotizacion": {
+            "enviado": true,
+            "fecha_envio": "2026-10-03",
+            "pdf_path": "uploads/X15/20261003-155626-cotizacion.pdf",
+            "items": [
+              {
+                "concepto": "Afinación mayor: bujías, filtros (aire, aceite, gasolina), revisión de niveles y puntos de seguridad.",
+                "cantidad": 1,
+                "costo_unitario": 2900
+              }
+            ],
+            "incluir_iva": false,
+            "observaciones": "Se checó la batería y marca que es del mes 7 del año 2024. Ya tiene más de dos años y le toca reemplazo pronto.",
+            "aceptado": true,
+            "fecha_aceptado": "2026-10-03"
+          },
+          "informe_trabajo": {
+            "enviado": true,
+            "fecha_envio": "2026-10-03",
+            "pdf_path": "uploads/X15/20261003-171354-informe-trabajo.pdf"
+          },
+          "fechas_etapa": {
+            "recibido": "2026-10-03T20:40:20.008Z",
+            "diagnostico": "2026-10-03T22:56:40.646Z",
+            "en_proceso": "2026-10-03T23:11:08.784Z"
+          },
+          "adjuntos": {
+            "recibido": {
+              "fotos": [
+                "uploads/X15/20261003-152624-recibido-0-20261003_143455.jpg"
+              ],
+              "documentos": []
+            },
+            "diagnostico": {
+              "fotos": [
+                "uploads/X15/20261003-155538-diagnostico-0-IMG-20261003-WA0025.jpg",
+                "uploads/X15/20261003-155540-diagnostico-1-IMG-20261003-WA0023.jpg",
+                "uploads/X15/20261003-155542-diagnostico-2-IMG-20261003-WA0022.jpg",
+                "uploads/X15/20261003-155543-diagnostico-3-IMG-20261003-WA0020.jpg",
+                "uploads/X15/20261003-155544-diagnostico-4-IMG-20261003-WA0019.jpg",
+                "uploads/X15/20261003-155546-diagnostico-5-IMG-20261003-WA0021.jpg",
+                "uploads/X15/20261003-155547-diagnostico-6-IMG-20261003-WA0010.jpg",
+                "uploads/X15/20261003-155549-diagnostico-7-IMG-20261003-WA0018.jpg",
+                "uploads/X15/20261003-155550-diagnostico-8-IMG-20261003-WA0016.jpg",
+                "uploads/X15/20261003-155552-diagnostico-9-IMG-20261003-WA0015.jpg",
+                "uploads/X15/20261003-155553-diagnostico-10-IMG-20261003-WA0014.jpg",
+                "uploads/X15/20261003-155555-diagnostico-11-20261003_143455.jpg",
+                "uploads/X15/20261003-155556-diagnostico-12-20261003_143401.jpg"
+              ],
+              "documentos": []
+            },
+            "en_proceso": {
+              "fotos": [
+                "uploads/X15/20261003-170917-en_proceso-0-1000852532.jpg",
+                "uploads/X15/20261003-170923-en_proceso-1-1000852533.jpg",
+                "uploads/X15/20261003-170929-en_proceso-2-1000852591.jpg",
+                "uploads/X15/20261003-171035-en_proceso-3-1000852592.jpg",
+                "uploads/X15/20261003-171039-en_proceso-4-1000852637.jpg",
+                "uploads/X15/20261003-171048-en_proceso-5-1000852639.jpg",
+                "uploads/X15/20261003-171050-en_proceso-6-1000852640.jpg",
+                "uploads/X15/20261003-171052-en_proceso-7-1000852641.jpg"
+              ],
+              "documentos": []
+            },
+            "listo": {
+              "fotos": [
+                "uploads/X15/20261003-171054-listo-0-1000852976.jpg"
+              ],
+              "documentos": []
+            },
+            "recogido": {
+              "fotos": [],
+              "documentos": []
+            },
+            "pago": {
+              "fotos": [],
+              "documentos": []
+            }
           }
         }
-      },
-      "servicios": []
+      ]
     },
     "X16": {
       "id": "X16",
