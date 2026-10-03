@@ -2194,9 +2194,9 @@
           }
         },
         "cotizacion": {
-          "enviado": false,
-          "fecha_envio": null,
-          "pdf_path": null,
+          "enviado": true,
+          "fecha_envio": "2026-10-03",
+          "pdf_path": "uploads/X15/20261003-152636-cotizacion.pdf",
           "items": [
             {
               "concepto": "Afinación mayor: bujías, filtros (aire, aceite, gasolina), revisión de niveles y puntos de seguridad.",
