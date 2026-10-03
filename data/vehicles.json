@@ -2245,11 +2245,22 @@
             "documentos": []
           },
           "en_proceso": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X15/20261003-170917-en_proceso-0-1000852532.jpg",
+              "uploads/X15/20261003-170923-en_proceso-1-1000852533.jpg",
+              "uploads/X15/20261003-170929-en_proceso-2-1000852591.jpg",
+              "uploads/X15/20261003-171035-en_proceso-3-1000852592.jpg",
+              "uploads/X15/20261003-171039-en_proceso-4-1000852637.jpg",
+              "uploads/X15/20261003-171048-en_proceso-5-1000852639.jpg",
+              "uploads/X15/20261003-171050-en_proceso-6-1000852640.jpg",
+              "uploads/X15/20261003-171052-en_proceso-7-1000852641.jpg"
+            ],
             "documentos": []
           },
           "listo": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X15/20261003-171054-listo-0-1000852976.jpg"
+            ],
             "documentos": []
           },
           "recogido": {
