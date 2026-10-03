@@ -2225,7 +2225,21 @@
             "documentos": []
           },
           "diagnostico": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X15/20261003-155538-diagnostico-0-IMG-20261003-WA0025.jpg",
+              "uploads/X15/20261003-155540-diagnostico-1-IMG-20261003-WA0023.jpg",
+              "uploads/X15/20261003-155542-diagnostico-2-IMG-20261003-WA0022.jpg",
+              "uploads/X15/20261003-155543-diagnostico-3-IMG-20261003-WA0020.jpg",
+              "uploads/X15/20261003-155544-diagnostico-4-IMG-20261003-WA0019.jpg",
+              "uploads/X15/20261003-155546-diagnostico-5-IMG-20261003-WA0021.jpg",
+              "uploads/X15/20261003-155547-diagnostico-6-IMG-20261003-WA0010.jpg",
+              "uploads/X15/20261003-155549-diagnostico-7-IMG-20261003-WA0018.jpg",
+              "uploads/X15/20261003-155550-diagnostico-8-IMG-20261003-WA0016.jpg",
+              "uploads/X15/20261003-155552-diagnostico-9-IMG-20261003-WA0015.jpg",
+              "uploads/X15/20261003-155553-diagnostico-10-IMG-20261003-WA0014.jpg",
+              "uploads/X15/20261003-155555-diagnostico-11-20261003_143455.jpg",
+              "uploads/X15/20261003-155556-diagnostico-12-20261003_143401.jpg"
+            ],
             "documentos": []
           },
           "en_proceso": {
