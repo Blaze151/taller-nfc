@@ -2159,7 +2159,7 @@
         "tecnico": "Sergio G",
         "tiempo_entrega_aprox": "Express",
         "fecha_inicio": "2026-10-03",
-        "estado": "diagnostico",
+        "estado": "en_proceso",
         "actualizado": "2026-10-03",
         "pago": {
           "estado": "no_pagado",
@@ -2207,8 +2207,8 @@
           ],
           "incluir_iva": false,
           "observaciones": "",
-          "aceptado": false,
-          "fecha_aceptado": null
+          "aceptado": true,
+          "fecha_aceptado": "2026-10-03"
         },
         "informe_trabajo": {
           "enviado": false,
@@ -2217,7 +2217,8 @@
         },
         "fechas_etapa": {
           "recibido": "2026-10-03T20:40:20.008Z",
-          "diagnostico": "2026-10-03T22:56:40.646Z"
+          "diagnostico": "2026-10-03T22:56:40.646Z",
+          "en_proceso": "2026-10-03T23:11:08.784Z"
         },
         "adjuntos": {
           "recibido": {
