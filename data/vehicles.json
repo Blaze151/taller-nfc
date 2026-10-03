@@ -2343,18 +2343,18 @@
           "pdf_path": "uploads/X16/20261003-165322-informe-recepcion.pdf"
         },
         "cotizacion": {
-          "enviado": false,
-          "fecha_envio": null,
-          "pdf_path": null,
+          "enviado": true,
+          "fecha_envio": "2026-10-03",
+          "pdf_path": "uploads/X16/20261003-170051-cotizacion.pdf",
           "items": [
             {
-              "concepto": "",
+              "concepto": "Afinación motor a gasolina cuatro cilindros 2.0 litros",
               "cantidad": 1,
-              "costo_unitario": null
+              "costo_unitario": 2900
             }
           ],
-          "incluir_iva": true,
-          "observaciones": "",
+          "incluir_iva": false,
+          "observaciones": "Revisión de puntos de seguridad y niveles",
           "aceptado": false,
           "fecha_aceptado": null
         },
@@ -2377,7 +2377,19 @@
             "documentos": []
           },
           "diagnostico": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X16/20261003-170118-diagnostico-0-1000852515.jpg",
+              "uploads/X16/20261003-170120-diagnostico-1-1000852516.jpg",
+              "uploads/X16/20261003-170123-diagnostico-2-1000852517.jpg",
+              "uploads/X16/20261003-170125-diagnostico-3-1000852527.jpg",
+              "uploads/X16/20261003-170221-diagnostico-4-1000852528.jpg",
+              "uploads/X16/20261003-170230-diagnostico-5-1000852531.jpg",
+              "uploads/X16/20261003-170233-diagnostico-6-1000852532.jpg",
+              "uploads/X16/20261003-170237-diagnostico-7-1000852534.jpg",
+              "uploads/X16/20261003-170239-diagnostico-8-1000852535.jpg",
+              "uploads/X16/20261003-170241-diagnostico-9-1000852591.jpg",
+              "uploads/X16/20261003-170244-diagnostico-10-1000852592.jpg"
+            ],
             "documentos": []
           },
           "en_proceso": {
