@@ -2261,6 +2261,41 @@
         }
       },
       "servicios": []
+    },
+    "X16": {
+      "id": "X16",
+      "fecha_creacion": "2026-10-03T22:49:48.017Z",
+      "foto_perfil": null,
+      "documentos_vehiculo": {
+        "fotos": [],
+        "documentos": []
+      },
+      "placas": "GDJ-621-D",
+      "numero_unidad": "",
+      "marca": "KIA",
+      "modelo": "FORTE",
+      "anio": 2012,
+      "version": "4 cil 2.0 lts",
+      "color": "Plata",
+      "combustible": "Gasolina",
+      "vin": "3KPF14BD6LE200701",
+      "km_actual": 69606,
+      "cliente_nombre": "Denisse Martínez",
+      "cliente_telefono": "8717695573",
+      "cliente_telefono_2": "8717361589",
+      "cliente_correo": "",
+      "cliente_rfc": "",
+      "cliente_direccion": "",
+      "ficha_tecnica": {
+        "aceite_tipo": "",
+        "aceite_capacidad": "",
+        "presion_llantas": "",
+        "bateria": "",
+        "filtro_aire": "",
+        "filtro_aceite": ""
+      },
+      "servicio_actual": null,
+      "servicios": []
     }
   },
   "folio_counter": 21
