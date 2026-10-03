@@ -2115,7 +2115,139 @@
         }
       },
       "servicios": []
+    },
+    "X15": {
+      "id": "X15",
+      "fecha_creacion": "2026-10-03T21:26:24.442Z",
+      "foto_perfil": "uploads/X15/20261003-152626-perfil.jpg",
+      "documentos_vehiculo": {
+        "fotos": [],
+        "documentos": []
+      },
+      "placas": "FDP684C",
+      "numero_unidad": "",
+      "marca": "Mazda",
+      "modelo": "6",
+      "anio": null,
+      "version": "",
+      "color": "",
+      "combustible": "Gasolina",
+      "vin": "JM1GJ1U33E1108913",
+      "km_actual": 186512,
+      "cliente_nombre": "Brayam rocha",
+      "cliente_telefono": "8721193518",
+      "cliente_telefono_2": "",
+      "cliente_correo": "",
+      "cliente_rfc": "",
+      "cliente_direccion": "",
+      "ficha_tecnica": {
+        "aceite_tipo": "",
+        "aceite_capacidad": "",
+        "presion_llantas": "",
+        "bateria": "",
+        "filtro_aire": "",
+        "filtro_aceite": ""
+      },
+      "servicio_actual": {
+        "id": "svc_1791060020008",
+        "folio": "A021",
+        "tipo": "Afinación",
+        "descripcion": "Afinación mayor: bujías, filtros (aire, aceite, gasolina), revisión de niveles y puntos de seguridad.",
+        "nota_interna": "",
+        "km": 186512,
+        "costo": 2900,
+        "tecnico": "Sergio G",
+        "tiempo_entrega_aprox": "Express",
+        "fecha_inicio": "2026-10-03",
+        "estado": "recibido",
+        "actualizado": "2026-10-03",
+        "pago": {
+          "estado": "no_pagado",
+          "metodo": null
+        },
+        "orden_recepcion": {
+          "enviado": false,
+          "aceptado": false,
+          "fecha_envio": null,
+          "fecha_aceptado": null,
+          "inventario": {
+            "exteriores": {
+              "antena": "no",
+              "espejo_lateral": "no",
+              "cristales": "no",
+              "emblema": "no",
+              "tapon_ruedas": "no",
+              "molduras_completas": "no",
+              "tapon_gasolina": "no"
+            },
+            "accesorios": {
+              "gato": "no",
+              "maneral_gato": "no",
+              "llave_ruedas": "no",
+              "estuche_herramientas": "no",
+              "triangulo_seguridad": "no",
+              "llanta_refaccion": "no",
+              "extinguidor": "no"
+            },
+            "gasolina": 0,
+            "danos_notas": ""
+          }
+        },
+        "cotizacion": {
+          "enviado": false,
+          "fecha_envio": null,
+          "pdf_path": null,
+          "items": [
+            {
+              "concepto": "Afinación mayor: bujías, filtros (aire, aceite, gasolina), revisión de niveles y puntos de seguridad.",
+              "cantidad": 1,
+              "costo_unitario": 2900
+            }
+          ],
+          "incluir_iva": false,
+          "observaciones": "",
+          "aceptado": false,
+          "fecha_aceptado": null
+        },
+        "informe_trabajo": {
+          "enviado": false,
+          "fecha_envio": null,
+          "pdf_path": null
+        },
+        "fechas_etapa": {
+          "recibido": "2026-10-03T20:40:20.008Z"
+        },
+        "adjuntos": {
+          "recibido": {
+            "fotos": [
+              "uploads/X15/20261003-152624-recibido-0-20261003_143455.jpg"
+            ],
+            "documentos": []
+          },
+          "diagnostico": {
+            "fotos": [],
+            "documentos": []
+          },
+          "en_proceso": {
+            "fotos": [],
+            "documentos": []
+          },
+          "listo": {
+            "fotos": [],
+            "documentos": []
+          },
+          "recogido": {
+            "fotos": [],
+            "documentos": []
+          },
+          "pago": {
+            "fotos": [],
+            "documentos": []
+          }
+        }
+      },
+      "servicios": []
     }
   },
-  "folio_counter": 20
+  "folio_counter": 21
 }
