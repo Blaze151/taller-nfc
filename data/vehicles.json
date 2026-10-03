@@ -2162,7 +2162,7 @@
         "estado": "en_proceso",
         "actualizado": "2026-10-03",
         "pago": {
-          "estado": "no_pagado",
+          "estado": "pagado",
           "metodo": "transferencia"
         },
         "orden_recepcion": {
@@ -2211,9 +2211,9 @@
           "fecha_aceptado": "2026-10-03"
         },
         "informe_trabajo": {
-          "enviado": false,
-          "fecha_envio": null,
-          "pdf_path": null
+          "enviado": true,
+          "fecha_envio": "2026-10-03",
+          "pdf_path": "uploads/X15/20261003-171354-informe-trabajo.pdf"
         },
         "fechas_etapa": {
           "recibido": "2026-10-03T20:40:20.008Z",
