@@ -2296,136 +2296,136 @@
         "filtro_aire": "",
         "filtro_aceite": ""
       },
-      "servicio_actual": {
-        "id": "svc_1791067818080",
-        "folio": "A022",
-        "tipo": "Afinación",
-        "descripcion": "Afinación motor a gasolina 4 cilindros, incluye cambio de aceite sintético 5w 30, 4 bujías, filtro aceite, filtro aire, relleno anticongelante, revisión de niveles",
-        "nota_interna": "",
-        "km": 69606,
-        "costo": 2900,
-        "tecnico": "Sergio/Antonio",
-        "tiempo_entrega_aprox": "Mismo Día Express",
-        "fecha_inicio": "2026-10-03",
-        "estado": "diagnostico",
-        "actualizado": "2026-10-03",
-        "pago": {
-          "estado": "no_pagado",
-          "metodo": "transferencia"
-        },
-        "orden_recepcion": {
-          "enviado": true,
-          "aceptado": true,
-          "fecha_envio": "2026-10-03",
-          "fecha_aceptado": "2026-10-03",
-          "inventario": {
-            "exteriores": {
-              "antena": "si",
-              "espejo_lateral": "si",
-              "cristales": "si",
-              "emblema": "si",
-              "tapon_ruedas": "si",
-              "molduras_completas": "si",
-              "tapon_gasolina": "si"
-            },
-            "accesorios": {
-              "gato": "si",
-              "maneral_gato": "si",
-              "llave_ruedas": "si",
-              "estuche_herramientas": "si",
-              "triangulo_seguridad": "si",
-              "llanta_refaccion": "si",
-              "extinguidor": "si"
-            },
-            "gasolina": 25,
-            "danos_notas": ""
-          },
-          "pdf_path": "uploads/X16/20261003-165322-informe-recepcion.pdf"
-        },
-        "cotizacion": {
-          "enviado": true,
-          "fecha_envio": "2026-10-03",
-          "pdf_path": "uploads/X16/20261003-170051-cotizacion.pdf",
-          "items": [
-            {
-              "concepto": "Afinación motor a gasolina cuatro cilindros 2.0 litros",
-              "cantidad": 1,
-              "costo_unitario": 2900
-            }
-          ],
-          "incluir_iva": false,
-          "observaciones": "Revisión de puntos de seguridad y niveles",
-          "aceptado": false,
-          "fecha_aceptado": null
-        },
-        "informe_trabajo": {
-          "enviado": true,
-          "fecha_envio": "2026-10-03",
-          "pdf_path": "uploads/X16/20261003-170719-informe-trabajo.pdf"
-        },
-        "fechas_etapa": {
-          "recibido": "2026-10-03T22:50:18.086Z",
-          "diagnostico": "2026-10-03T22:53:30.164Z"
-        },
-        "adjuntos": {
-          "recibido": {
-            "fotos": [
-              "uploads/X16/20261003-165330-recibido-0-1000852515.jpg",
-              "uploads/X16/20261003-165332-recibido-1-1000852516.jpg",
-              "uploads/X16/20261003-165335-recibido-2-1000852531.jpg"
-            ],
-            "documentos": []
-          },
-          "diagnostico": {
-            "fotos": [
-              "uploads/X16/20261003-170118-diagnostico-0-1000852515.jpg",
-              "uploads/X16/20261003-170120-diagnostico-1-1000852516.jpg",
-              "uploads/X16/20261003-170123-diagnostico-2-1000852517.jpg",
-              "uploads/X16/20261003-170125-diagnostico-3-1000852527.jpg",
-              "uploads/X16/20261003-170221-diagnostico-4-1000852528.jpg",
-              "uploads/X16/20261003-170230-diagnostico-5-1000852531.jpg",
-              "uploads/X16/20261003-170233-diagnostico-6-1000852532.jpg",
-              "uploads/X16/20261003-170237-diagnostico-7-1000852534.jpg",
-              "uploads/X16/20261003-170239-diagnostico-8-1000852535.jpg",
-              "uploads/X16/20261003-170241-diagnostico-9-1000852591.jpg",
-              "uploads/X16/20261003-170244-diagnostico-10-1000852592.jpg"
-            ],
-            "documentos": []
-          },
-          "en_proceso": {
-            "fotos": [
-              "uploads/X16/20261003-170523-en_proceso-0-1000852536.jpg",
-              "uploads/X16/20261003-170529-en_proceso-1-1000852591.jpg",
-              "uploads/X16/20261003-170545-en_proceso-2-1000852592.jpg",
-              "uploads/X16/20261003-170554-en_proceso-3-1000852635.jpg",
-              "uploads/X16/20261003-170606-en_proceso-4-1000852637.jpg",
-              "uploads/X16/20261003-170631-en_proceso-5-1000852638.jpg",
-              "uploads/X16/20261003-170642-en_proceso-6-1000852643.jpg"
-            ],
-            "documentos": []
-          },
-          "listo": {
-            "fotos": [
-              "uploads/X16/20261003-170645-listo-0-1000852991.jpg",
-              "uploads/X16/20261003-170648-listo-1-1000852987.jpg",
-              "uploads/X16/20261003-170650-listo-2-1000852980.jpg",
-              "uploads/X16/20261003-170654-listo-3-1000852979.jpg"
-            ],
-            "documentos": []
-          },
-          "recogido": {
-            "fotos": [
-              "uploads/X16/20261003-170707-recogido-0-1000853101.jpg"
-            ],
-            "documentos": []
-          },
+      "servicio_actual": null,
+      "servicios": [
+        {
+          "fecha": "2026-10-03",
+          "folio": "A022",
+          "tipo": "Afinación",
+          "descripcion": "Afinación motor a gasolina 4 cilindros, incluye cambio de aceite sintético 5w 30, 4 bujías, filtro aceite, filtro aire, relleno anticongelante, revisión de niveles",
+          "nota_interna": "",
+          "km": 69606,
+          "costo": 2900,
+          "tecnico": "Sergio/Antonio",
+          "tiempo_entrega_aprox": "Mismo Día Express",
+          "fecha_inicio": "2026-10-03",
           "pago": {
-            "fotos": [],
-            "documentos": []
+            "estado": "pagado",
+            "metodo": "transferencia"
+          },
+          "orden_recepcion": {
+            "enviado": true,
+            "aceptado": true,
+            "fecha_envio": "2026-10-03",
+            "fecha_aceptado": "2026-10-03",
+            "inventario": {
+              "exteriores": {
+                "antena": "si",
+                "espejo_lateral": "si",
+                "cristales": "si",
+                "emblema": "si",
+                "tapon_ruedas": "si",
+                "molduras_completas": "si",
+                "tapon_gasolina": "si"
+              },
+              "accesorios": {
+                "gato": "si",
+                "maneral_gato": "si",
+                "llave_ruedas": "si",
+                "estuche_herramientas": "si",
+                "triangulo_seguridad": "si",
+                "llanta_refaccion": "si",
+                "extinguidor": "si"
+              },
+              "gasolina": 25,
+              "danos_notas": ""
+            },
+            "pdf_path": "uploads/X16/20261003-165322-informe-recepcion.pdf"
+          },
+          "cotizacion": {
+            "enviado": true,
+            "fecha_envio": "2026-10-03",
+            "pdf_path": "uploads/X16/20261003-170051-cotizacion.pdf",
+            "items": [
+              {
+                "concepto": "Afinación motor a gasolina cuatro cilindros 2.0 litros",
+                "cantidad": 1,
+                "costo_unitario": 2900
+              }
+            ],
+            "incluir_iva": false,
+            "observaciones": "Revisión de puntos de seguridad y niveles",
+            "aceptado": false,
+            "fecha_aceptado": null
+          },
+          "informe_trabajo": {
+            "enviado": true,
+            "fecha_envio": "2026-10-03",
+            "pdf_path": "uploads/X16/20261003-170719-informe-trabajo.pdf"
+          },
+          "fechas_etapa": {
+            "recibido": "2026-10-03T22:50:18.086Z",
+            "diagnostico": "2026-10-03T22:53:30.164Z"
+          },
+          "adjuntos": {
+            "recibido": {
+              "fotos": [
+                "uploads/X16/20261003-165330-recibido-0-1000852515.jpg",
+                "uploads/X16/20261003-165332-recibido-1-1000852516.jpg",
+                "uploads/X16/20261003-165335-recibido-2-1000852531.jpg"
+              ],
+              "documentos": []
+            },
+            "diagnostico": {
+              "fotos": [
+                "uploads/X16/20261003-170118-diagnostico-0-1000852515.jpg",
+                "uploads/X16/20261003-170120-diagnostico-1-1000852516.jpg",
+                "uploads/X16/20261003-170123-diagnostico-2-1000852517.jpg",
+                "uploads/X16/20261003-170125-diagnostico-3-1000852527.jpg",
+                "uploads/X16/20261003-170221-diagnostico-4-1000852528.jpg",
+                "uploads/X16/20261003-170230-diagnostico-5-1000852531.jpg",
+                "uploads/X16/20261003-170233-diagnostico-6-1000852532.jpg",
+                "uploads/X16/20261003-170237-diagnostico-7-1000852534.jpg",
+                "uploads/X16/20261003-170239-diagnostico-8-1000852535.jpg",
+                "uploads/X16/20261003-170241-diagnostico-9-1000852591.jpg",
+                "uploads/X16/20261003-170244-diagnostico-10-1000852592.jpg"
+              ],
+              "documentos": []
+            },
+            "en_proceso": {
+              "fotos": [
+                "uploads/X16/20261003-170523-en_proceso-0-1000852536.jpg",
+                "uploads/X16/20261003-170529-en_proceso-1-1000852591.jpg",
+                "uploads/X16/20261003-170545-en_proceso-2-1000852592.jpg",
+                "uploads/X16/20261003-170554-en_proceso-3-1000852635.jpg",
+                "uploads/X16/20261003-170606-en_proceso-4-1000852637.jpg",
+                "uploads/X16/20261003-170631-en_proceso-5-1000852638.jpg",
+                "uploads/X16/20261003-170642-en_proceso-6-1000852643.jpg"
+              ],
+              "documentos": []
+            },
+            "listo": {
+              "fotos": [
+                "uploads/X16/20261003-170645-listo-0-1000852991.jpg",
+                "uploads/X16/20261003-170648-listo-1-1000852987.jpg",
+                "uploads/X16/20261003-170650-listo-2-1000852980.jpg",
+                "uploads/X16/20261003-170654-listo-3-1000852979.jpg"
+              ],
+              "documentos": []
+            },
+            "recogido": {
+              "fotos": [
+                "uploads/X16/20261003-170707-recogido-0-1000853101.jpg"
+              ],
+              "documentos": []
+            },
+            "pago": {
+              "fotos": [],
+              "documentos": []
+            }
           }
         }
-      },
-      "servicios": []
+      ]
     }
   },
   "folio_counter": 22
