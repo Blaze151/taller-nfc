@@ -2311,7 +2311,7 @@
         "actualizado": "2026-10-03",
         "pago": {
           "estado": "no_pagado",
-          "metodo": null
+          "metodo": "transferencia"
         },
         "orden_recepcion": {
           "enviado": true,
@@ -2393,11 +2393,24 @@
             "documentos": []
           },
           "en_proceso": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X16/20261003-170523-en_proceso-0-1000852536.jpg",
+              "uploads/X16/20261003-170529-en_proceso-1-1000852591.jpg",
+              "uploads/X16/20261003-170545-en_proceso-2-1000852592.jpg",
+              "uploads/X16/20261003-170554-en_proceso-3-1000852635.jpg",
+              "uploads/X16/20261003-170606-en_proceso-4-1000852637.jpg",
+              "uploads/X16/20261003-170631-en_proceso-5-1000852638.jpg",
+              "uploads/X16/20261003-170642-en_proceso-6-1000852643.jpg"
+            ],
             "documentos": []
           },
           "listo": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X16/20261003-170645-listo-0-1000852991.jpg",
+              "uploads/X16/20261003-170648-listo-1-1000852987.jpg",
+              "uploads/X16/20261003-170650-listo-2-1000852980.jpg",
+              "uploads/X16/20261003-170654-listo-3-1000852979.jpg"
+            ],
             "documentos": []
           },
           "recogido": {
