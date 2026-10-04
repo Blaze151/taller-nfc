@@ -2438,6 +2438,41 @@
           }
         }
       ]
+    },
+    "X17": {
+      "id": "X17",
+      "fecha_creacion": "2026-10-04T00:14:14.601Z",
+      "foto_perfil": "uploads/X17/20261003-181414-perfil.jpg",
+      "documentos_vehiculo": {
+        "fotos": [],
+        "documentos": []
+      },
+      "placas": "FN-1111-C",
+      "numero_unidad": "P03",
+      "marca": "VOLKSWAGEN",
+      "modelo": "SAVEIRO",
+      "anio": 2017,
+      "version": "",
+      "color": "BLANCO",
+      "combustible": "Gasolina",
+      "vin": "9BWKB45U5HP098831",
+      "km_actual": 216473,
+      "cliente_nombre": "PROYECTA SOLUCIONES EN MANTENIMIENTO",
+      "cliente_telefono": "871 727 1731",
+      "cliente_telefono_2": "+52 871 223 5779",
+      "cliente_correo": "",
+      "cliente_rfc": "PSM171103JD2",
+      "cliente_direccion": "LAZARO CARDENAS CENTRO #206, COL. ZONA INDUSTRIAL Y SECCIONES, GÓMEZ PALACIO, DURANGO",
+      "ficha_tecnica": {
+        "aceite_tipo": "",
+        "aceite_capacidad": "",
+        "presion_llantas": "",
+        "bateria": "",
+        "filtro_aire": "",
+        "filtro_aceite": ""
+      },
+      "servicio_actual": null,
+      "servicios": []
     }
   },
   "folio_counter": 22
