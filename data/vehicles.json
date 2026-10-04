@@ -2517,18 +2517,33 @@
           }
         },
         "cotizacion": {
-          "enviado": false,
-          "fecha_envio": null,
-          "pdf_path": null,
+          "enviado": true,
+          "fecha_envio": "2026-10-04",
+          "pdf_path": "uploads/X17/20261003-201409-cotizacion.pdf",
           "items": [
             {
-              "concepto": "",
+              "concepto": "Pintura General carrocería externa color blanco a vehículo de carga",
+              "cantidad": 1,
+              "costo_unitario": 13000
+            },
+            {
+              "concepto": "Remoción de rótulos en carrocería",
+              "cantidad": 1,
+              "costo_unitario": 800
+            },
+            {
+              "concepto": "Pulida de faros",
+              "cantidad": 1,
+              "costo_unitario": 600
+            },
+            {
+              "concepto": "Lavado de motor, interior de cabina, y caja de carga",
               "cantidad": 1,
               "costo_unitario": null
             }
           ],
           "incluir_iva": true,
-          "observaciones": "",
+          "observaciones": "No se incluye pintura en tubería de la caja de carga.\nLa limpieza de motor se realiza en seco.\n\nSe recomienda retapizar asientos. Costo aproximado $3,500 (4 días hábiles).",
           "aceptado": false,
           "fecha_aceptado": null
         },
