@@ -2475,12 +2475,12 @@
         "id": "svc_1791073389660",
         "folio": "A023",
         "tipo": "PINTURA",
-        "descripcion": "",
+        "descripcion": "Pintura general en carrocería externa de vehículo con caja. Mismo color blanco. Quitar señaléticas de toda la carrocería.\nPulida de faros.",
         "nota_interna": "",
         "km": 216473,
         "costo": null,
         "tecnico": "",
-        "tiempo_entrega_aprox": "",
+        "tiempo_entrega_aprox": "15 días hábiles",
         "fecha_inicio": "2026-10-04",
         "estado": "en_proceso",
         "actualizado": "2026-10-04",
@@ -2495,13 +2495,13 @@
           "fecha_aceptado": null,
           "inventario": {
             "exteriores": {
-              "antena": "no",
-              "espejo_lateral": "no",
-              "cristales": "no",
-              "emblema": "no",
-              "tapon_ruedas": "no",
-              "molduras_completas": "no",
-              "tapon_gasolina": "no"
+              "antena": "si",
+              "espejo_lateral": "si",
+              "cristales": "si",
+              "emblema": "si",
+              "tapon_ruedas": "si",
+              "molduras_completas": "si",
+              "tapon_gasolina": "si"
             },
             "accesorios": {
               "gato": "no",
@@ -2512,8 +2512,8 @@
               "llanta_refaccion": "no",
               "extinguidor": "no"
             },
-            "gasolina": 0,
-            "danos_notas": ""
+            "gasolina": 25,
+            "danos_notas": "Asientos de piloto y copiloto dañados. Carrocería sin choque aparente. Pintura solo en exterior. Facias delantera y trasera dejar del mismo color sin pintar."
           }
         },
         "cotizacion": {
@@ -2543,7 +2543,19 @@
         },
         "adjuntos": {
           "recibido": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X17/20261003-192429-recibido-0-1000853358.jpg",
+              "uploads/X17/20261003-192431-recibido-1-1000853335.jpg",
+              "uploads/X17/20261003-192433-recibido-2-1000853353.jpg",
+              "uploads/X17/20261003-192435-recibido-3-1000853362.jpg",
+              "uploads/X17/20261003-192437-recibido-4-1000853403.jpg",
+              "uploads/X17/20261003-192439-recibido-5-1000853442.jpg",
+              "uploads/X17/20261003-192445-recibido-6-1000853460.jpg",
+              "uploads/X17/20261003-192517-recibido-7-1000853458.jpg",
+              "uploads/X17/20261003-192522-recibido-8-1000853455.jpg",
+              "uploads/X17/20261003-192609-recibido-9-1000853450.jpg",
+              "uploads/X17/20261003-192616-recibido-10-1000853447.jpg"
+            ],
             "documentos": []
           },
           "diagnostico": {
