@@ -2578,7 +2578,17 @@
             "documentos": []
           },
           "en_proceso": {
-            "fotos": [],
+            "fotos": [
+              "uploads/X17/20261003-204041-en_proceso-0-1000853480.jpg",
+              "uploads/X17/20261003-204044-en_proceso-1-1000853484.jpg",
+              "uploads/X17/20261003-204046-en_proceso-2-1000853476.jpg",
+              "uploads/X17/20261003-204047-en_proceso-3-1000853472.jpg",
+              "uploads/X17/20261003-204049-en_proceso-4-1000853488.jpg",
+              "uploads/X17/20261003-204051-en_proceso-5-1000853496.jpg",
+              "uploads/X17/20261003-204053-en_proceso-6-1000853502.jpg",
+              "uploads/X17/20261003-204055-en_proceso-7-1000853498.jpg",
+              "uploads/X17/20261003-204056-en_proceso-8-1000853490.jpg"
+            ],
             "documentos": []
           },
           "listo": {
