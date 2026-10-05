@@ -2653,16 +2653,16 @@
         "tecnico": "Sergio/Antonio",
         "tiempo_entrega_aprox": "S/f",
         "fecha_inicio": "2026-10-05",
-        "estado": "recibido",
+        "estado": "diagnostico",
         "actualizado": "2026-10-05",
         "pago": {
           "estado": "no_pagado",
           "metodo": null
         },
         "orden_recepcion": {
-          "enviado": false,
+          "enviado": true,
           "aceptado": false,
-          "fecha_envio": null,
+          "fecha_envio": "2026-10-05",
           "fecha_aceptado": null,
           "inventario": {
             "exteriores": {
@@ -2685,7 +2685,8 @@
             },
             "gasolina": 25,
             "danos_notas": ""
-          }
+          },
+          "pdf_path": "uploads/Xx1/20261005-171933-informe-recepcion.pdf"
         },
         "cotizacion": {
           "enviado": false,
@@ -2709,7 +2710,8 @@
           "pdf_path": null
         },
         "fechas_etapa": {
-          "recibido": "2026-10-05T23:16:13.271Z"
+          "recibido": "2026-10-05T23:16:13.271Z",
+          "diagnostico": "2026-10-05T23:19:38.062Z"
         },
         "adjuntos": {
           "recibido": {
