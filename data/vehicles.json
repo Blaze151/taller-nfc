@@ -2606,6 +2606,44 @@
         }
       },
       "servicios": []
+    },
+    "Xx1": {
+      "id": "Xx1",
+      "fecha_creacion": "2026-10-05T23:15:55.857Z",
+      "foto_perfil": "uploads/Xx1/20261005-171556-perfil.jpg",
+      "documentos_vehiculo": {
+        "fotos": [
+          "uploads/Xx1/20261005-171558-vdoc-0-20261005_170529.jpg",
+          "uploads/Xx1/20261005-171559-vdoc-1-17912420968041657154578739213305.jpg"
+        ],
+        "documentos": []
+      },
+      "placas": "Gab354c",
+      "numero_unidad": "Xx1",
+      "marca": "Dodge",
+      "modelo": "Attitude",
+      "anio": 2023,
+      "version": "",
+      "color": "Blanco",
+      "combustible": "Gasolina",
+      "vin": "Ml3abt6j3ph000525",
+      "km_actual": 56100,
+      "cliente_nombre": "Eduardo valdez",
+      "cliente_telefono": "8711044146",
+      "cliente_telefono_2": "",
+      "cliente_correo": "",
+      "cliente_rfc": "",
+      "cliente_direccion": "",
+      "ficha_tecnica": {
+        "aceite_tipo": "",
+        "aceite_capacidad": "",
+        "presion_llantas": "",
+        "bateria": "",
+        "filtro_aire": "",
+        "filtro_aceite": ""
+      },
+      "servicio_actual": null,
+      "servicios": []
     }
   },
   "folio_counter": 22
