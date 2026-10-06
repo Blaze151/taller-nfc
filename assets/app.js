@@ -190,6 +190,32 @@
     return `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/${REPO_BRANCH}/${path}`;
   }
 
+  // GitHub entrega los PDFs como "application/octet-stream" con una política
+  // de seguridad (CSP sandbox) que impide que el visor de PDF del navegador
+  // de ESCRITORIO los muestre. En celular el sistema los abre con su propio
+  // visor y sí funcionan, así que ahí no se toca nada. En escritorio se
+  // descarga el archivo en memoria, se le pone el tipo correcto
+  // (application/pdf) y se abre desde ahí. Si algo falla, se abre el
+  // enlace normal como antes. (abrirPdfEnEscritorio)
+  const ES_MOVIL_PDF = /Android|iPhone|iPod|Mobile/i.test(navigator.userAgent);
+  document.addEventListener("click", async (e) => {
+    if (ES_MOVIL_PDF || e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey) return;
+    const a = e.target.closest && e.target.closest("a[href]");
+    if (!a || !/^https:\/\/raw\.githubusercontent\.com\/[^?#]+\.pdf(\?.*)?$/i.test(a.href)) return;
+    e.preventDefault();
+    const ventana = window.open("", "_blank");
+    try { if (ventana) ventana.document.write("<p style=\"font-family:sans-serif;padding:20px\">Cargando PDF…</p>"); } catch (err) {}
+    try {
+      const res = await fetch(a.href);
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      const buf = await res.arrayBuffer();
+      const blobUrl = URL.createObjectURL(new Blob([buf], { type: "application/pdf" }));
+      if (ventana) ventana.location.href = blobUrl; else window.location.href = blobUrl;
+    } catch (err) {
+      if (ventana) ventana.location.href = a.href; else window.location.href = a.href;
+    }
+  });
+
   // GitHub Pages a veces sirve un 404 en caché para un archivo recién subido
   // (mientras su CDN termina de publicarlo), y ese error puede quedar "atorado"
   // varios minutos en un dispositivo concreto. Reintentamos con pausas cada vez
