@@ -356,7 +356,7 @@
   function setEditorControlsBusy(busy) {
     [
       "as-estado", "btn-finalize-service", "btn-cancel-service", "btn-back",
-      "btn-save-visible", "btn-save-and-back", "btn-enviar-orden", "btn-enviar-cotizacion", "btn-enviar-informe-trabajo",
+      "btn-save-visible", "btn-save-and-back", "btn-cambiar-id", "btn-enviar-orden", "btn-enviar-cotizacion", "btn-enviar-informe-trabajo",
     ].forEach((id) => {
       const el = $(id);
       if (el) el.disabled = busy;
@@ -466,6 +466,15 @@
       guardar_btn: "Guardar cambios en GitHub",
       guardar_todos_btn: "💾 Guardar todos los cambios",
       guardar_y_volver_btn: "💾 Guardar y volver",
+      cambiar_id_btn: "🔁 Cambiar ID",
+      cambiar_id_guardar_primero: "Tienes cambios sin guardar. Se guardarán primero y después se cambiará el ID. ¿Continuar?",
+      cambiar_id_prompt: "Nuevo ID para este vehículo (actual: {id}).\nSolo letras, números, guion (-), guion bajo (_) y punto (.), máximo 40 caracteres.",
+      cambiar_id_invalido: "ID no válido. Usa solo letras, números, guion, guion bajo o punto (máximo 40 caracteres, sin espacios).",
+      cambiar_id_confirmar: "¿Cambiar el ID de \"{viejo}\" a \"{nuevo}\"?\n\n• La etiqueta NFC y cualquier enlace que use el ID anterior (?v={viejo}) dejarán de abrir este vehículo: la etiqueta debe quedar con el ID nuevo.\n• Las fotos y PDFs que ya están subidos se conservan y siguen funcionando.",
+      cambiar_id_no_existe: "Ese vehículo ya no existe en GitHub (¿se eliminó desde otro lugar?).",
+      cambiar_id_ok: "✅ ID cambiado a {nuevo}",
+      descartar_fotos_btn: "🗑️ Descartar todas las fotos",
+      confirm_descartar_fotos_etapa: "¿Descartar las {n} foto(s) de esta etapa? Las que ya estaban guardadas se borrarán de GitHub al presionar Guardar.",
       guardado_justo_ahora_txt: "Guardado justo ahora",
       guardado_hace_1min_txt: "Guardado hace 1 minuto",
       guardado_hace_min_txt: "Guardado hace {n} minutos",
@@ -775,6 +784,15 @@
       guardar_btn: "Save changes to GitHub",
       guardar_todos_btn: "💾 Save all changes",
       guardar_y_volver_btn: "💾 Save and go back",
+      cambiar_id_btn: "🔁 Change ID",
+      cambiar_id_guardar_primero: "You have unsaved changes. They will be saved first, then the ID will be changed. Continue?",
+      cambiar_id_prompt: "New ID for this vehicle (current: {id}).\nOnly letters, numbers, hyphen (-), underscore (_) and dot (.), up to 40 characters.",
+      cambiar_id_invalido: "Invalid ID. Use only letters, numbers, hyphen, underscore or dot (max 40 characters, no spaces).",
+      cambiar_id_confirmar: "Change the ID from \"{viejo}\" to \"{nuevo}\"?\n\n• The NFC tag and any link using the old ID (?v={viejo}) will stop opening this vehicle: the tag must carry the new ID.\n• Photos and PDFs that are already uploaded are kept and keep working.",
+      cambiar_id_no_existe: "That vehicle no longer exists on GitHub (was it deleted elsewhere?).",
+      cambiar_id_ok: "✅ ID changed to {nuevo}",
+      descartar_fotos_btn: "🗑️ Discard all photos",
+      confirm_descartar_fotos_etapa: "Discard the {n} photo(s) of this stage? Photos that were already saved will be deleted from GitHub when you press Save.",
       guardado_justo_ahora_txt: "Saved just now",
       guardado_hace_1min_txt: "Saved 1 minute ago",
       guardado_hace_min_txt: "Saved {n} minutes ago",
@@ -2142,29 +2160,67 @@
       try { await deleteFileFromRepo(path); } catch (err) { /* si uno falla, seguimos con los demás */ }
     }
   }
-  async function deleteVehicleUploadsFolder(vehicleId, onProgress) {
-    let entries;
+  // Todas las rutas de archivos que un vehículo referencia en su registro
+  // (foto de perfil, documentos, adjuntos por etapa del servicio activo y del
+  // historial, y los 3 PDFs). Sirve para borrar sus archivos aunque estén
+  // FUERA de la carpeta uploads/<id> (pasa cuando se le cambió el ID).
+  function rutasDeUnVehiculo(v) {
+    const rutas = new Set();
+    if (!v) return [];
+    const grupo = (g) => {
+      if (!g) return;
+      (g.fotos || []).forEach((p) => p && rutas.add(p));
+      (g.documentos || []).forEach((p) => p && rutas.add(p));
+    };
+    const servicio = (s) => {
+      if (!s) return;
+      if (s.adjuntos) Object.values(s.adjuntos).forEach(grupo);
+      if (s.orden_recepcion && s.orden_recepcion.pdf_path) rutas.add(s.orden_recepcion.pdf_path);
+      if (s.cotizacion && s.cotizacion.pdf_path) rutas.add(s.cotizacion.pdf_path);
+      if (s.informe_trabajo && s.informe_trabajo.pdf_path) rutas.add(s.informe_trabajo.pdf_path);
+    };
+    if (v.foto_perfil) rutas.add(v.foto_perfil);
+    grupo(v.documentos_vehiculo);
+    servicio(v.servicio_actual);
+    (v.servicios || []).forEach(servicio);
+    return Array.from(rutas);
+  }
+
+  // Borra los archivos de un vehículo. Además de lo que haya en su carpeta
+  // uploads/<id>, borra los que su registro referencia fuera de ella (por un
+  // cambio de ID), y NUNCA toca un archivo que otro vehículo siga usando
+  // (por ejemplo, si este ID lo tuvo antes otro vehículo que fue renombrado).
+  async function deleteVehicleUploadsFolder(vehicleId, onProgress, rutasPropias) {
+    let entradas = [];
     try {
-      entries = await githubRequest(`uploads/${encodeURIComponent(vehicleId)}`, { method: "GET" });
-    } catch (err) {
-      return { total: 0, fallidos: [] }; // no existe la carpeta (o ya está vacía) — nada que borrar
-    }
-    if (!Array.isArray(entries)) return { total: 0, fallidos: [] };
-    const archivos = entries.filter((e) => e.type === "file");
+      const r = await githubRequest(`uploads/${encodeURIComponent(vehicleId)}`, { method: "GET" });
+      if (Array.isArray(r)) entradas = r.filter((e) => e.type === "file");
+    } catch (err) { /* no existe la carpeta (o ya está vacía) */ }
+    const deOtros = collectAllReferencedPaths();
+    const shaPorRuta = new Map();
+    entradas.forEach((e) => shaPorRuta.set(e.path, e.sha));
+    (rutasPropias || []).forEach((p) => { if (!shaPorRuta.has(p)) shaPorRuta.set(p, null); });
+    const objetivos = Array.from(shaPorRuta.keys()).filter((p) => !deOtros.has(p));
     const fallidos = [];
-    for (let i = 0; i < archivos.length; i++) {
-      const entry = archivos[i];
-      if (onProgress) onProgress(i + 1, archivos.length);
+    for (let i = 0; i < objetivos.length; i++) {
+      const ruta = objetivos[i];
+      if (onProgress) onProgress(i + 1, objetivos.length);
       try {
-        await githubRequest(entry.path, {
+        let sha = shaPorRuta.get(ruta);
+        if (!sha) {
+          const meta = await githubRequest(ruta, { method: "GET" });
+          sha = meta.sha;
+        }
+        await githubRequest(ruta, {
           method: "DELETE",
-          body: JSON.stringify({ message: `Eliminar archivos del vehículo ${vehicleId}`, sha: entry.sha, branch: cfg.branch }),
+          body: JSON.stringify({ message: `Eliminar archivos del vehículo ${vehicleId}`, sha, branch: cfg.branch }),
         });
       } catch (err) {
-        fallidos.push(entry.path); // seguimos con los demás aunque uno falle, pero se reporta al final
+        if (err.status === 404) continue; // ya no existe, nada que borrar
+        fallidos.push(ruta); // seguimos con los demás aunque uno falle, pero se reporta al final
       }
     }
-    return { total: archivos.length, fallidos };
+    return { total: objetivos.length, fallidos };
   }
   function collectServiceAttachmentPaths(s) {
     const paths = [];
@@ -3259,6 +3315,7 @@
 
     $("btn-delete").style.display = isNewVehicle ? "none" : "inline-flex";
     $("btn-copiar-enlace").style.display = isNewVehicle ? "none" : "inline-flex";
+    $("btn-cambiar-id").style.display = isNewVehicle ? "none" : "inline-flex";
     showView("editor");
   }
 
@@ -3535,6 +3592,7 @@
             <button type="button" class="btn btn-outline btn-sm" data-stage-camera="${stage}">${esc(t("tomar_foto"))}</button>
             <button type="button" class="btn btn-outline btn-sm" data-stage-gallery="${stage}">${esc(t("fototeca_btn"))}</button>
             <button type="button" class="btn btn-outline btn-sm" data-stage-pdf="${stage}">${esc(t("pdf_btn"))}</button>
+            ${((saved.fotos || []).length + pending.fotos.length) >= 2 ? `<button type="button" class="btn btn-outline btn-sm btn-danger" data-stage-clear-fotos="${stage}">${esc(t("descartar_fotos_btn"))}</button>` : ""}
             ${toolButtonHtml}
             <input type="file" id="as-cam-${stage}" data-stage="${stage}" data-kind="foto" accept="image/*" capture="environment" style="display:none;">
             <input type="file" id="as-gal-${stage}" data-stage="${stage}" data-kind="foto" accept="image/*" multiple style="display:none;">
@@ -4210,6 +4268,23 @@
     const pdf = e.target.closest("[data-stage-pdf]");
     if (pdf) { $(`as-pdf-${pdf.dataset.stagePdf}`).click(); return; }
 
+    const clearFotos = e.target.closest("[data-stage-clear-fotos]");
+    if (clearFotos) {
+      const etapa = clearFotos.dataset.stageClearFotos;
+      readActiveServiceFieldsFromDom();
+      const guardadas = (svcActual.adjuntos[etapa] && svcActual.adjuntos[etapa].fotos) || [];
+      const pendientes = (svcActualPending[etapa] && svcActualPending[etapa].fotos) || [];
+      const totalFotos = guardadas.length + pendientes.length;
+      if (!totalFotos) return;
+      if (!confirm(t("confirm_descartar_fotos_etapa").replace("{n}", totalFotos))) return;
+      // Las ya guardadas se borran de GitHub al guardar (igual que con la "×"
+      // de cada foto); las pendientes simplemente se descartan.
+      guardadas.forEach((p) => queueDelete(p));
+      svcActual.adjuntos[etapa].fotos = [];
+      if (svcActualPending[etapa]) svcActualPending[etapa].fotos.length = 0;
+      renderActiveServiceCard();
+      return;
+    }
     const rmSavedFoto = e.target.closest("[data-remove-saved-foto]");
     if (rmSavedFoto) {
       const [stage, idx] = rmSavedFoto.dataset.removeSavedFoto.split(":");
@@ -4605,6 +4680,69 @@
     }
   }
 
+  // Cambia el ID de un vehículo YA guardado. Es una acción aparte (no se edita
+  // el campo directamente) porque el ID es la llave de todo: el enlace público
+  // (?v=ID) y la etiqueta NFC. Los archivos ya subidos NO se mueven: el registro
+  // guarda la ruta completa de cada uno, así que siguen funcionando igual (y
+  // los enlaces a PDFs que ya se mandaron por WhatsApp tampoco se rompen).
+  // Los archivos nuevos se suben a la carpeta del ID nuevo.
+  async function cambiarIdVehiculo() {
+    if (!currentVehicleId || isNewVehicle) return;
+    const viejo = currentVehicleId;
+    if (hasUnsavedChanges) {
+      if (!confirm(t("cambiar_id_guardar_primero"))) return;
+      const guardadoOk = await saveVehicle();
+      if (!guardadoOk || hasUnsavedChanges) return;
+    }
+    const entrada = prompt(t("cambiar_id_prompt").replace("{id}", viejo), viejo);
+    if (entrada === null) return;
+    const nuevo = entrada.trim();
+    if (!nuevo || nuevo === viejo) return;
+    if (!/^[A-Za-z0-9._-]{1,40}$/.test(nuevo) || nuevo === "." || nuevo === "..") {
+      showToast(t("cambiar_id_invalido"), "error", 7000);
+      return;
+    }
+    if (db.vehicles[nuevo]) {
+      showToast(t("msg_ya_existe_id"), "error");
+      return;
+    }
+    if (!confirm(t("cambiar_id_confirmar").split("{viejo}").join(viejo).split("{nuevo}").join(nuevo))) return;
+
+    const btn = $("btn-cambiar-id");
+    const etiquetaOriginal = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = t("guardando_btn");
+    try {
+      await saveDatabaseWithRetry(`Cambiar ID de vehículo ${viejo} → ${nuevo}`, () => {
+        if (!db.vehicles[viejo]) throw new Error(t("cambiar_id_no_existe"));
+        if (db.vehicles[nuevo]) throw new Error(t("msg_ya_existe_id"));
+        // Se reconstruye el objeto para que el vehículo conserve su lugar en la
+        // lista (los que no tienen fecha de creación se ordenan por posición).
+        const reconstruido = {};
+        Object.keys(db.vehicles).forEach((k) => {
+          if (k === viejo) {
+            const v = db.vehicles[k];
+            v.id = nuevo;
+            reconstruido[nuevo] = v;
+          } else {
+            reconstruido[k] = db.vehicles[k];
+          }
+        });
+        db.vehicles = reconstruido;
+      });
+      borrarBorradorLocal(viejo);
+      showToast(t("cambiar_id_ok").replace("{nuevo}", nuevo), "success");
+      renderDashboard($("search-box").value);
+      await openEditor(nuevo);
+    } catch (err) {
+      if (err.status === 409) showToast(t("msg_conflicto_persistente"), "error", 9000);
+      else showToast(t("msg_error_guardar") + err.message, "error", 8000);
+    } finally {
+      btn.disabled = false;
+      btn.textContent = etiquetaOriginal;
+    }
+  }
+
   async function deleteVehicle() {
     if (!currentVehicleId) return;
     if (!confirm(t("confirm_eliminar_vehiculo"))) return;
@@ -4615,14 +4753,18 @@
     const originalLabel = btn.textContent;
     try {
       btn.textContent = t("eliminando_registro_btn");
-      await saveDatabaseWithRetry(`Eliminar vehículo ${currentVehicleId}`, () => { delete db.vehicles[vehicleIdToClean]; });
+      let rutasPropias = [];
+      await saveDatabaseWithRetry(`Eliminar vehículo ${currentVehicleId}`, () => {
+        rutasPropias = rutasDeUnVehiculo(db.vehicles[vehicleIdToClean]);
+        delete db.vehicles[vehicleIdToClean];
+      });
 
       // Se espera a que los archivos de verdad terminen de borrarse (antes
       // corría en segundo plano y el admin nunca sabía si algo había
       // fallado) — se muestra el progreso real, archivo por archivo.
       const resultado = await deleteVehicleUploadsFolder(vehicleIdToClean, (actual, total) => {
         btn.textContent = t("eliminando_archivos_btn").replace("{actual}", actual).replace("{total}", total);
-      });
+      }, rutasPropias);
 
       if (resultado.fallidos.length) {
         showToast(t("msg_vehiculo_eliminado_parcial").replace("{n}", resultado.fallidos.length), "error", 10000);
@@ -4676,13 +4818,14 @@
   // Botones que NO cambian ningún dato — no deben marcar "cambios sin
   // guardar" solo por tocarlos (copiar el enlace, volver, abrir/cerrar un
   // panel-herramienta, o el propio botón de guardar).
-  const BOTONES_SIN_CAMBIOS = new Set(["btn-back", "btn-copiar-enlace", "btn-save-visible", "btn-save", "btn-save-and-back"]);
+  const BOTONES_SIN_CAMBIOS = new Set(["btn-back", "btn-copiar-enlace", "btn-save-visible", "btn-save", "btn-save-and-back", "btn-cambiar-id"]);
   $("view-editor").addEventListener("click", (e) => {
     const btn = e.target.closest("button");
     if (btn && (BOTONES_SIN_CAMBIOS.has(btn.id) || btn.hasAttribute("data-toggle-tool"))) return;
     if (btn || e.target.closest(".fuel-track")) { hasUnsavedChanges = true; contadorDeEdiciones++; updateUnsavedIndicator(); }
   });
   $("btn-save-visible").addEventListener("click", () => saveVehicle());
+  $("btn-cambiar-id").addEventListener("click", cambiarIdVehiculo);
   $("btn-copiar-enlace").addEventListener("click", async () => {
     if (!currentVehicleId) return;
     const url = `${TRACK_BASE_URL}?v=${encodeURIComponent(currentVehicleId)}`;
