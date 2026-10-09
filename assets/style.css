@@ -1216,3 +1216,30 @@ textarea { resize: vertical; min-height: 70px; }
   color: #0c0f0d;
   box-shadow: var(--neu-out-sm);
 }
+
+/* Autocompletar de clientes (panel de administración) */
+.cliente-sugerencias {
+  position: absolute; left: 0; right: 0; top: 100%; z-index: 40; margin-top: 4px;
+  max-height: 280px; overflow-y: auto;
+  background: var(--surface); border-radius: 14px; border: 1px solid var(--green-soft);
+  box-shadow: var(--neu-out);
+}
+.cliente-sugerencias-titulo {
+  padding: 9px 14px 5px; font-size: 10.5px; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--text-faint);
+}
+.cliente-sugerencia {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 2px;
+  width: 100%; min-height: 48px; padding: 9px 14px;
+  background: transparent; border: 0; border-top: 1px solid var(--green-soft);
+  color: var(--text); text-align: left; font: inherit; cursor: pointer;
+}
+.cliente-sugerencia:hover, .cliente-sugerencia.activa { background: var(--green-soft); }
+.cs-nombre { font-weight: 700; font-size: 14px; }
+.cs-detalle { font-size: 11.5px; color: var(--text-dim); }
+
+/* Campos de teléfono y correo: mismo estilo que el resto de los campos */
+input[type="tel"], input[type="email"] {
+  width: 100%; background: var(--surface-alt); border: none; border-radius: var(--radius-sm);
+  padding: 11px 13px; color: var(--text); box-shadow: var(--neu-in);
+}
