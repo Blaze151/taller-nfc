@@ -466,6 +466,9 @@
       guardar_btn: "Guardar cambios en GitHub",
       guardar_todos_btn: "💾 Guardar todos los cambios",
       guardar_y_volver_btn: "💾 Guardar y volver",
+      cliente_sugerencias_titulo: "Clientes guardados — toca uno para rellenar sus datos",
+      cliente_vehiculos_n: "{n} vehículo(s)",
+      cliente_datos_cargados: "✓ Datos de {nombre} cargados",
       cambiar_id_btn: "🔁 Cambiar ID",
       cambiar_id_guardar_primero: "Tienes cambios sin guardar. Se guardarán primero y después se cambiará el ID. ¿Continuar?",
       cambiar_id_prompt: "Nuevo ID para este vehículo (actual: {id}).\nSolo letras, números, guion (-), guion bajo (_) y punto (.), máximo 40 caracteres.",
@@ -784,6 +787,9 @@
       guardar_btn: "Save changes to GitHub",
       guardar_todos_btn: "💾 Save all changes",
       guardar_y_volver_btn: "💾 Save and go back",
+      cliente_sugerencias_titulo: "Saved customers — tap one to fill in their details",
+      cliente_vehiculos_n: "{n} vehicle(s)",
+      cliente_datos_cargados: "✓ {nombre}'s details loaded",
       cambiar_id_btn: "🔁 Change ID",
       cambiar_id_guardar_primero: "You have unsaved changes. They will be saved first, then the ID will be changed. Continue?",
       cambiar_id_prompt: "New ID for this vehicle (current: {id}).\nOnly letters, numbers, hyphen (-), underscore (_) and dot (.), up to 40 characters.",
@@ -2436,11 +2442,20 @@
 
   /* ---------------- Login / sesión ---------------- */
 
+  // Este panel comparte dominio (blaze151.github.io) con el de otro taller, así
+  // que solo se acepta SU propio repositorio: evita que una sesión o un dato
+  // equivocado lea o escriba en la base de datos del otro taller.
+  function esRepoDeEsteTaller(c) {
+    return !!c && String(c.owner || "").toLowerCase() === REPO_OWNER.toLowerCase()
+      && String(c.repo || "").toLowerCase() === REPO_NAME.toLowerCase();
+  }
+
   function restoreSession() {
     const raw = localStorage.getItem(SESSION_KEY);
     if (!raw) return false;
     try {
       cfg = JSON.parse(raw);
+      if (!esRepoDeEsteTaller(cfg)) { localStorage.removeItem(SESSION_KEY); cfg = null; return false; }
       return !!(cfg.owner && cfg.repo && cfg.token);
     } catch {
       return false;
@@ -2457,6 +2472,12 @@
 
     if (!owner || !repo || !token) {
       errEl.textContent = t("msg_completa_campos");
+      errEl.style.display = "block";
+      return;
+    }
+
+    if (!esRepoDeEsteTaller({ owner, repo })) {
+      errEl.textContent = `Este panel solo funciona con el repositorio ${REPO_OWNER}/${REPO_NAME}.`;
       errEl.style.display = "block";
       return;
     }
@@ -3150,27 +3171,112 @@
     ].forEach((id) => { $(id).value = ""; });
   }
 
-  // Directorio simple de clientes: junta nombre/teléfono ya capturados en otros
-  // vehículos, para sugerirlos como autocompletar al dar de alta uno nuevo.
-  function buildClientDirectory() {
-    const byNombre = new Map();
-    const byTel = new Map();
-    Object.values(db.vehicles || {}).forEach((v) => {
-      const nombre = (v.cliente_nombre || "").trim();
-      const tel = (v.cliente_telefono || "").trim();
-      if (nombre && !byNombre.has(nombre)) byNombre.set(nombre, tel);
-      if (tel && !byTel.has(tel)) byTel.set(tel, nombre);
-    });
-    return { byNombre, byTel };
+  /* ---------------- Directorio de clientes (autocompletar) ---------------- */
+
+  // Quita acentos, mayúsculas y signos para comparar nombres ("José" = "jose").
+  function normalizarTexto(s) {
+    return String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()
+      .replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
+  }
+  function soloDigitos(s) { return String(s || "").replace(/\D/g, ""); }
+
+  // Cuántas letras hay que cambiar para convertir un texto en otro — sirve para
+  // tolerar faltas de ortografía al buscar ("hernandes" encuentra "Hernández").
+  function distanciaTexto(a, b) {
+    const m = a.length, n = b.length;
+    if (!m) return n;
+    if (!n) return m;
+    let prev = Array.from({ length: n + 1 }, (_, j) => j);
+    for (let i = 1; i <= m; i++) {
+      const cur = [i];
+      for (let j = 1; j <= n; j++) {
+        cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+      }
+      prev = cur;
+    }
+    return prev[n];
   }
 
-  function renderClientDatalists() {
-    const dir = buildClientDirectory();
-    const dlNombre = $("clientes-nombres");
-    const dlTel = $("clientes-telefonos");
-    if (dlNombre) dlNombre.innerHTML = Array.from(dir.byNombre.keys()).map((n) => `<option value="${esc(n)}"></option>`).join("");
-    if (dlTel) dlTel.innerHTML = Array.from(dir.byTel.keys()).map((tel) => `<option value="${esc(tel)}"></option>`).join("");
+  // Junta, de todos los vehículos, TODA la información de cada cliente (nombre,
+  // teléfonos, correo, RFC y dirección). Un mismo cliente con varios vehículos
+  // aparece una sola vez: manda lo más reciente y los datos que le falten se
+  // completan con los de sus otros vehículos. Dos personas con el mismo nombre
+  // pero teléfonos distintos se mantienen separadas. No se excluye el vehículo
+  // que se está editando para no sugerirse a sí mismo.
+  function buildClientDirectory(excluirId) {
+    const ordenados = Object.values(db.vehicles || {})
+      .map((v, i) => ({ v, i }))
+      .filter(({ v }) => v.id !== excluirId && (v.cliente_nombre || "").trim())
+      .sort((a, b) => {
+        const ta = Date.parse(a.v.cliente_actualizado || a.v.fecha_creacion || "") || 0;
+        const tb = Date.parse(b.v.cliente_actualizado || b.v.fecha_creacion || "") || 0;
+        return tb !== ta ? tb - ta : b.i - a.i;
+      });
+    const clientes = [];
+    ordenados.forEach(({ v }) => {
+      const datos = {
+        nombre: (v.cliente_nombre || "").trim(),
+        telefono: (v.cliente_telefono || "").trim(),
+        telefono2: (v.cliente_telefono_2 || "").trim(),
+        correo: (v.cliente_correo || "").trim(),
+        rfc: (v.cliente_rfc || "").trim().toUpperCase(),
+        direccion: (v.cliente_direccion || "").trim(),
+      };
+      const clave = normalizarTexto(datos.nombre);
+      const tels = [soloDigitos(datos.telefono), soloDigitos(datos.telefono2)].filter(Boolean);
+      const grupo = clientes.find((c) => c.clave === clave && (
+        !tels.length || !c.tels.length || tels.some((t) => c.tels.includes(t)) ||
+        (datos.rfc && datos.rfc === c.rfc) ||
+        (datos.correo && datos.correo.toLowerCase() === c.correo.toLowerCase())
+      ));
+      if (!grupo) {
+        clientes.push({ clave, tels: tels.slice(), ...datos, vehiculos: 1 });
+        return;
+      }
+      grupo.vehiculos++;
+      ["telefono", "telefono2", "correo", "rfc", "direccion"].forEach((k) => { if (!grupo[k] && datos[k]) grupo[k] = datos[k]; });
+      tels.forEach((t) => { if (!grupo.tels.includes(t)) grupo.tels.push(t); });
+    });
+    return clientes;
   }
+
+  // Busca clientes por nombre (palabras sueltas, sin acentos, tolerando una
+  // letra mal escrita) o por teléfono (a partir de 3 dígitos).
+  function buscarClientes(consulta, modo, excluirId) {
+    const dir = buildClientDirectory(excluirId);
+    if (modo === "telefono") {
+      const d = soloDigitos(consulta);
+      if (d.length < 3) return [];
+      return dir.filter((c) => c.tels.some((t) => t.includes(d))).slice(0, 6);
+    }
+    const q = normalizarTexto(consulta);
+    if (q.length < 2) return [];
+    const palabrasBuscadas = q.split(" ");
+    const encontrados = [];
+    dir.forEach((c, idx) => {
+      const palabrasNombre = c.clave.split(" ");
+      let puntos = 0;
+      for (const tok of palabrasBuscadas) {
+        let mejor = 0;
+        for (const w of palabrasNombre) {
+          if (w === tok) mejor = Math.max(mejor, 3);
+          else if (w.startsWith(tok)) mejor = Math.max(mejor, 2);
+          else if (tok.length >= 3 && w.includes(tok)) mejor = Math.max(mejor, 1);
+          else if (tok.length >= 4 && distanciaTexto(tok, w.slice(0, tok.length)) <= 1) mejor = Math.max(mejor, 0.5);
+        }
+        if (!mejor) return;
+        puntos += mejor;
+      }
+      if (c.clave.startsWith(q)) puntos += 2;
+      encontrados.push({ c, puntos, idx });
+    });
+    encontrados.sort((a, b) => b.puntos - a.puntos || a.idx - b.idx);
+    return encontrados.slice(0, 6).map((x) => x.c);
+  }
+
+  // Lo asigna wireClientAutocomplete(); cierra los menús de sugerencias.
+  let ocultarSugerenciasCliente = () => {};
+  function renderClientDatalists() { ocultarSugerenciasCliente(); }
 
   // Junta los nombres de técnico ya usados antes (servicio activo e
   // historial, de todos los vehículos) para sugerirlos al escribir — evita
@@ -3187,18 +3293,85 @@
     dl.innerHTML = Array.from(nombres).filter(Boolean).sort().map((n) => `<option value="${esc(n)}"></option>`).join("");
   }
 
+  // Menú desplegable de clientes guardados: al escribir el nombre (o el
+  // teléfono) aparecen los clientes parecidos, y al tocar uno se rellenan todos
+  // sus datos (nombre, teléfonos, correo, RFC y dirección).
   function wireClientAutocomplete() {
-    const nombreEl = $("f-cliente-nombre");
-    const telEl = $("f-cliente-tel");
-    if (!nombreEl || !telEl) return;
-    nombreEl.addEventListener("input", () => {
-      const match = buildClientDirectory().byNombre.get(nombreEl.value.trim());
-      if (match && !telEl.value.trim()) telEl.value = match;
-    });
-    telEl.addEventListener("input", () => {
-      const match = buildClientDirectory().byTel.get(telEl.value.trim());
-      if (match && !nombreEl.value.trim()) nombreEl.value = match;
-    });
+    const campos = {
+      nombre: $("f-cliente-nombre"), telefono: $("f-cliente-tel"), telefono2: $("f-cliente-tel-2"),
+      correo: $("f-cliente-correo"), rfc: $("f-cliente-rfc"), direccion: $("f-cliente-direccion"),
+    };
+    if (!campos.nombre || !campos.telefono) return;
+    let rellenando = false;
+    const listas = [];
+    const ocultarTodas = () => listas.forEach((l) => l.ocultar());
+    ocultarSugerenciasCliente = ocultarTodas;
+
+    function rellenarCon(c) {
+      rellenando = true;
+      const poner = (el, valor) => { el.value = valor || ""; el.dispatchEvent(new Event("input", { bubbles: true })); };
+      poner(campos.nombre, c.nombre);
+      poner(campos.telefono, c.telefono);
+      poner(campos.telefono2, c.telefono2);
+      poner(campos.correo, c.correo);
+      poner(campos.rfc, c.rfc);
+      poner(campos.direccion, c.direccion);
+      rellenando = false;
+      ocultarTodas();
+      showToast(t("cliente_datos_cargados").replace("{nombre}", c.nombre), "success");
+    }
+
+    function crearLista(input, modo) {
+      const caja = document.createElement("div");
+      caja.className = "cliente-sugerencias";
+      caja.style.display = "none";
+      caja.setAttribute("role", "listbox");
+      if (input.parentNode) input.parentNode.style.position = "relative";
+      input.insertAdjacentElement("afterend", caja);
+      let resultados = [];
+      let activo = -1;
+      let temporizadorCierre = null;   // cierre pendiente tras salir del campo
+
+      function ocultar() { caja.style.display = "none"; caja.innerHTML = ""; resultados = []; activo = -1; }
+      function pintar() {
+        if (!resultados.length) { ocultar(); return; }
+        caja.innerHTML = `<div class="cliente-sugerencias-titulo">${esc(t("cliente_sugerencias_titulo"))}</div>` + resultados.map((c, i) => {
+          const detalle = [c.telefono, c.correo].filter(Boolean).join(" · ");
+          const veh = t("cliente_vehiculos_n").replace("{n}", c.vehiculos);
+          return `<button type="button" class="cliente-sugerencia${i === activo ? " activa" : ""}" role="option" data-i="${i}"><span class="cs-nombre">${esc(c.nombre)}</span><span class="cs-detalle">${esc(detalle ? detalle + " · " + veh : veh)}</span></button>`;
+        }).join("");
+        caja.style.display = "block";
+      }
+      function buscar() {
+        if (rellenando) return;
+        clearTimeout(temporizadorCierre);
+        resultados = buscarClientes(input.value, modo, currentVehicleId);
+        activo = -1;
+        pintar();
+      }
+
+      input.addEventListener("input", buscar);
+      input.addEventListener("focus", () => clearTimeout(temporizadorCierre));
+      input.addEventListener("blur", () => { clearTimeout(temporizadorCierre); temporizadorCierre = setTimeout(ocultar, 180); });
+      input.addEventListener("keydown", (e) => {
+        if (caja.style.display === "none" || !resultados.length) return;
+        if (e.key === "ArrowDown") { e.preventDefault(); activo = (activo + 1) % resultados.length; pintar(); }
+        else if (e.key === "ArrowUp") { e.preventDefault(); activo = (activo - 1 + resultados.length) % resultados.length; pintar(); }
+        else if (e.key === "Enter" && activo >= 0) { e.preventDefault(); rellenarCon(resultados[activo]); }
+        else if (e.key === "Escape") { ocultar(); }
+      });
+      // Tocar una opción no debe quitarle el foco al campo (si no, el menú se
+      // cerraría antes de registrar el toque).
+      caja.addEventListener("mousedown", (e) => e.preventDefault());
+      caja.addEventListener("click", (e) => {
+        const b = e.target.closest(".cliente-sugerencia");
+        if (b) rellenarCon(resultados[Number(b.dataset.i)]);
+      });
+      listas.push({ ocultar });
+    }
+
+    crearLista(campos.nombre, "nombre");
+    crearLista(campos.telefono, "telefono");
   }
 
   async function openEditor(id) {
@@ -4527,6 +4700,20 @@
     }
 
     const vehiculoExistente = db.vehicles && db.vehicles[id];
+    // Se anota CUÁNDO cambió por última vez la información del cliente, para
+    // que el autocompletar prefiera siempre los datos más recientes.
+    const datosCliente = {
+      cliente_nombre: $("f-cliente-nombre").value.trim(),
+      cliente_telefono: $("f-cliente-tel").value.trim(),
+      cliente_telefono_2: $("f-cliente-tel-2").value.trim(),
+      cliente_correo: $("f-cliente-correo").value.trim(),
+      cliente_rfc: $("f-cliente-rfc").value.trim().toUpperCase(),
+      cliente_direccion: $("f-cliente-direccion").value.trim(),
+    };
+    const clienteCambio = !vehiculoExistente || Object.keys(datosCliente).some((k) => (vehiculoExistente[k] || "") !== datosCliente[k]);
+    const clienteActualizado = clienteCambio
+      ? new Date().toISOString()
+      : ((vehiculoExistente && (vehiculoExistente.cliente_actualizado || vehiculoExistente.fecha_creacion)) || null);
     return {
       id,
       fecha_creacion: (vehiculoExistente && vehiculoExistente.fecha_creacion) || new Date().toISOString(),
@@ -4556,6 +4743,7 @@
       cliente_correo: $("f-cliente-correo").value.trim(),
       cliente_rfc: $("f-cliente-rfc").value.trim().toUpperCase(),
       cliente_direccion: $("f-cliente-direccion").value.trim(),
+      cliente_actualizado: clienteActualizado,
       ficha_tecnica: {
         aceite_tipo: $("f-aceite-tipo").value.trim(),
         aceite_capacidad: $("f-aceite-cap").value.trim(),
